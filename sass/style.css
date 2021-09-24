@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, a {
+  display: block;
+}
+
+body {
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  /*隱藏滾輪*/
+  display: none;
+}
+
+#app .up,
+#app .down {
+  border: 1px solid red;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#app .up .banner {
+  border: 1px solid green;
+  height: 250px;
+  position: relative;
+}
+
+#app .up .banner img {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+#app .up .middle {
+  border: 1px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+#app .up .middle .left {
+  width: 65%;
+}
+
+#app .up .middle .left .input label:nth-of-type(1) {
+  font-size: 22px;
+}
+
+#app .up .middle .left .input label:nth-of-type(1) select {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#app .up .middle .left .input label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 40px;
+}
+
+#app .up .middle .left .input label select:nth-of-type(1) {
+  margin-left: 5px;
+}
+
+#app .up .middle .left .input label select {
+  font-size: 22px;
+  padding: 10px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  border: 2px solid #999;
+}
+
+#app .up .middle .left .input label .flxLeft {
+  width: 40%;
+  text-align: right;
+}
+
+#app .up .middle .left .input label .flxLeft span {
+  font-size: 38px;
+  color: #f2410f;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#app .up .middle .left .input label .flxLeft span.secSpan {
+  font-size: 22px;
+  color: black;
+  font-weight: 800;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  margin-top: 15px;
+}
+
+#app .up .middle .left .input label input {
+  width: 45%;
+  outline: none;
+  border: 2px solid #999;
+  font-size: 38px;
+  padding: 5px 0px 5px 5px;
+  border-radius: 1px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  margin-left: 5px;
+}
+
+#app .up .middle .left .chkbox {
+  border: 1px solid hotpink;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 40px;
+}
+
+#app .up .middle .left .chkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+#app .up .middle .left .chkbox label input[type="checkbox"] {
+  zoom: 1.5;
+}
+
+#app .up .middle .left .chkbox label .chkbox2 p:nth-of-type(1) {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#app .up .middle .right {
+  width: 33%;
+}
+
+#app .up .middle .right img {
+  display: block;
+  -webkit-box-shadow: 0px 15px 20px #666;
+          box-shadow: 0px 15px 20px #666;
+}
+
+#app .up .middle .right img:nth-of-type(2) {
+  margin-top: 10px;
+}
+
+#app .down .btnRow {
+  text-align: center;
+}
+
+#app .down .btnRow button {
+  width: 250px;
+  height: 60px;
+  margin-right: 40px;
+}
+
+#app .down p {
+  text-align: right;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=style.css.map */
