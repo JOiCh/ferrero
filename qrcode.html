@@ -23,17 +23,13 @@
                                 <div class="flxLeft">
                                     <span>發票日期:</span>
                                 </div>
-                                <select name="" id="">
-                                    <option value="">月份</option>
-                                    <option value="">8</option>
-                                    <option value="">9</option>
+                                <select name="" id="" v-model="selectedMonth" @change="chooseMonths">
+                                    <option>月份</option>
+                                    <option v-for="month in months">{{month}}</option>
                                 </select>月
-                                <select name="" id="">
+                                <select name="" id="" >
                                     <option value="">日期</option>
-                                    <option value="">28</option>
-                                    <option value="">29</option>
-                                    <option value="">30</option>
-                                    <option value="">31</option>
+                                    <option v-for="day in days">{{day}}</option>
                                 </select>日
                             </label>
                             <label for="">
@@ -120,6 +116,33 @@
             </div>
         </form>
     </div>
+    <script src="./js/vue.js"></script>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                months:[12,1,2],
+                selectedMonth:"月份",
+                days:0,
+            },
+            methods: {
+                chooseMonths(){
+                    console.log('object');
+                    switch (parseInt(this.selectedMonth)) {
+                        case 2:
+                            this.days = 28;
+                            console.log(this.selectedMonth); 
+                            break;
+                        default:
+                            console.log(this.selectedMonth); 
+                            this.days = 31;
+                            break;
+                    }
+                },
+            },
+            
+        })
+    </script>
 </body>
 
 </html>
