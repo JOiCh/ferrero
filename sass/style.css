@@ -123,19 +123,6 @@ table {
   margin-top: 40px;
 }
 
-#app .up .middle .left .input label select:nth-of-type(1) {
-  margin-left: 5px;
-}
-
-#app .up .middle .left .input label select {
-  font-size: 22px;
-  padding: 10px;
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-  border: 2px solid #999;
-  outline: none;
-}
-
 #app .up .middle .left .input label .flxLeft {
   width: 40%;
   text-align: right;
@@ -155,6 +142,19 @@ table {
   -webkit-transform: translateX(-15px);
           transform: translateX(-15px);
   margin-top: 15px;
+}
+
+#app .up .middle .left .input label .flxRight select:nth-of-type(1) {
+  margin-left: 5px;
+}
+
+#app .up .middle .left .input label .flxRight select {
+  font-size: 22px;
+  padding: 10px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  border: 2px solid #999;
+  outline: none;
 }
 
 #app .up .middle .left .input label input {
@@ -313,21 +313,12 @@ table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 40px;
-  }
-  #app .up .middle .left .input label select:nth-of-type(1) {
-    margin-left: 5px;
-  }
-  #app .up .middle .left .input label select {
-    font-size: 22px;
-    padding: 10px;
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-    border: 2px solid #999;
-    outline: none;
   }
   #app .up .middle .left .input label .flxLeft {
     width: 40%;
@@ -347,8 +338,19 @@ table {
             transform: translateX(-15px);
     margin-top: 15px;
   }
+  #app .up .middle .left .input label .flxRight select:nth-of-type(1) {
+    margin-left: 5px;
+  }
+  #app .up .middle .left .input label .flxRight select {
+    font-size: 22px;
+    padding: 10px;
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+    border: 2px solid #999;
+    outline: none;
+  }
   #app .up .middle .left .input label input {
-    width: 45%;
+    width: 90%;
     outline: none;
     border: 2px solid #999;
     font-size: 38px;

@@ -34,14 +34,16 @@
                                 <div class="flxLeft">
                                     <span>發票日期:</span>
                                 </div>
-                                <select name="" id="" v-model="selectedMonth" @change="chooseMonths">
-                                    <option>月份</option>
-                                    <option v-for="month in months">{{month}}</option>
-                                </select>月
-                                <select name="" id="" >
-                                    <option value="">日期</option>
-                                    <option v-for="day in days">{{day}}</option>
-                                </select>日
+                                <div class="flxRight">
+                                    <select name="" id="" v-model="selectedMonth" @change="chooseMonths">
+                                        <option>月份</option>
+                                        <option v-for="month in months">{{month}}</option>
+                                    </select>月
+                                    <select name="" id="">
+                                        <option value="">日期</option>
+                                        <option v-for="day in days">{{day}}</option>
+                                    </select>日
+                                </div>
                             </label>
                             <label for="">
                                 <div class="flxLeft">
@@ -115,7 +117,7 @@
                     <button type="button">button1</button>
                     <button type="button">button2</button>
                 </div>
-                
+
             </div>
         </form>
         <footer>
@@ -126,14 +128,14 @@
     <script src="./js/header_footer.js"></script>
     <script>
         new Vue({
-            el:'#app',
-            data:{
-                months:[12,1,2],
-                selectedMonth:"月份",
-                days:0,
+            el: '#app',
+            data: {
+                months: [12, 1, 2],
+                selectedMonth: "月份",
+                days: 0,
             },
             methods: {
-                chooseMonths(){
+                chooseMonths() {
                     console.log('object');
                     switch (parseInt(this.selectedMonth)) {
                         case 2:
@@ -145,7 +147,7 @@
                     }
                 },
             },
-            
+
         })
     </script>
 </body>

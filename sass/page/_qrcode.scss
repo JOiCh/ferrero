@@ -42,16 +42,7 @@
                         display: flex;
                         align-items: flex-start;
                         margin-top: 40px;
-                        select:nth-of-type(1){
-                            margin-left: 5px;
-                        }
-                        select{
-                            font-size: 22px;
-                            padding: 10px;
-                            transform: translateY(-15px);
-                            border: 2px solid #999;
-                            outline: none;
-                        }
+                        
                         .flxLeft{
                             width: 40%;
                             text-align: right;
@@ -67,6 +58,18 @@
                                 font-weight: 800;
                                 transform: translateX(-15px);
                                 margin-top: 15px;
+                            }
+                        }
+                        .flxRight{
+                            select:nth-of-type(1){
+                                margin-left: 5px;
+                            }
+                            select{
+                                font-size: 22px;
+                                padding: 10px;
+                                transform: translateY(-15px);
+                                border: 2px solid #999;
+                                outline: none;
                             }
                         }
                         input{
@@ -204,6 +207,7 @@
     
                 .left {
                     width: 100%;
+                    
                     .input{
                         label:nth-of-type(1){
                             font-size: 22px;
@@ -214,18 +218,10 @@
                         }
                         label{
                             display: flex;
+                            flex-wrap: wrap;
                             align-items: flex-start;
                             margin-top: 40px;
-                            select:nth-of-type(1){
-                                margin-left: 5px;
-                            }
-                            select{
-                                font-size: 22px;
-                                padding: 10px;
-                                transform: translateY(-15px);
-                                border: 2px solid #999;
-                                outline: none;
-                            }
+                            
                             .flxLeft{
                                 width: 40%;
                                 text-align: right;
@@ -243,8 +239,20 @@
                                     margin-top: 15px;
                                 }
                             }
+                            .flxRight{
+                                select:nth-of-type(1){
+                                    margin-left: 5px;
+                                }
+                                select{
+                                    font-size: 22px;
+                                    padding: 10px;
+                                    transform: translateY(-15px);
+                                    border: 2px solid #999;
+                                    outline: none;
+                                }
+                            }
                             input{
-                                width: 45%;
+                                width: 90%;
                                 outline: none;
                                 border: 2px solid #999;
                                 font-size: 38px;
