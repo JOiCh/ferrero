@@ -20,7 +20,9 @@
                 left: 0px;
             }
         }
-
+        .scan{
+            display: none;
+        }
         .middle {
             border: 1px solid blue;
             display: flex;
@@ -152,6 +154,172 @@
                 margin: 15px 10px;
             }
       
+        }
+    }
+
+    @include mobile{
+        .up,
+        .down {
+            width: 90%;
+        }
+    
+        .up {
+            .banner {
+                height: 200px;
+            }
+            .scan{
+                display: flex;
+                justify-content: center;
+                margin: 20px 0;
+                .scanL{
+                    width: 120px;
+                    height: 120px;
+                    line-height: 100px;
+                    font-size: 20px;
+                    background-color: yellow;
+                    text-align: center;
+                    align-self: center;
+                    margin-right: 8%;
+                    cursor: pointer;
+                }
+                .scanR{
+                    width: 60%;
+                    font-size: 26px;
+                    p{
+                        border: 1px solid black;
+                        text-align: center;
+                        line-height: 36px;
+                    }
+                    h4{
+                        text-align: center;
+                        margin-top: 10px;
+                        color: $main;
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .middle {
+                margin-top: 20px;
+    
+                .left {
+                    width: 100%;
+                    .input{
+                        label:nth-of-type(1){
+                            font-size: 22px;
+                            select{
+                                margin-right: 5px;
+                                margin-left:5px;
+                            }
+                        }
+                        label{
+                            display: flex;
+                            align-items: flex-start;
+                            margin-top: 40px;
+                            select:nth-of-type(1){
+                                margin-left: 5px;
+                            }
+                            select{
+                                font-size: 22px;
+                                padding: 10px;
+                                transform: translateY(-15px);
+                                border: 2px solid #999;
+                                outline: none;
+                            }
+                            .flxLeft{
+                                width: 40%;
+                                text-align: right;
+                                span{
+                                    font-size: 38px;
+                                    color: $main;
+                                    font-weight: bold;
+                                    display: inline-block;
+                                }
+                                span.secSpan{
+                                    font-size: 22px;
+                                    color: black;
+                                    font-weight: 800;
+                                    transform: translateX(-15px);
+                                    margin-top: 15px;
+                                }
+                            }
+                            input{
+                                width: 45%;
+                                outline: none;
+                                border: 2px solid #999;
+                                font-size: 38px;
+                                padding: 5px 0px 5px 5px;
+                                border-radius: 1px;
+                                transform: translateY(-15px);
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                   
+                }
+    
+                .right {
+                    display: none;
+                }
+            }
+            .chkbox{
+                border: 1px solid hotpink;
+                margin: 0 auto;
+                width: 50%;
+                margin-top: 40px;
+                label{
+                    display: flex;
+                    margin-top: 25px;
+                    cursor: pointer;
+                    input[type="checkbox"]{
+                        zoom:1.5;
+                        
+                    }
+                    .chkbox2{
+                        p:nth-of-type(1){
+                            font-size: 22px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .chkbox2:nth-of-type(1){
+                    span{
+                      text-decoration: underline;
+                    color: $notice;  
+                    }
+                }
+                
+            }
+        }
+        .down{
+            margin-top: 40px;
+            margin-bottom: 80px;
+            .btnRow{
+                text-align: center;
+                button{
+                    width: 250px;
+                    height: 60px;
+                    margin-right: 40px;
+                }
+            }
+            p{
+                text-align: right;
+                margin-top: 40px;
+                margin-bottom: 140px;
+            }
+        }
+        footer{
+            div{
+                background-color: $main;
+                color: white;
+                display: flex;
+                font-size: 10px;
+                justify-content: center;
+                p{
+                    margin: 15px 10px;
+                }
+          
+            }
         }
     }
 }
