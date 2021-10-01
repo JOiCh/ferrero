@@ -68,34 +68,35 @@
                                 <input type="email">
                             </label>
                         </div>
-                        <div class="chkbox">
-                            <label for="chk1">
-                                <input type="checkbox" id="chk1">
-                                <div class="chkbox2">
-                                    <p>我已閱讀並同意<span>條款</span></p>
-                                    <p class="secP">(包括個人資料保護條款)</p>
-                                </div>
-                            </label>
-                            <label for="chk2">
-                                <input type="checkbox" id="chk2">
-                                <div class="chkbox2">
-                                    <p>我已年滿20歲</p>
-                                    <p class="secP">(20歲以下的參加者將被取消參加/得獎資格)</p>
-                                </div>
-                            </label>
-                            <label for="chk3">
-                                <input type="checkbox" id="chk3">
-                                <div class="chkbox2">
-                                    <p>我確認持有電子發票正本</p>
-                                    <p class="secP">(所有雲端發票將被取消參加/得獎資格)</p>
-                                </div>
-                            </label>
-                        </div>
+
                     </div>
                     <div class="right">
                         <img src="./imgs/paysheetUp.JPG" alt="">
                         <img src="./imgs/paysheetDown.JPG" alt="">
                     </div>
+                </div>
+                <div class="chkbox">
+                    <label for="chk1">
+                        <input type="checkbox" id="chk1">
+                        <div class="chkbox2">
+                            <p>我已閱讀並同意<span>條款</span></p>
+                            <p class="secP">(包括個人資料保護條款)</p>
+                        </div>
+                    </label>
+                    <label for="chk2">
+                        <input type="checkbox" id="chk2">
+                        <div class="chkbox2">
+                            <p>我已年滿20歲</p>
+                            <p class="secP">(20歲以下的參加者將被取消參加/得獎資格)</p>
+                        </div>
+                    </label>
+                    <label for="chk3">
+                        <input type="checkbox" id="chk3">
+                        <div class="chkbox2">
+                            <p>我確認持有電子發票正本</p>
+                            <p class="secP">(所有雲端發票將被取消參加/得獎資格)</p>
+                        </div>
+                    </label>
                 </div>
             </div>
             <div class="down">
@@ -103,20 +104,15 @@
                     <button type="button">button1</button>
                     <button type="button">button2</button>
                 </div>
-                <p>
-                    *本活動受條款及細則約束</br>
-                    憑單一發票</br>
-                    健達繽紛樂3入裝 / 5入裝 / 18入裝只計算為1件產品</br>
-                    不接受所有雲端發票</br>
-                    (有隨機碼的雲端發票亦不接受)</br>
-                    必須保留紙本電子發票的證明聯及交易明細聯</br>
-                    贈品圖片僅為示意 (以實機為準)</br>
-                    贈品顏色隨機出貨 (恕不挑色)</br>
-                </p>
+                
             </div>
         </form>
+        <footer>
+            <the-footer></the-footer>
+        </footer>
     </div>
     <script src="./js/vue.js"></script>
+    <script src="./js/header_footer.js"></script>
     <script>
         new Vue({
             el:'#app',
@@ -131,10 +127,8 @@
                     switch (parseInt(this.selectedMonth)) {
                         case 2:
                             this.days = 28;
-                            console.log(this.selectedMonth); 
                             break;
                         default:
-                            console.log(this.selectedMonth); 
                             this.days = 31;
                             break;
                     }
