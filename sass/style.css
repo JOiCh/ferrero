@@ -68,31 +68,84 @@ table {
   display: none;
 }
 
+/*input number消除旁邊箭頭*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+#app header {
+  position: relative;
+  z-index: 5;
+}
+
+#app header .fullHeader {
+  width: 100%;
+}
+
+#app header .narrowHeader {
+  display: none;
+}
+
+#app footer div {
+  background-color: #62171b;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app footer div p {
+  margin: 15px 10px;
+}
+
 #app form {
+  -webkit-transform: translateY(-165px);
+          transform: translateY(-165px);
   background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top, left bottom;
+  background-color: #fbf3dc;
+  min-height: 100%;
 }
 
 #app form .up,
 #app form .down {
   border: 1px solid red;
-  width: 60%;
+  width: 55%;
   margin: 0 auto;
 }
 
-#app form .up .banner {
+#app form .banner {
   border: 1px solid green;
-  height: 250px;
+  height: 320px;
   position: relative;
 }
 
-#app form .up .banner img {
-  width: 100%;
+#app form .banner img.text_fill {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
+  width: 65%;
+}
+
+#app form .up {
+  margin-top: 15px;
 }
 
 #app form .up .scan {
@@ -104,7 +157,6 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 60px;
 }
 
 #app form .up .middle .left {
@@ -113,6 +165,7 @@ table {
 
 #app form .up .middle .left .input label:nth-of-type(1) {
   font-size: 22px;
+  margin-top: 25px;
 }
 
 #app form .up .middle .left .input label:nth-of-type(1) select {
@@ -127,7 +180,7 @@ table {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 #app form .up .middle .left .input label .flxLeft {
@@ -151,8 +204,21 @@ table {
   margin-top: 15px;
 }
 
+#app form .up .middle .left .input label .flxRight {
+  position: relative;
+}
+
 #app form .up .middle .left .input label .flxRight select:nth-of-type(1) {
   margin-left: 5px;
+}
+
+#app form .up .middle .left .input label .flxRight .spanMv {
+  position: absolute;
+}
+
+#app form .up .middle .left .input label .flxRight .spanMv:nth-of-type(1) {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
 }
 
 #app form .up .middle .left .input label .flxRight select {
@@ -162,6 +228,10 @@ table {
           transform: translateY(-15px);
   border: 2px solid #999;
   outline: none;
+}
+
+#app form .up .middle .left .input label .flxRight select:nth-of-type(1) {
+  margin-right: 20px;
 }
 
 #app form .up .middle .left .input label input {
@@ -181,14 +251,7 @@ table {
 }
 
 #app form .up .middle .right img {
-  display: block;
-  -webkit-box-shadow: 0px 15px 20px #666;
-          box-shadow: 0px 15px 20px #666;
-  max-width: 70%;
-}
-
-#app form .up .middle .right img:nth-of-type(2) {
-  margin-top: 10px;
+  width: 100%;
 }
 
 #app form .up .chkbox {
@@ -221,40 +284,36 @@ table {
 }
 
 #app form .down {
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: 60px;
 }
 
 #app form .down .btnRow {
   text-align: center;
+  margin-bottom: 80px;
 }
 
 #app form .down .btnRow button {
-  width: 250px;
-  height: 60px;
-  margin-right: 40px;
+  width: 318px;
+  height: 80px;
+  margin-right: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
 }
 
-#app form .down p {
-  text-align: right;
-  margin-top: 40px;
-  margin-bottom: 140px;
+#app form .down .btnRow button:active {
+  opacity: .8;
 }
 
-#app footer div {
-  background-color: #62171b;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#app form .down .btnRow button:nth-of-type(1) {
+  background-image: url(../../imgs/x2/btn_rewrite.png);
 }
 
-#app footer div p {
-  margin: 15px 10px;
+#app form .down .btnRow button:nth-of-type(2) {
+  background-image: url(../../imgs/x2/btn_send.png);
 }
 
 @media all and (max-width: 576px) {

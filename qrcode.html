@@ -11,11 +11,15 @@
 
 <body>
     <div id="app">
+        <header>
+            <the-header></the-header>
+        </header>
         <form action="">
+            <div class="banner">
+                <img src="./imgs/x2/text_fill.png" class="text_fill">
+            </div>
             <div class="up">
-                <div class="banner">
-                    <img src="./imgs/banner.png" alt="">
-                </div>
+              
                 <!-- 這邊開始是掃描功能區塊 -->
                 <div class="scan">
                     <div class="scanL">
@@ -38,11 +42,13 @@
                                     <select name="" id="" v-model="selectedMonth" @change="chooseMonths">
                                         <option>月份</option>
                                         <option v-for="month in months">{{month}}</option>
-                                    </select>月
+                                    </select>
+                                    <span class="spanMv">月</span>
                                     <select name="" id="">
                                         <option value="">日期</option>
                                         <option v-for="day in days">{{day}}</option>
-                                    </select>日
+                                    </select>
+                                    <span class="spanMv">日</span>
                                 </div>
                             </label>
                             <label for="">
@@ -84,8 +90,7 @@
 
                     </div>
                     <div class="right">
-                        <img src="./imgs/paysheetUp.JPG" alt="">
-                        <img src="./imgs/paysheetDown.JPG" alt="">
+                        <img src="./imgs/x2/bill.png" alt="">
                     </div>
                 </div>
                 <div class="chkbox">
@@ -114,10 +119,9 @@
             </div>
             <div class="down">
                 <div class="btnRow">
-                    <button type="button">button1</button>
-                    <button type="button">button2</button>
+                    <button type="button"></button>
+                    <button type="button"></button>
                 </div>
-
             </div>
         </form>
         <footer>

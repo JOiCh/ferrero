@@ -1,0 +1,28 @@
+#app{
+    header {
+        position: relative;
+        z-index: 5;
+
+        .fullHeader {
+            width: 100%;
+        }
+
+        .narrowHeader {
+            display: none;
+        }
+    }
+    footer {
+        div {
+            background-color: $main;
+            color: white;
+            display: flex;
+            font-size: 10px;
+            justify-content: center;
+
+            p {
+                margin: 15px 10px;
+            }
+
+        }
+    }
+}
