@@ -68,31 +68,38 @@ table {
   display: none;
 }
 
-#app .up,
-#app .down {
+#app form {
+  background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top, left bottom;
+}
+
+#app form .up,
+#app form .down {
   border: 1px solid red;
   width: 60%;
   margin: 0 auto;
 }
 
-#app .up .banner {
+#app form .up .banner {
   border: 1px solid green;
   height: 250px;
   position: relative;
 }
 
-#app .up .banner img {
+#app form .up .banner img {
   width: 100%;
   position: absolute;
   bottom: 0px;
   left: 0px;
 }
 
-#app .up .scan {
+#app form .up .scan {
   display: none;
 }
 
-#app .up .middle {
+#app form .up .middle {
   border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,20 +107,20 @@ table {
   margin-top: 60px;
 }
 
-#app .up .middle .left {
+#app form .up .middle .left {
   width: 65%;
 }
 
-#app .up .middle .left .input label:nth-of-type(1) {
+#app form .up .middle .left .input label:nth-of-type(1) {
   font-size: 22px;
 }
 
-#app .up .middle .left .input label:nth-of-type(1) select {
+#app form .up .middle .left .input label:nth-of-type(1) select {
   margin-right: 5px;
   margin-left: 5px;
 }
 
-#app .up .middle .left .input label {
+#app form .up .middle .left .input label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,19 +130,19 @@ table {
   margin-top: 40px;
 }
 
-#app .up .middle .left .input label .flxLeft {
+#app form .up .middle .left .input label .flxLeft {
   width: 40%;
   text-align: right;
 }
 
-#app .up .middle .left .input label .flxLeft span {
+#app form .up .middle .left .input label .flxLeft span {
   font-size: 38px;
   color: #62171b;
   font-weight: bold;
   display: inline-block;
 }
 
-#app .up .middle .left .input label .flxLeft span.secSpan {
+#app form .up .middle .left .input label .flxLeft span.secSpan {
   font-size: 22px;
   color: black;
   font-weight: 800;
@@ -144,11 +151,11 @@ table {
   margin-top: 15px;
 }
 
-#app .up .middle .left .input label .flxRight select:nth-of-type(1) {
+#app form .up .middle .left .input label .flxRight select:nth-of-type(1) {
   margin-left: 5px;
 }
 
-#app .up .middle .left .input label .flxRight select {
+#app form .up .middle .left .input label .flxRight select {
   font-size: 22px;
   padding: 10px;
   -webkit-transform: translateY(-15px);
@@ -157,7 +164,7 @@ table {
   outline: none;
 }
 
-#app .up .middle .left .input label input {
+#app form .up .middle .left .input label input {
   width: 45%;
   outline: none;
   border: 2px solid #999;
@@ -169,29 +176,29 @@ table {
   margin-left: 5px;
 }
 
-#app .up .middle .right {
+#app form .up .middle .right {
   width: 33%;
 }
 
-#app .up .middle .right img {
+#app form .up .middle .right img {
   display: block;
   -webkit-box-shadow: 0px 15px 20px #666;
           box-shadow: 0px 15px 20px #666;
   max-width: 70%;
 }
 
-#app .up .middle .right img:nth-of-type(2) {
+#app form .up .middle .right img:nth-of-type(2) {
   margin-top: 10px;
 }
 
-#app .up .chkbox {
+#app form .up .chkbox {
   border: 1px solid hotpink;
   margin: 0 auto;
   width: 50%;
   margin-top: 40px;
 }
 
-#app .up .chkbox label {
+#app form .up .chkbox label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,36 +206,36 @@ table {
   cursor: pointer;
 }
 
-#app .up .chkbox label input[type="checkbox"] {
+#app form .up .chkbox label input[type="checkbox"] {
   zoom: 1.5;
 }
 
-#app .up .chkbox label .chkbox2 p:nth-of-type(1) {
+#app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
   font-size: 22px;
   font-weight: bold;
 }
 
-#app .up .chkbox .chkbox2:nth-of-type(1) span {
+#app form .up .chkbox .chkbox2:nth-of-type(1) span {
   text-decoration: underline;
   color: #a08d4b;
 }
 
-#app .down {
+#app form .down {
   margin-top: 40px;
   margin-bottom: 80px;
 }
 
-#app .down .btnRow {
+#app form .down .btnRow {
   text-align: center;
 }
 
-#app .down .btnRow button {
+#app form .down .btnRow button {
   width: 250px;
   height: 60px;
   margin-right: 40px;
 }
 
-#app .down p {
+#app form .down p {
   text-align: right;
   margin-top: 40px;
   margin-bottom: 140px;
