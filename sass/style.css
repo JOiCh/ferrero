@@ -112,8 +112,6 @@ input[type=number] {
 }
 
 #app form {
-  -webkit-transform: translateY(-165px);
-          transform: translateY(-165px);
   background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -484,5 +482,72 @@ input[type=number] {
   #app footer div p {
     margin: 15px 10px;
   }
+}
+
+#app .banner {
+  border: 1px solid green;
+  height: 320px;
+  position: relative;
+}
+
+#app .banner img.text_fill {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
+  width: 65%;
+}
+
+#app main {
+  max-width: 1052px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+}
+
+#app main .wordBox {
+  width: 60%;
+  border: 1px solid blue;
+}
+
+#app main .imgBox {
+  width: 39%;
+  border: 1px solid green;
+}
+
+#app .down {
+  margin-top: 60px;
+}
+
+#app .down .btnRow {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#app .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  margin-right: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+#app .down .btnRow button:active {
+  opacity: .8;
+}
+
+#app .down .btnRow button:nth-of-type(1) {
+  background-image: url(../../imgs/x2/btn_rewrite.png);
+}
+
+#app .down .btnRow button:nth-of-type(2) {
+  background-image: url(../../imgs/x2/btn_sure.png);
 }
 /*# sourceMappingURL=style.css.map */

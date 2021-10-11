@@ -1,0 +1,66 @@
+#app {
+
+    .banner {
+        border: 1px solid green;
+        height: 320px;
+        position: relative;
+
+        img.text_fill {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 50px;
+            width: 65%;
+        }
+    }
+
+    main {
+        max-width: 1052px;
+        margin: 0 auto;
+        display: flex;
+        border: 1px solid red;
+
+        .wordBox {
+            width: 60%;
+            border: 1px solid blue;
+        }
+
+        .imgBox {
+            width: 39%;
+            border: 1px solid green;
+        }
+    }
+
+    .down {
+        margin-top: 60px;
+
+        .btnRow {
+            text-align: center;
+            margin-bottom: 80px;
+
+            button {
+                width: 318px;
+                height: 80px;
+                margin-right: 80px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                outline: unset;
+                border: unset;
+                cursor: pointer;
+
+                &:active {
+                    opacity: .8;
+                }
+            }
+
+            button:nth-of-type(1) {
+                background-image: url(../../imgs/x2/btn_rewrite.png);
+            }
+
+            button:nth-of-type(2) {
+                background-image: url(../../imgs/x2/btn_sure.png);
+            }
+        }
+    }
+}

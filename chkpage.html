@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>check page</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <the-header></the-header>
+        </header>
+        <div class="banner">
+            <img src="./imgs/x2/text_fill.png" class="text_fill">
+        </div>
+        <main>
+            <div class="wordBox">
+                <div class="wordItem">
+                    <div class="flxLeft">
+                        發票日期:
+                    </div>
+                    <div class="flxRight">
+                        2021年12月15日
+                    </div>
+                </div>
+                <div class="wordItem">
+                    <div class="flxLeft">
+                        發票號碼:   
+                    </div>
+                    <div class="flxRight">
+                        FN0000123
+                    </div>
+                </div>
+                <div class="wordItem">
+                    <div class="flxLeft">
+                        發票隨機碼:
+                    </div>
+                    <div class="flxRight">
+                        8132
+                    </div>
+                </div>
+                <div class="wordItem">
+                    <div class="flxLeft">
+                        真實姓名:
+                    </div>
+                    <div class="flxRight">
+                        王小明
+                    </div>
+                </div>
+                <div class="wordItem">
+                    <div class="flxLeft">
+                        手機號碼:
+                    </div>
+                    <div class="flxRight">
+                        0912345678
+                    </div>
+                </div>
+                <div class="wordItem">
+                    <div class="flxLeft">
+                        電子郵件地址:
+                    </div>
+                    <div class="flxRight">
+                        award@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="imgBox"></div>
+        </main>
+        <div class="down">
+            <div class="btnRow">
+                <button type="button"></button>
+                <button type="button"></button>
+            </div>
+        </div>
+        <footer>
+            <the-footer></the-footer>
+        </footer>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/header_footer.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+        })
+    </script>
+</body>
+
+</html>
