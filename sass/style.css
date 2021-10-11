@@ -200,14 +200,12 @@ input[type=number] {
 #app form .up .middle .left .input label .flxLeft span {
   font-size: 38px;
   color: #62171b;
-  font-weight: bold;
   display: inline-block;
 }
 
 #app form .up .middle .left .input label .flxLeft span.secSpan {
   font-size: 22px;
   color: black;
-  font-weight: 800;
   -webkit-transform: translateX(-15px);
           transform: translateX(-15px);
   margin-top: 15px;

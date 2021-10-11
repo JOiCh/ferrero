@@ -95,21 +95,21 @@
                 </div>
                 <div class="chkbox">
                     <label for="chk1">
-                        <input type="checkbox" id="chk1">
+                        <input type="checkbox" id="chk1" v-model="chkData.agree.checked">
                         <div class="chkbox2">
                             <p>我已閱讀並同意<span>條款</span></p>
                             <p class="secP">(包括個人資料保護條款)</p>
                         </div>
                     </label>
                     <label for="chk2">
-                        <input type="checkbox" id="chk2">
+                        <input type="checkbox" id="chk2" v-model="chkData.age.checked">
                         <div class="chkbox2">
                             <p>我已年滿20歲</p>
                             <p class="secP">(20歲以下的參加者將被取消參加/得獎資格)</p>
                         </div>
                     </label>
                     <label for="chk3">
-                        <input type="checkbox" id="chk3">
+                        <input type="checkbox" id="chk3" v-model="chkData.ticket.checked">
                         <div class="chkbox2">
                             <p>我確認持有電子發票正本</p>
                             <p class="secP">(所有雲端發票將被取消參加/得獎資格)</p>
@@ -120,7 +120,7 @@
             <div class="down">
                 <div class="btnRow">
                     <button type="button"></button>
-                    <button type="button"></button>
+                    <button type="button" @click="gotItems"></button>
                 </div>
             </div>
         </form>
@@ -138,6 +138,17 @@
                 selectedMonth: "月份",
                 selectedDay:"日期",
                 days: 0,
+                chkData: {
+                    agree: {
+                        checked: false
+                    },
+                    age: {
+                        checked: false
+                    },
+                    ticket: {
+                        checked: false
+                    }
+                },
             },
             methods: {
                 chooseMonths() {
@@ -150,6 +161,9 @@
                             this.days = 31;
                             break;
                     }
+                },
+                gotItems(){
+                    
                 },
             },
 
