@@ -82,6 +82,13 @@ input[type=number] {
   /* Firefox */
 }
 
+@font-face {
+  font-family: "LiHei";
+  /* 自訂名稱 */
+  src: url("../font/DFLiHeiStd-W5.otf");
+  /* 字體檔路徑 */
+}
+
 #app header {
   position: relative;
   z-index: 5;
@@ -109,6 +116,10 @@ input[type=number] {
 
 #app footer div p {
   margin: 15px 10px;
+}
+
+#app {
+  font-family: "LiHei", sans-serif;
 }
 
 #app form {
@@ -484,6 +495,15 @@ input[type=number] {
   }
 }
 
+#app {
+  font-family: "LiHei", sans-serif;
+  background-image: url(../../imgs/x2/blur_bg_down.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom 54px;
+  background-color: #fbf3dc;
+  background-size: contain;
+}
+
 #app .banner {
   border: 1px solid green;
   height: 320px;
@@ -511,6 +531,25 @@ input[type=number] {
 #app main .wordBox {
   width: 60%;
   border: 1px solid blue;
+}
+
+#app main .wordBox .wordItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+#app main .wordBox .wordItem .flxLeft {
+  width: 40%;
+  text-align: right;
+  font-size: 38px;
+  color: #62171b;
+}
+
+#app main .wordBox .wordItem .flxRight {
+  width: 59%;
+  font-size: 38px;
 }
 
 #app main .imgBox {

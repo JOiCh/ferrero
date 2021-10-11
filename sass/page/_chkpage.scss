@@ -1,4 +1,10 @@
 #app {
+    font-family: "LiHei", sans-serif;
+    background-image: url(../../imgs/x2/blur_bg_down.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom 54px;
+    background-color: $bg;
+    background-size: contain;
 
     .banner {
         border: 1px solid green;
@@ -19,10 +25,25 @@
         margin: 0 auto;
         display: flex;
         border: 1px solid red;
+    
 
         .wordBox {
             width: 60%;
             border: 1px solid blue;
+            .wordItem{
+                display: flex;
+                margin-top: 60px;
+                .flxLeft{
+                    width: 40%;
+                    text-align: right;
+                    font-size: 38px;
+                    color: $main;
+                }
+                .flxRight{
+                    width: 59%;
+                    font-size: 38px;
+                }
+            }
         }
 
         .imgBox {

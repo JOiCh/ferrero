@@ -40,12 +40,12 @@
                                 </div>
                                 <div class="flxRight">
                                     <select name="" id="" v-model="selectedMonth" @change="chooseMonths">
-                                        <option>月份</option>
+                                        <option selected hidden>月份</option>
                                         <option v-for="month in months">{{month}}</option>
                                     </select>
                                     <span class="spanMv">月</span>
-                                    <select name="" id="">
-                                        <option value="">日期</option>
+                                    <select name="" id="" v-model="selectedDay">
+                                        <option selected hidden>日期</option>
                                         <option v-for="day in days">{{day}}</option>
                                     </select>
                                     <span class="spanMv">日</span>
@@ -136,6 +136,7 @@
             data: {
                 months: [12, 1, 2],
                 selectedMonth: "月份",
+                selectedDay:"日期",
                 days: 0,
             },
             methods: {
