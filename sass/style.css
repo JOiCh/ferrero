@@ -91,19 +91,31 @@ input[type=number] {
 
 #app header {
   position: relative;
+  height: 240px;
   z-index: 5;
+  background-image: url(./../imgs/x2/head_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #app header .fullHeader {
-  width: 100%;
+  position: absolute;
+  height: 320px;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #app header .narrowHeader {
   display: none;
 }
 
-#app footer div {
+#app footer {
   background-color: #62171b;
+}
+
+#app footer div {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +130,57 @@ input[type=number] {
   margin: 15px 10px;
 }
 
+@media all and (max-width: 1420px) {
+  #app header {
+    height: 200px;
+  }
+  #app header .fullHeader {
+    height: 240px;
+    top: 40%;
+  }
+}
+
+@media all and (max-width: 992px) {
+  #app header {
+    height: 140px;
+  }
+  #app header .fullHeader {
+    height: 220px;
+    top: 20%;
+  }
+}
+
+@media all and (max-width: 910px) {
+  #app header {
+    height: 130px;
+  }
+  #app header .fullHeader {
+    height: 188px;
+  }
+  #app footer div {
+    font-size: 8px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #app header {
+    height: 110px;
+  }
+  #app header .fullHeader {
+    height: 165px;
+  }
+  #app footer {
+    padding: 10px 0;
+    text-align: center;
+  }
+  #app footer div {
+    display: block;
+  }
+  #app footer div p {
+    margin: 0px;
+  }
+}
+
 #app {
   font-family: "LiHei", sans-serif;
 }
@@ -128,7 +191,6 @@ input[type=number] {
   background-repeat: no-repeat;
   background-position: left top, left bottom;
   background-color: #fbf3dc;
-  min-height: 100%;
 }
 
 #app form .up,
@@ -323,18 +385,222 @@ input[type=number] {
   background-image: url(../../imgs/x2/btn_send.png);
 }
 
+@media all and (max-width: 1600px) {
+  #app form {
+    background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top, left bottom;
+    background-color: #fbf3dc;
+    min-height: 100%;
+  }
+  #app form .up,
+  #app form .down {
+    width: 900px;
+  }
+  #app form .banner {
+    height: 310px;
+  }
+  #app form .up .middle .left {
+    width: 72%;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) {
+    font-size: 24px;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) select {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  #app form .up .middle .left .input label .flxLeft {
+    width: 40%;
+  }
+  #app form .up .middle .left .input label .flxLeft span {
+    font-size: 33px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan {
+    -webkit-transform: translateX(-9px);
+            transform: translateX(-9px);
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    width: 255px;
+    white-space: nowrap;
+  }
+  #app form .up .middle .left .input label .flxRight select {
+    font-size: 24px;
+  }
+  #app form .up .middle .left .input label input {
+    font-size: 30px;
+  }
+  #app form .up .middle .right img {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  #app form .up .chkbox {
+    width: 50%;
+    margin-top: 80px;
+    border: unset;
+  }
+  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+    font-weight: 400;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #app form .up,
+  #app form .down {
+    width: 800px;
+  }
+  #app form .banner {
+    height: 280px;
+  }
+  #app form .banner img.text_fill {
+    width: 80%;
+  }
+  #app form .up .middle .left {
+    width: 80%;
+  }
+  #app form .up .middle .left .input label .flxLeft {
+    width: 40%;
+  }
+  #app form .up .middle .left .input label .flxLeft span {
+    font-size: 30px;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    -webkit-transform: translateX(-36px);
+            transform: translateX(-36px);
+  }
+  #app form .up .middle .left .input label .flxRight select {
+    font-size: 22px;
+    padding: 9px;
+  }
+  #app form .up .middle .left .input label input {
+    font-size: 24px;
+    padding: 9px;
+  }
+  #app form .up .middle .right img {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  #app form .up .chkbox {
+    margin-top: 60px;
+  }
+  #app form .up .chkbox label input[type="checkbox"] {
+    margin-left: 10px;
+  }
+  #app form .down .btnRow {
+    margin-bottom: 80px;
+  }
+  #app form .down .btnRow button {
+    width: 286px;
+    height: 72px;
+    margin-right: 140px;
+  }
+  #app form .down .btnRow button:nth-of-type(2) {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  #app form .up,
+  #app form .down {
+    width: 720px;
+  }
+  #app form .banner {
+    height: 263px;
+  }
+  #app form .banner img.text_fill {
+    bottom: 35px;
+  }
+  #app form .up .middle .left .input label {
+    margin-top: 60px;
+  }
+  #app form .up .middle .left .input label .flxLeft span {
+    font-size: 28px;
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan {
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    -webkit-transform: translateX(-57px);
+            transform: translateX(-57px);
+  }
+  #app form .up .middle .left .input label .flxRight select {
+    font-size: 20px;
+    padding: 8px;
+  }
+  #app form .up .middle .left .input label input {
+    font-size: 22px;
+    padding: 7px;
+  }
+  #app form .up .middle .right img {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  #app form .down .btnRow {
+    margin-bottom: 75px;
+  }
+  #app form .down .btnRow button {
+    width: 257px;
+    height: 64px;
+    margin-right: 130px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #app form .up,
+  #app form .down {
+    width: 680px;
+  }
+  #app form .banner {
+    height: 180px;
+  }
+  #app form .banner img.text_fill {
+    bottom: 25px;
+  }
+  #app form .up .middle .left .input label {
+    margin-top: 50px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+  #app form .up .middle .right img {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  #app form .up .chkbox {
+    width: 55%;
+    margin-top: 30px;
+  }
+  #app form .up .chkbox label {
+    margin-top: 30px;
+  }
+  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+    font-size: 18px;
+  }
+}
+
 @media all and (max-width: 576px) {
+  #app .banner {
+    height: 200px;
+  }
   #app .up,
   #app .down {
     width: 90%;
   }
-  #app .up .banner {
-    height: 200px;
-  }
   #app .up .scan {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

@@ -1,10 +1,18 @@
 #app{
     header {
         position: relative;
+        height: 240px;
         z-index: 5;
+        background-image: url(./../imgs/x2/head_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
 
         .fullHeader {
-            width: 100%;
+            position: absolute;
+            height: 320px;
+            left: 50%;
+            top: 20%;
+            transform: translateX(-50%);
         }
 
         .narrowHeader {
@@ -12,8 +20,9 @@
         }
     }
     footer {
+        background-color: $main;
         div {
-            background-color: $main;
+            
             color: white;
             display: flex;
             font-size: 10px;
@@ -25,4 +34,59 @@
 
         }
     }
+
+    @media all and (max-width: 1420px) {
+        header{
+            height: 200px;
+            .fullHeader{
+                height: 240px;
+                top: 40%;
+            }
+        }
+     }
+
+     @include laptop{
+         header{
+             height: 140px;
+             .fullHeader{
+                 height: 220px;
+                 top:20%
+             }
+         }
+     }
+
+     @media all and (max-width: 910px) {
+        header{
+            height: 130px;
+            .fullHeader{
+                height: 188px;
+            }
+        }
+        footer{
+            div{
+                font-size: 8px;
+            }
+            
+        }
+     }
+
+     @include ipad{
+        header{
+            height: 110px;
+            .fullHeader{
+                height: 165px;
+            }
+        }
+        footer{
+            padding: 10px 0;
+            text-align: center;
+            div{
+                display: block;
+                p{
+                    margin: 0px;
+                }
+            }
+            
+        }
+     }
 }

@@ -1,8 +1,7 @@
 const header = Vue.component("the-header", {
     template: `
         <div>
-            <img src="./imgs/x2/header.png" class="fullHeader">
-            <img src="./imgs/pop_header.png" class="narrowHeader">
+            <img src="./imgs/x2/head_title.png" class="fullHeader">
         </div>
     `,
 })
