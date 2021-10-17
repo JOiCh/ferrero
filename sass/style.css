@@ -202,7 +202,7 @@ input[type=number] {
   }
 }
 
-@media all and (max-width: 411px) {
+@media all and (max-width: 414px) {
   #app header {
     background-size: contain;
     height: 86px;
@@ -254,8 +254,7 @@ input[type=number] {
   margin-top: 15px;
 }
 
-#app form .up .scan,
-#app form .up .bill_m {
+#app form .up .scan {
   display: none;
 }
 
@@ -683,6 +682,29 @@ input[type=number] {
     color: #c29138;
     text-decoration: underline;
   }
+  #app form .up .bill_m {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 53, 53, 0.589);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+  #app form .up .bill_m img.billShow {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 60%;
+  }
+  #app form .up .bill_m img.closeBtn {
+    display: block;
+    position: absolute;
+    width: 10%;
+    top: 20px;
+    right: 20%;
+  }
   #app form .up .middle {
     margin-top: 10px;
   }
@@ -730,7 +752,8 @@ input[type=number] {
   #app form .up .middle .left .input label .flxLeft span.m_span {
     display: block;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan, #app form .up .middle .left .input label .flxLeft span.m_span {
+  #app form .up .middle .left .input label .flxLeft span.secSpan,
+  #app form .up .middle .left .input label .flxLeft span.m_span {
     font-size: 18px;
     color: black;
     margin-left: 14px;
@@ -808,7 +831,7 @@ input[type=number] {
   }
 }
 
-@media all and (max-width: 411px) {
+@media all and (max-width: 414px) {
   #app form .banner {
     height: 125px;
   }
@@ -866,7 +889,8 @@ input[type=number] {
   #app form .up .middle .left .input label .flxLeft span {
     margin-left: 1.8%;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan, #app form .up .middle .left .input label .flxLeft span.m_span {
+  #app form .up .middle .left .input label .flxLeft span.secSpan,
+  #app form .up .middle .left .input label .flxLeft span.m_span {
     font-size: 15px;
     margin-left: 8px;
     margin-top: 2px;

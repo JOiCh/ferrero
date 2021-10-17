@@ -20,7 +20,7 @@
                 <img src="./imgs/mobile/m_text_fill.png" id="m_text_fill">
             </div>
             <div class="up">
-              
+
                 <!-- 這邊開始是掃描功能區塊 -->
                 <div class="scan">
                     <div class="scanL">
@@ -28,22 +28,22 @@
                     </div>
                     <div class="scanR">
                         <p>掃描發票QR code</br>或輸入以下發票資料</p>
-                        <h4>參考發票</h4>
+                        <h4 @click="openBill">參考發票</h4>
                     </div>
                 </div>
                 <!-- 掃瞄功能區塊結束 -->
 
                 <!-- 手機發票區塊 -->
-                <div class="bill_m">
-                    <img src="./imgs/mobile/m_bill.png" alt="">
-                    <img src="./imgs/mobile/m_pop_close.png" alt="">
+                <div class="bill_m" v-if="this.open === true">
+                    <img src="./imgs/mobile/m_bill.png" alt="" class="billShow">
+                    <img src="./imgs/mobile/m_pop_close.png" alt="" @click="closeBill" class="closeBtn">
                 </div>
                 <!-- 手機發票區塊結束 -->
 
                 <div class="middle">
                     <div class="left">
                         <div class="input">
-                            <label for="" >
+                            <label for="">
                                 <div class="flxLeft">
                                     <span>發票日期:</span>
                                 </div>
@@ -52,7 +52,7 @@
                                         <option selected hidden>月份</option>
                                         <option v-for="month in months">{{month}}</option>
                                     </select>
-                                    <span class="spanMv month">月</span>
+                                    <span class="spanMv">月</span>
                                     <select name="" id="" v-model="selectedDay">
                                         <option selected hidden>日期</option>
                                         <option v-for="day in days">{{day}}</option>
@@ -146,7 +146,7 @@
             data: {
                 months: [12, 1, 2],
                 selectedMonth: "月份",
-                selectedDay:"日期",
+                selectedDay: "日期",
                 days: 0,
                 chkData: {
                     agree: {
@@ -159,6 +159,8 @@
                         checked: false
                     }
                 },
+                open: false,
+
             },
             methods: {
                 chooseMonths() {
@@ -172,9 +174,15 @@
                             break;
                     }
                 },
-                gotItems(){
-                    
+                gotItems() {
+
                 },
+                openBill() {
+                    this.open = true;
+                },
+                closeBill() {
+                    this.open = false;
+                }
             },
 
         })
