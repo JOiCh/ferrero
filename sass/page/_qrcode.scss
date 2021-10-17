@@ -29,12 +29,17 @@
                 bottom: 50px;
                 width: 65%;
             }
+
+            img#m_text_fill {
+                display: none;
+            }
         }
 
         .up {
             margin-top: 15px;
 
-            .scan {
+            .scan,
+            .bill_m {
                 display: none;
             }
 
@@ -77,6 +82,10 @@
                                     transform: translateX(-15px);
                                     margin-top: 15px;
                                 }
+
+                                span.m_span{
+                                    display: none;
+                                } 
                             }
 
                             .flxRight {
@@ -372,23 +381,23 @@
 
                     label {
                         input[type="checkbox"] {
-                           margin-left: 10px;
+                            margin-left: 10px;
                         }
                     }
                 }
             }
 
             .down {
-    
+
                 .btnRow {
                     margin-bottom: 80px;
-    
+
                     button {
                         width: 286px;
                         height: 72px;
                         margin-right: 140px;
                     }
-    
+
                     button:nth-of-type(2) {
                         margin-right: 0px;
                     }
@@ -398,7 +407,7 @@
 
     }
 
-    @include laptop{
+    @include laptop {
         form {
 
             .up,
@@ -424,6 +433,7 @@
 
                             label {
                                 margin-top: 60px;
+
                                 .flxLeft {
 
                                     span {
@@ -470,10 +480,10 @@
             }
 
             .down {
-    
+
                 .btnRow {
                     margin-bottom: 75px;
-    
+
                     button {
                         width: 257px;
                         height: 64px;
@@ -484,7 +494,7 @@
         }
     }
 
-    @include ipad{
+    @include ipad {
         form {
 
             .up,
@@ -510,6 +520,7 @@
 
                             label {
                                 margin-top: 50px;
+
                                 .flxLeft {
 
                                     span.secSpan.nowrap {
@@ -534,215 +545,231 @@
                 .chkbox {
                     width: 55%;
                     margin-top: 30px;
-    
+
                     label {
                         margin-top: 30px;
-    
+
                         .chkbox2 {
                             p:nth-of-type(1) {
                                 font-size: 18px;
                             }
                         }
                     }
-    
+
                 }
 
             }
-        }   
+        }
     }
 
     @include mobile {
-        .banner {
-            height: 200px;
-        }
-        .up,
-        .down {
-            width: 90%;
-        }
+        // * {
+        //     outline: 1px solid red;
+        // }
 
-        .up {
-         
-            .scan {
-                display: flex !important ;
-                justify-content: center;
-                margin: 20px 0;
-
-                .scanL {
-                    width: 120px;
-                    height: 120px;
-                    line-height: 100px;
-                    font-size: 20px;
-                    background-color: yellow;
-                    text-align: center;
-                    align-self: center;
-                    margin-right: 8%;
-                    cursor: pointer;
-                }
-
-                .scanR {
-                    width: 60%;
-                    font-size: 26px;
-
-                    p {
-                        border: 1px solid black;
-                        text-align: center;
-                        line-height: 36px;
-                    }
-
-                    h4 {
-                        text-align: center;
-                        margin-top: 10px;
-                        color: $main;
-                        font-weight: bold;
-                        text-decoration: underline;
-                    }
-                }
-            }
-
-            .middle {
-                margin-top: 20px;
-
-                .left {
-                    width: 100%;
-
-                    .input {
-                        label:nth-of-type(1) {
-                            font-size: 22px;
-
-                            select {
-                                margin-right: 5px;
-                                margin-left: 5px;
-                            }
-                        }
-
-                        label {
-                            display: flex;
-                            flex-wrap: wrap;
-                            align-items: flex-start;
-                            margin-top: 40px;
-
-                            .flxLeft {
-                                width: 40%;
-                                text-align: right;
-
-                                span {
-                                    font-size: 38px;
-                                    color: $main;
-                                    font-weight: bold;
-                                    display: inline-block;
-                                }
-
-                                span.secSpan {
-                                    font-size: 22px;
-                                    color: black;
-                                    font-weight: 800;
-                                    transform: translateX(-15px);
-                                    margin-top: 15px;
-                                }
-                            }
-
-                            .flxRight {
-                                select:nth-of-type(1) {
-                                    margin-left: 5px;
-                                }
-
-                                select {
-                                    font-size: 22px;
-                                    padding: 10px;
-                                    transform: translateY(-15px);
-                                    border: 2px solid #999;
-                                    outline: none;
-                                }
-                            }
-
-                            input {
-                                width: 90%;
-                                outline: none;
-                                border: 2px solid #999;
-                                font-size: 38px;
-                                padding: 5px 0px 5px 5px;
-                                border-radius: 1px;
-                                transform: translateY(-15px);
-                                margin-left: 5px;
-                            }
-                        }
-                    }
-
-                }
-
-                .right {
+        form {
+            .banner {
+                height: 155px;
+                position: relative;
+                img.text_fill {
                     display: none;
                 }
+    
+                img#m_text_fill {
+                    position: absolute;
+                    display: block;
+                    width: 90%;
+                    left: 50%;
+                    bottom:24px;
+                    transform: translateX(-50%);
+                }
             }
 
-            .chkbox {
-                border: 1px solid hotpink;
+            .up,
+            .down {
+                width: 80%;
+            }
+
+            .up {
+
                 margin: 0 auto;
-                width: 50%;
-                margin-top: 40px;
+                .scan {
+                    display: flex !important;
+                    justify-content: center;
 
-                label {
-                    display: flex;
-                    margin-top: 25px;
-                    cursor: pointer;
-
-                    input[type="checkbox"] {
-                        zoom: 1.5;
-
+                    .scanL {
+                        margin: 0 auto;
+                        cursor: pointer;
+                        img{
+                            width: 120px;;
+                        }
                     }
 
-                    .chkbox2 {
-                        p:nth-of-type(1) {
-                            font-size: 22px;
-                            font-weight: bold;
+                    .scanR {
+                        width: 70%;
+                        font-size: 24px;
+                        color: $main;
+
+                        p {
+                            text-align: center;
+                            line-height: 36px;
+                        }
+
+                        h4 {
+                            text-align: center;
+                            margin-top: 8px;
+                            color: $notice;
+                            text-decoration: underline;
                         }
                     }
                 }
 
-                .chkbox2:nth-of-type(1) {
-                    span {
-                        text-decoration: underline;
-                        color: $notice;
+                .middle {
+                    margin-top: 10px;
+
+                    .left {
+                        width: 100%;
+
+                        .input {
+                            label:nth-of-type(1) {
+                                display: flex;
+                                font-size: 22px;
+
+                                .flxLeft{
+                                    width: 27%;
+                                    span{
+                                        margin-left: 12%;
+                                        transform: translateY(1px);
+                                    }
+                                }
+                                select {
+                                    margin-right: 5px;
+                                    margin-left: 5px;
+                                    background-color: white;
+                                }
+                            }
+
+                            label {
+                                display: block;
+                                flex-wrap: wrap;
+                                align-items: flex-start;
+                                margin-top: 40px;
+
+                                .flxLeft {
+                                    width: 100%;
+                                    text-align: left;
+
+                                    span {
+                                        font-size: 24px;
+                                        color: $main;
+                                        display: inline-block;
+                                        margin-left: 2.5%;
+                                    }
+
+                                    span.m_span{
+                                        display: block;
+                                    } 
+                                    span.secSpan, span.m_span {
+                                        font-size: 18px;
+                                        color: black;
+                                        margin-left: 14px;
+                                        margin-top: 5px;
+                                    }
+                                    span.secSpan{
+                                        transform: translateX(-1px);
+                                        margin-top: 0px;
+                                    }
+                                    span.m1_span{
+                                        display: none;
+                                    }
+
+                                    span.secSpan.nowrap{
+                                        transform: translateX(0px);
+                                    }
+
+                                }
+
+                                .flxRight {
+                                   
+                                    select:nth-of-type(1) {
+                                        margin-left: 5px;
+                                    }
+
+                                    select {
+                                        font-size: 18px;
+                                        padding: 5px;
+                                        transform: translateY(-5px);
+                                        border: 2px solid #999;
+                                        outline: none;
+                                    }
+
+                                    
+                                }
+
+                                input {
+                                    width: 90%;
+                                    outline: none;
+                                    border: 2px solid #999;
+                                    font-size: 24px;
+                                    padding: 5px 0px 5px 5px;
+                                    border-radius: 1px;
+                                    transform: translateY(3px);
+                                    margin-left: 12px;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .right {
+                        display: none;
                     }
                 }
 
-            }
-        }
+                .chkbox {
+                    margin: 0 auto;
+                    width: 100%;
+                    margin-top: 40px;
 
-        .down {
-            margin-top: 40px;
-            margin-bottom: 80px;
+                    label {
+                        margin-top: 25px;
+                        cursor: pointer;
 
-            .btnRow {
-                text-align: center;
+                        input[type="checkbox"] {
+                            zoom: 1;
+                            margin-left: 15px;
+                        }
 
-                button {
-                    width: 250px;
-                    height: 60px;
-                    margin-right: 40px;
+                        .chkbox2 {
+                            p:nth-of-type(1) {
+                                font-size: 18px;
+                            }
+
+                            p.secP{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
                 }
             }
 
-            p {
-                text-align: right;
-                margin-top: 40px;
-                margin-bottom: 140px;
-            }
-        }
+            .down {
+                margin-top: 35px;
+                margin-bottom: 0px;
 
-        footer {
-            div {
-                background-color: $main;
-                color: white;
-                display: flex;
-                font-size: 10px;
-                justify-content: center;
-
-                p {
-                    margin: 15px 10px;
+                .btnRow {
+                    flex-wrap: nowrap;
+                    margin-bottom: 45px;
+                    button {
+                        width: 191px;
+                        height: 46px;
+                        margin-right: 15%;
+                    }
                 }
-
             }
         }
+
+
     }
 }

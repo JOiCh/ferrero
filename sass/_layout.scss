@@ -89,4 +89,25 @@
             
         }
      }
+
+     @include mobile{
+         header{
+             background-image: url(./../imgs/mobile/m_head_bg.png);
+             background-size: cover;
+             .fullHeader{
+                 width: 95%;
+                 top:35%;
+             }
+         }
+         footer{
+            padding: 10px 0;
+            text-align: center;
+            div{
+                display: block !important;
+                p{
+                    margin: 0px !important;
+                }
+            }
+         }
+     }
 }

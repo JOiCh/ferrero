@@ -17,13 +17,14 @@
         <form action="">
             <div class="banner">
                 <img src="./imgs/x2/text_fill.png" class="text_fill">
+                <img src="./imgs/mobile/m_text_fill.png" id="m_text_fill">
             </div>
             <div class="up">
               
                 <!-- 這邊開始是掃描功能區塊 -->
                 <div class="scan">
                     <div class="scanL">
-                        按此掃描
+                        <img src="./imgs/mobile/m_scand.png" alt="">
                     </div>
                     <div class="scanR">
                         <p>掃描發票QR code</br>或輸入以下發票資料</p>
@@ -31,10 +32,18 @@
                     </div>
                 </div>
                 <!-- 掃瞄功能區塊結束 -->
+
+                <!-- 手機發票區塊 -->
+                <div class="bill_m">
+                    <img src="./imgs/mobile/m_bill.png" alt="">
+                    <img src="./imgs/mobile/m_pop_close.png" alt="">
+                </div>
+                <!-- 手機發票區塊結束 -->
+
                 <div class="middle">
                     <div class="left">
                         <div class="input">
-                            <label for="">
+                            <label for="" >
                                 <div class="flxLeft">
                                     <span>發票日期:</span>
                                 </div>
@@ -43,7 +52,7 @@
                                         <option selected hidden>月份</option>
                                         <option v-for="month in months">{{month}}</option>
                                     </select>
-                                    <span class="spanMv">月</span>
+                                    <span class="spanMv month">月</span>
                                     <select name="" id="" v-model="selectedDay">
                                         <option selected hidden>日期</option>
                                         <option v-for="day in days">{{day}}</option>
@@ -54,7 +63,8 @@
                             <label for="">
                                 <div class="flxLeft">
                                     <span>發票號碼:</span></br>
-                                    <span class="secSpan">英文字母2碼+數字8碼</br>必須持有紙本電子發票</span>
+                                    <span class="secSpan m1_span">英文字母2碼+數字8碼</br>必須持有紙本電子發票</span>
+                                    <span class="m_span">英文字母2碼+數字8碼，必須持有紙本電子發票</span>
                                 </div>
                                 <input type="text">
                             </label>
