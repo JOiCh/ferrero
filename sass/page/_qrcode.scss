@@ -770,6 +770,126 @@
             }
         }
 
+    }
 
+    @include mobile_m{
+        form {
+            .banner {
+                height: 125px;
+                img.text_fill {
+                    display: none;
+                }
+    
+                img#m_text_fill {
+                    bottom:20px;
+                }
+            }
+
+            .up{
+                width: 85%;
+            }
+
+            .up {
+
+                margin: 0 auto;
+                .scan {
+                    display: flex !important;
+                    justify-content: center;
+
+                    .scanL {
+                        margin: 0 auto;
+                        cursor: pointer;
+                        img{
+                            width: 120px;;
+                        }
+                    }
+
+                    .scanR {
+                        font-size: 22px;
+
+                        p {
+                            line-height: 26px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+                .middle {
+                    margin-top: 0px;
+
+                    .left {
+
+                        .input {
+                            label:nth-of-type(1) {
+                                font-size: 20px;
+
+                                .flxLeft{
+                                    width: 35%;
+                                    span{
+                                        margin-left: 5%;
+                                        transform: translateY(1px);
+                                    }
+                                }
+                            }
+
+                            label {
+                                margin-top: 35px;
+
+                                .flxLeft {
+
+                                    span {
+                                        margin-left: 1.8%;
+                                    }
+
+                                    span.secSpan, span.m_span {
+                                        font-size: 15px;
+                                        margin-left: 8px;
+                                        margin-top: 2px;
+                                    }
+
+                                    span.secSpan.nowrap{
+                                        transform: translateX(0px);
+                                    }
+
+                                }
+
+                                input {
+                                    transform: translateY(0px);
+                                    margin-left: 9px;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
+                .chkbox {
+                    margin-top: 25px;
+
+                    label {
+                        margin-top: 18px;
+
+                        input[type="checkbox"] {
+                            margin-left: 12px;
+                        }
+                    }
+
+                }
+            }
+
+            .down {
+                width: 95%;
+                .btnRow {
+                    margin-bottom: 35px;
+                    button {
+                        width: 171px;
+                        height: 41px;
+                        margin-right: 9%;
+                    }
+                }
+            }
+        }
     }
 }

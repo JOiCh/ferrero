@@ -110,4 +110,14 @@
             }
          }
      }
+
+     @include mobile_m{
+         header{
+             background-size: contain;
+             height: 86px;
+             .fullHeader{
+                height: 112px;
+             }
+         }
+     }
 }

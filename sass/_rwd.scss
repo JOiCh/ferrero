@@ -3,6 +3,7 @@ $middle_screen:1200px;
 $laptop:992px;
 $ipad:768px;
 $mobile:576px;
+$mobile_m:411px;
 
 @mixin full_screen {
    @media all and (max-width: $full_screen) {
@@ -33,3 +34,9 @@ $mobile:576px;
        @content 
     }
   };
+
+@mixin mobile_m {   
+   @media all and  (max-width: $mobile_m) {
+      @content 
+   }
+ };
