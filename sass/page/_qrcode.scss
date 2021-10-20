@@ -818,10 +818,6 @@
 
             .up {
                 width: 85%;
-            }
-
-            .up {
-
                 margin: 0 auto;
 
                 .scan {
@@ -924,6 +920,200 @@
                     button {
                         width: 171px;
                         height: 41px;
+                        margin-right: 9%;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mobile_s{
+        form {
+            .banner {
+                height: 109px;
+
+                img#m_text_fill {
+                    bottom: 15px;
+                    width: 93%;
+                }
+            }
+
+            .up {
+
+                .scan {
+
+                    .scanL {
+
+                        img {
+                            width: 110px;
+                            ;
+                        }
+                    }
+
+                    .scanR {
+                        font-size: 18px;
+
+                        p {
+                            line-height: 24px;
+                            margin-top: 20px;
+                        }
+                        h4{
+                            margin-top: 0px;
+                        }
+                    }
+                }
+
+                .middle {
+
+                    .left {
+
+                        .input {
+                            label:nth-of-type(1) {
+                                font-size: 18px;
+
+                                .flxLeft {
+                                    span {
+                                        margin-left: 9%;
+                                        transform: translateY(1px);
+                                        
+                                    }
+                                    span.fstSpan{
+                                        font-size: 20px;
+                                    }
+                                }
+
+                                .flxRight{
+                                    select:nth-of-type(1){
+                                        margin-left: -1px;
+                                    }
+                                }
+                            }
+
+                            label {
+                                margin-top: 25px;
+
+                                .flxLeft {
+
+                                    span {
+                                        margin-left: 2.8%;
+                                        font-size: 20px;
+                                        transform: translateY(2px);
+                                    }
+
+                                    span.secSpan,
+                                    span.m_span {
+                                        font-size: 14px;
+                                        margin-left: 10px;
+                                        margin-top: 0px;
+                                    }
+
+                                }
+
+                                input {
+                                    transform: translateY(0px);
+                                    margin-left: 9px;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+            .down {
+
+                .btnRow {
+
+                    button {
+                        width: 145px;
+                        height: 35px;
+                        margin-right: 11%;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mobile_xs{
+        form {
+            .banner {
+                height: 94px;
+            }
+
+            .up {
+
+                .scan {
+
+                    .scanL {
+
+                        img {
+                            width: 100px;
+                            ;
+                        }
+                    }
+
+                    .scanR {
+                        font-size: 17px;
+                    }
+                }
+
+                .middle {
+
+                    .left {
+
+                        .input {
+                            label:nth-of-type(1) {
+
+                                .flxRight{
+                                    left: 10px;
+                                    top:10px;
+                                }
+                            }
+
+                            label {
+                                margin-top: 25px;
+
+                                .flxLeft {
+
+                                    span.secSpan,
+                                    span.m_span {
+                                        font-size: 12px;
+                                    }
+
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+                .chkbox {
+
+                    label {
+
+                        .chkbox2 {
+                            p:nth-of-type(1) {
+                                font-size: 16px;
+                            }
+
+                            p.secP {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .down {
+
+                .btnRow {
+
+                    button {
+                        width: 130px;
+                        height: 32px;
                         margin-right: 9%;
                     }
                 }

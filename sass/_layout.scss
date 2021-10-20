@@ -120,4 +120,24 @@
              }
          }
      }
+
+     @include mobile_s{
+         header{
+            height: 78px;
+            .fullHeader{
+                height: 100px;
+                top: 40%;
+            }
+         } 
+     }
+
+     @include mobile_xs{
+          header{
+              height: 66px;
+              .fullHeader{
+                  height: 89px;
+                  top:33%
+              }
+          }
+     }
 }
