@@ -8,7 +8,7 @@
 
     .banner {
         border: 1px solid green;
-        height: 320px;
+        height: 200px;
         position: relative;
 
         img.text_fill {
@@ -49,6 +49,9 @@
         .imgBox {
             width: 39%;
             border: 1px solid green;
+            img{
+                max-width: 100%;
+            }
         }
     }
 
