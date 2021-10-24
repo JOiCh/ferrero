@@ -1,0 +1,59 @@
+#app {
+    background-image: url(../../imgs/1016_landing/landing_bg.jpg);
+    background-position: top left;
+    background-size: cover;
+
+    .allContent {
+        text-align: center;
+        position: relative;
+
+        img {
+            max-width: 90%;
+            margin-top: 20px;
+        }
+
+        #btndetail1,#btndetail2 {
+            position: absolute;
+            width: 150px;
+            bottom: 163px;
+            cursor: pointer;
+            &:active{
+                opacity: .8;
+            }
+        }
+
+        #btndetail1{
+            left: 205px;
+        }
+
+        #btndetail2{
+            left: 43.5%;
+        }
+
+    }
+
+    .down {
+
+        .btnRow {
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+
+            button {
+                width: 318px;
+                height: 80px;
+                margin-right: auto;
+            }
+
+            button:nth-of-type(1) {
+                background-image: url(../../imgs/x2/btn_note.png);
+
+            }
+
+            button:nth-of-type(2) {
+                background-image: url(../../imgs/x2/btn_join.png);
+
+            }
+        }
+    }
+}

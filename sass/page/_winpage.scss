@@ -21,7 +21,7 @@
     }
 
     .main_bg {
-        width: 70%;
+        width: 65%;
         border: 1px solid black;
         margin: 0 auto;
         background-image: url(./../../imgs/x2/congratulations_text.png);
@@ -31,18 +31,18 @@
         margin-bottom: 60px;
 
         main {
-            width: 50%;
+            width: 70%;
             justify-content: center;
+            margin: 100px auto 40px auto;
             
             img{
-                margin-top: 80px;
                 max-width: 100%;
             }
         }
 
         .down {
-            margin-top: 60px;
-            margin-bottom: 500px;
+            margin-top: 47px;
+            margin-bottom: 320px;
 
             .btnRow {
                 text-align: center;
@@ -51,7 +51,7 @@
                 button {
                     width: 318px;
                     height: 80px;
-                    margin-right: 80px;
+                    margin-right: 20%;
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-color: transparent;
@@ -70,6 +70,7 @@
 
                 button:nth-of-type(2) {
                     background-image: url(../../imgs/x2/btn_another_bill.png);
+                    margin-right: 0px;
                 }
             }
         }

@@ -1166,7 +1166,7 @@ input[type=number] {
 }
 
 #app .main_bg {
-  width: 70%;
+  width: 65%;
   border: 1px solid black;
   margin: 0 auto;
   background-image: url(./../../imgs/x2/congratulations_text.png);
@@ -1177,20 +1177,20 @@ input[type=number] {
 }
 
 #app .main_bg main {
-  width: 50%;
+  width: 70%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 100px auto 40px auto;
 }
 
 #app .main_bg main img {
-  margin-top: 80px;
   max-width: 100%;
 }
 
 #app .main_bg .down {
-  margin-top: 60px;
-  margin-bottom: 500px;
+  margin-top: 47px;
+  margin-bottom: 320px;
 }
 
 #app .main_bg .down .btnRow {
@@ -1201,7 +1201,7 @@ input[type=number] {
 #app .main_bg .down .btnRow button {
   width: 318px;
   height: 80px;
-  margin-right: 80px;
+  margin-right: 20%;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -1220,5 +1220,89 @@ input[type=number] {
 
 #app .main_bg .down .btnRow button:nth-of-type(2) {
   background-image: url(../../imgs/x2/btn_another_bill.png);
+  margin-right: 0px;
+}
+
+#app .allcontent {
+  text-align: center;
+}
+
+#app .allcontent img {
+  max-width: 83%;
+}
+
+#app button {
+  display: block;
+  margin: 40px auto 60px auto;
+  width: 318px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+  background-image: url(../../imgs/x2/btn_another_bill.png);
+}
+
+#app button:active {
+  opacity: .8;
+}
+
+#app {
+  background-image: url(../../imgs/1016_landing/landing_bg.jpg);
+  background-position: top left;
+  background-size: cover;
+}
+
+#app .allContent {
+  text-align: center;
+  position: relative;
+}
+
+#app .allContent img {
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+#app .allContent #btndetail1, #app .allContent #btndetail2 {
+  position: absolute;
+  width: 150px;
+  bottom: 163px;
+  cursor: pointer;
+}
+
+#app .allContent #btndetail1:active, #app .allContent #btndetail2:active {
+  opacity: .8;
+}
+
+#app .allContent #btndetail1 {
+  left: 205px;
+}
+
+#app .allContent #btndetail2 {
+  left: 43.5%;
+}
+
+#app .down .btnRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#app .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  margin-right: auto;
+}
+
+#app .down .btnRow button:nth-of-type(1) {
+  background-image: url(../../imgs/x2/btn_note.png);
+}
+
+#app .down .btnRow button:nth-of-type(2) {
+  background-image: url(../../imgs/x2/btn_join.png);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+#app {
+
+    .allcontent {
+        text-align: center;
+        img {
+            max-width: 83%;
+        }
+    }
+
+    button {
+        display: block;
+        margin: 40px auto 60px auto;
+        width: 318px;
+        height: 80px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        outline: unset;
+        border: unset;
+        cursor: pointer;
+        background-image: url(../../imgs/x2/btn_another_bill.png);
+
+        &:active {
+            opacity: .8;
+        }
+    }
+
+
+}
