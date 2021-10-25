@@ -1053,7 +1053,7 @@ input[type=number] {
 
 #app .banner {
   border: 1px solid green;
-  height: 320px;
+  height: 200px;
   position: relative;
 }
 
@@ -1104,6 +1104,10 @@ input[type=number] {
   border: 1px solid green;
 }
 
+#app main .imgBox img {
+  max-width: 100%;
+}
+
 #app .down {
   margin-top: 60px;
 }
@@ -1135,5 +1139,240 @@ input[type=number] {
 
 #app .down .btnRow button:nth-of-type(2) {
   background-image: url(../../imgs/x2/btn_sure.png);
+}
+
+#app {
+  font-family: "LiHei", sans-serif;
+  background-image: url(../../imgs/x2/blur_bg_up.jpg);
+  background-repeat: no-repeat;
+  background-position: left top 200px;
+  background-color: #fbf3dc;
+  background-size: contain;
+}
+
+#app .banner {
+  border: 1px solid green;
+  height: 250px;
+  position: relative;
+}
+
+#app .banner img.text_fill {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
+  width: 65%;
+}
+
+#app .main_bg {
+  width: 65%;
+  border: 1px solid black;
+  margin: 0 auto;
+  background-image: url(./../../imgs/x2/congratulations_text.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  margin-bottom: 60px;
+}
+
+#app .main_bg main {
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px auto 40px auto;
+}
+
+#app .main_bg main img {
+  max-width: 100%;
+}
+
+#app .main_bg .down {
+  margin-top: 47px;
+  margin-bottom: 320px;
+}
+
+#app .main_bg .down .btnRow {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#app .main_bg .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  margin-right: 20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+#app .main_bg .down .btnRow button:active {
+  opacity: .8;
+}
+
+#app .main_bg .down .btnRow button:nth-of-type(1) {
+  background-image: url(../../imgs/x2/btn_more.png);
+}
+
+#app .main_bg .down .btnRow button:nth-of-type(2) {
+  background-image: url(../../imgs/x2/btn_another_bill.png);
+  margin-right: 0px;
+}
+
+#app .allcontent {
+  text-align: center;
+}
+
+#app .allcontent img {
+  max-width: 83%;
+}
+
+#app button {
+  display: block;
+  margin: 40px auto 60px auto;
+  width: 318px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+  background-image: url(../../imgs/x2/btn_another_bill.png);
+}
+
+#app button:active {
+  opacity: .8;
+}
+
+#app {
+  background-image: url(../../imgs/1016_landing/landing_bg.jpg);
+  background-position: top left;
+  background-size: cover;
+}
+
+#app .allContent {
+  text-align: center;
+  position: relative;
+}
+
+#app .allContent img {
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+#app .allContent #btndetail1,
+#app .allContent #btndetail2 {
+  position: absolute;
+  width: 150px;
+  bottom: 163px;
+  cursor: pointer;
+}
+
+#app .allContent #btndetail1:active,
+#app .allContent #btndetail2:active {
+  opacity: .8;
+}
+
+#app .allContent #btndetail1 {
+  left: 205px;
+}
+
+#app .allContent #btndetail2 {
+  left: 43.5%;
+}
+
+#app .down .btnRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#app .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  margin-right: auto;
+}
+
+#app .down .btnRow button:nth-of-type(1) {
+  background-image: url(../../imgs/x2/btn_note.png);
+}
+
+#app .down .btnRow button:nth-of-type(2) {
+  background-image: url(../../imgs/x2/btn_join.png);
+}
+
+#app .showAwards {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 53, 53, 0.589);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 6;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+#app .showAwards .wrap {
+  width: 67%;
+  margin: 0 auto;
+}
+
+#app .showAwards .wrap header {
+  margin-top: 50px;
+}
+
+#app .showAwards .wrap header .fullHeader {
+  max-width: 90%;
+  max-height: 100%;
+  top: 44%;
+}
+
+#app .showAwards .wrap .banner {
+  height: 152px;
+  position: relative;
+  background-color: white;
+  border: unset;
+}
+
+#app .showAwards .wrap .banner.part2 {
+  height: 120px;
+}
+
+#app .showAwards .wrap .wordBox {
+  width: 100%;
+  height: 450px;
+  background-color: white;
+  overflow-y: auto;
+  padding: 0px 50px 50px 50px;
+}
+
+#app .showAwards .wrap .picBox {
+  width: 100%;
+  text-align: center;
+  height: 450px;
+  background-color: white;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+#app .showAwards .wrap .picBox img {
+  width: 80%;
+}
+
+#app .showAwards #btn_close,
+#app .showAwards #btn_close2 {
+  position: absolute;
+  cursor: pointer;
+  top: 28px;
+  right: 17%;
+  z-index: 6;
 }
 /*# sourceMappingURL=style.css.map */
