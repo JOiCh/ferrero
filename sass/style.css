@@ -1342,6 +1342,18 @@ input[type=number] {
   border: unset;
 }
 
+#app .showAwards .wrap .banner.part2 {
+  height: 120px;
+}
+
+#app .showAwards .wrap .wordBox {
+  width: 100%;
+  height: 450px;
+  background-color: white;
+  overflow-y: auto;
+  padding: 0px 50px 50px 50px;
+}
+
 #app .showAwards .wrap .picBox {
   width: 100%;
   text-align: center;
@@ -1355,7 +1367,8 @@ input[type=number] {
   width: 80%;
 }
 
-#app .showAwards #btn_close {
+#app .showAwards #btn_close,
+#app .showAwards #btn_close2 {
   position: absolute;
   cursor: pointer;
   top: 28px;

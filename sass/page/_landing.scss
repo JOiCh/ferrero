@@ -75,7 +75,8 @@
 
             header {
                 margin-top: 50px;
-                .fullHeader{
+
+                .fullHeader {
                     max-width: 90%;
                     max-height: 100%;
                     top: 44%;
@@ -89,6 +90,18 @@
                 border: unset;
             }
 
+            .banner.part2 {
+                height: 120px;
+            }
+
+            .wordBox {
+                width: 100%;
+                height: 450px;
+                background-color: white;
+                overflow-y: auto;
+                padding:0px 50px 50px 50px;
+            }
+
             .picBox {
                 width: 100%;
                 text-align: center;
@@ -96,13 +109,15 @@
                 background-color: white;
                 overflow-y: auto;
                 padding-bottom: 50px;
-                img{
+
+                img {
                     width: 80%;
                 }
             }
         }
 
-        #btn_close{
+        #btn_close,
+        #btn_close2 {
             position: absolute;
             cursor: pointer;
             top: 28px;
