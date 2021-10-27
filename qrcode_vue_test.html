@@ -12,7 +12,7 @@
 <body>
     <div id="app">
         <!-- <p class="decode-result">Last result: <b>{{ result }}</b></p> -->
-
+        <button @click="() => this.created = true"></button>
         <h1> 發票號碼: {{inv_data.num}}</h1>
         <h1> 購買月: {{inv_data.month}}</h1>
         <h1> 購買日: {{inv_data.date}}</h1>
@@ -40,7 +40,7 @@
                 camera: 'auto',
                 result: null,
                 showScanConfirmation: false,
-                created: true,
+                created: false,
             },
             watch: {
                 result(newValue) {
@@ -51,10 +51,11 @@
                     invMonth = array.slice(13, 15).join(''); 
                     invDate = array.slice(15, 17).join(''); 
                     randomNum = array.slice(17, 21).join(''); 
-                    this.inv_data.num= invNum;
-                    this.inv_data.month= invMonth;
-                    this.inv_data.date= invDate;
-                    this.inv_data.randomNum= randomNum;
+                    this.inv_data.num = invNum;
+                    this.inv_data.month = invMonth;
+                    this.inv_data.date = invDate;
+                    this.inv_data.randomNum = randomNum;
+                    this.created = false;
                 },
             },
             methods: {
