@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/style.css">
     <title>Document</title>
+    <style>
+        .camera{
+            /* border: 2px solid red; */
+            width: 200px;
+            height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +30,7 @@
 
                 <!-- 這邊開始是掃描功能區塊 -->
                 <div class="scan">
-                    <div class="scanL">
+                    <div class="scanL" @click="() => this.isScan = true">
                         <img src="./imgs/mobile/m_scand.png" alt="">
                     </div>
                     <div class="scanR">
@@ -31,6 +38,11 @@
                         <h4 @click="openBill">參考發票</h4>
                     </div>
                 </div>
+                <qrcode-stream v-if="isScan" :camera="camera" @decode="onDecode" @init="onInit" class="camera">
+                    <div v-show="showScanConfirmation" class="scan-confirmation">
+                        <!-- <img :src="$withBase('/checkmark.svg')" alt="Checkmark" width="128px" /> -->
+                    </div>
+                </qrcode-stream>
                 <!-- 掃瞄功能區塊結束 -->
 
                 <!-- 手機發票區塊 -->
@@ -49,12 +61,12 @@
                                 </div>
                                 <div class="flxRight">
                                     <select name="" id="" v-model="selectedMonth" @change="chooseMonths">
-                                        <option selected hidden>月份</option>
+                                        <option selected hidden>{{selectedMonth}}</option>
                                         <option v-for="month in months">{{month}}</option>
                                     </select>
                                     <span class="spanMv">月</span>
                                     <select name="" id="" v-model="selectedDay">
-                                        <option selected hidden>日期</option>
+                                        <option selected hidden>{{selectedDay}}</option>
                                         <option v-for="day in days">{{day}}</option>
                                     </select>
                                     <span class="spanMv">日</span>
@@ -66,14 +78,14 @@
                                     <span class="secSpan m1_span">英文字母2碼+數字8碼</br>必須持有紙本電子發票</span>
                                     <span class="m_span">英文字母2碼+數字8碼，必須持有紙本電子發票</span>
                                 </div>
-                                <input type="text">
+                                <input type="text" v-model="inv_data.num">
                             </label>
                             <label for="">
                                 <div class="flxLeft">
                                     <span>發票隨機碼:</span></br>
                                     <span class="secSpan">數字4碼不接受雲端發票</span>
                                 </div>
-                                <input type="number">
+                                <input type="number" v-model="inv_data.randomNum">
                             </label>
                             <label for="">
                                 <div class="flxLeft">
@@ -139,6 +151,8 @@
         </footer>
     </div>
     <script src="./js/vue.js"></script>
+    <!-- vue qrcode -->
+    <script src="https://unpkg.com/vue-qrcode-reader/dist/VueQrcodeReader.umd.min.js"></script>
     <script src="./js/header_footer.js"></script>
     <script>
         new Vue({
@@ -161,6 +175,18 @@
                 },
                 open: false,
 
+                //以下是 qrcode 掃描發票資訊
+                inv_data: {
+                    num: null,
+                    date: null,
+                    month: null,
+                    randomNum: null,
+                },
+                camera: 'auto',
+                result: null,
+                showScanConfirmation: false,
+                isScan: false, // 開關鏡頭  
+
             },
             methods: {
                 chooseMonths() {
@@ -182,9 +208,60 @@
                 },
                 closeBill() {
                     this.open = false;
+                },
+
+                //  qrcode sacn ...
+                async onInit(promise) {
+                    try {
+                        await promise
+                    } catch (e) {
+                        console.error(e)
+                    } finally {
+                        this.showScanConfirmation = this.camera === "off"
+                    }
+                },
+
+                async onDecode(content) {
+                    this.result = content
+                    console.log('onDecode');
+                    this.pause()
+                    // await this.timeout(500)
+                    // this.unpause()
+                },
+
+                unpause() {
+                    this.camera = 'auto';
+                },
+
+                pause() {
+                    // this.camera = 'off'
+                    this.isScan = false;
+
+                },
+
+                timeout(ms) {
+                    return new Promise(resolve => {
+                        window.setTimeout(resolve, ms)
+                    })
                 }
             },
 
+            watch: {
+                result(newValue) { // 監聽 result (發票掃描結果) 
+                    console.log(newValue);
+                    array = newValue.split(''); // 將字串轉陣列
+                    // console.log(array);
+                    invNum = array.slice(0, 10).join(''); // slice() 切割陣列 -> join 將陣列轉字串
+                    invMonth = array.slice(13, 15).join('');
+                    invDate = array.slice(15, 17).join('');
+                    randomNum = array.slice(17, 21).join('');
+                    this.inv_data.num = invNum;
+                    this.selectedMonth = this.inv_data.month = invMonth;
+                    this.selectedDay = this.inv_data.date = invDate;
+                    this.inv_data.randomNum = randomNum;
+                    this.isScan = false;
+                },
+            },
         })
     </script>
 </body>
