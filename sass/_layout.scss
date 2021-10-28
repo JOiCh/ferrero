@@ -21,6 +21,11 @@
     }
     footer {
         background-color: $main;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+
         div {
             
             color: white;
@@ -128,7 +133,7 @@
                 height: 100px;
                 top: 40%;
             }
-         } 
+         }
      }
 
      @include mobile_xs{
@@ -139,5 +144,8 @@
                   top:33%
               }
           }
+          footer{
+            position: relative;
+        } 
      }
 }

@@ -1,15 +1,12 @@
 #app {
     font-family: "LiHei", sans-serif;
-    background-image: url(../../imgs/x2/blur_bg_down.jpg);
+    background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
     background-repeat: no-repeat;
     background-position: left bottom 54px;
     background-color: $bg;
     background-size: contain;
 
     .banner {
-        border: 1px solid green;
-        height: 200px;
-        position: relative;
 
         img.text_fill {
             position: absolute;
@@ -18,6 +15,10 @@
             bottom: 50px;
             width: 65%;
         }
+
+        img:nth-of-type(2) {
+            display: none;
+        }
     }
 
     main {
@@ -25,21 +26,24 @@
         margin: 0 auto;
         display: flex;
         border: 1px solid red;
-    
+
 
         .wordBox {
             width: 60%;
             border: 1px solid blue;
-            .wordItem{
+
+            .wordItem {
                 display: flex;
                 margin-top: 60px;
-                .flxLeft{
+
+                .flxLeft {
                     width: 40%;
                     text-align: right;
                     font-size: 38px;
                     color: $main;
                 }
-                .flxRight{
+
+                .flxRight {
                     width: 59%;
                     font-size: 38px;
                 }
@@ -49,41 +53,222 @@
         .imgBox {
             width: 39%;
             border: 1px solid green;
-            img{
+
+            img {
                 max-width: 100%;
             }
         }
     }
 
     .down {
-        margin-top: 60px;
+        width: 55%;
+        margin: 0px auto;
 
         .btnRow {
-            text-align: center;
-            margin-bottom: 80px;
-
-            button {
-                width: 318px;
-                height: 80px;
-                margin-right: 80px;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-color: transparent;
-                outline: unset;
-                border: unset;
-                cursor: pointer;
-
-                &:active {
-                    opacity: .8;
-                }
-            }
+            margin-bottom: 55px !important;
 
             button:nth-of-type(1) {
-                background-image: url(../../imgs/x2/btn_rewrite.png);
+                background-image: url(../../imgs/x2/btn_rewrite.png) !important;
+                margin-right: 130px;
             }
 
             button:nth-of-type(2) {
-                background-image: url(../../imgs/x2/btn_sure.png);
+                background-image: url(../../imgs/x2/btn_sure.png) !important;
+            }
+        }
+    }
+
+
+}
+
+@include laptop{
+    #app {
+    
+        .banner {
+            height: 180px !important;
+
+            img.text_fill {
+                bottom: 25px !important;
+                width: 80% !important;
+            }
+    
+            img:nth-of-type(2) {
+                display: none;
+            }
+        }
+    
+        main {
+            max-width:685px;
+
+            .wordBox {
+    
+                .wordItem {
+    
+                    .flxLeft {
+                        width: 44%;
+                        font-size: 28px;
+                    }
+    
+                    .flxRight {
+                        font-size: 28px;
+                    }
+                }
+            }
+    
+            .imgBox {
+                width: 39%;
+    
+                img {
+                    max-width: 100%;
+                    margin-top: 63px;
+                }
+            }
+        }
+    
+        .down {
+            width: 100%;
+            margin-bottom: 54px;
+    
+            .btnRow {
+                // margin-bottom: 55px !important;
+
+                button{
+                    width: 257px !important;
+                    height: 64px !important;
+                   
+                }
+    
+                button:nth-of-type(1) {
+                    background-image: url(../../imgs/x2/btn_rewrite.png) !important;
+                    margin-right: 130px !important;
+                }
+    
+                button:nth-of-type(2) {
+                    background-image: url(../../imgs/x2/btn_sure.png) !important;
+                }
+            }
+        }
+    
+    
+    }
+    
+}
+
+@include mobile{
+    #app {
+        background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
+                          url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+        background-position: left top 87px, left bottom 117px !important;
+        background-repeat: no-repeat, no-repeat !important;
+        background-size: contain !important;
+
+        .banner {
+            height: 100px !important;
+            img.text_fill {
+                display: none;
+            }
+
+            img:nth-of-type(2) {
+                display: block;
+                max-width: 93%;
+                margin: 50px auto 0px auto;
+            }
+        }
+
+        main{
+            display: block;
+            .wordBox{
+                width: 90%;
+                margin: 0 auto;
+                .wordItem:nth-of-type(1){
+                    margin-top: 5px;
+                }
+                .wordItem{
+                    margin-top: 20px;
+                    .flxLeft, .flxRight{
+                        font-size: 20px;
+                    }
+                    .flxLeft{
+                        width: 48%;
+                        margin-right: 7px;
+                    }
+                }
+            }
+            .imgBox{
+                display: none;
+            }
+        }
+
+        .down{
+            margin-top: 0px;
+            margin-bottom: 106px;
+            .btnRow{
+                width: 90% !important;
+                button{
+                    width: 123px !important;
+                    height: 33px !important;
+                    margin: 25px auto 15px auto;
+                }
+            }
+        }
+    }
+}
+
+@include mobile_s {
+    #app {
+        background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
+                          url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+        background-position: left top 70px, left bottom 117px !important;
+        background-repeat: no-repeat, no-repeat !important;
+        background-size: contain !important;
+
+        .banner {
+            height: 100px !important;
+            img.text_fill {
+                display: none;
+            }
+
+            img:nth-of-type(2) {
+                display: block;
+                max-width: 93%;
+                margin: 50px auto 0px auto;
+            }
+        }
+
+        main{
+            display: block;
+            .wordBox{
+                width: 90%;
+                margin: 0 auto;
+                .wordItem:nth-of-type(1){
+                    margin-top: 5px;
+                }
+                .wordItem{
+                    margin-top: 20px;
+                    .flxLeft, .flxRight{
+                        font-size: 20px;
+                    }
+                    .flxLeft{
+                        width: 48%;
+                        margin-right: 7px;
+                    }
+                }
+            }
+            .imgBox{
+                display: none;
+            }
+        }
+
+        .down{
+            margin-top: 0px;
+            margin-bottom: 46px;
+            .btnRow{
+                width: 90% !important;
+                button{
+                    width: 123px !important;
+                    height: 33px !important;
+                    margin: 25px auto 15px auto;
+                }
             }
         }
     }

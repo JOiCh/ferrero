@@ -113,6 +113,10 @@ input[type=number] {
 
 #app footer {
   background-color: #6b1c1f;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
 }
 
 #app footer div {
@@ -230,10 +234,14 @@ input[type=number] {
     height: 89px;
     top: 33%;
   }
+  #app footer {
+    position: relative;
+  }
 }
 
 #app {
   font-family: "LiHei", sans-serif;
+  min-height: 100vh;
 }
 
 #app form {
@@ -1044,17 +1052,11 @@ input[type=number] {
 
 #app {
   font-family: "LiHei", sans-serif;
-  background-image: url(../../imgs/x2/blur_bg_down.jpg);
+  background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
   background-repeat: no-repeat;
   background-position: left bottom 54px;
   background-color: #fbf3dc;
   background-size: contain;
-}
-
-#app .banner {
-  border: 1px solid green;
-  height: 200px;
-  position: relative;
 }
 
 #app .banner img.text_fill {
@@ -1064,6 +1066,10 @@ input[type=number] {
           transform: translateX(-50%);
   bottom: 50px;
   width: 65%;
+}
+
+#app .banner img:nth-of-type(2) {
+  display: none;
 }
 
 #app main {
@@ -1109,36 +1115,176 @@ input[type=number] {
 }
 
 #app .down {
-  margin-top: 60px;
+  width: 55%;
+  margin: 0px auto;
 }
 
 #app .down .btnRow {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-#app .down .btnRow button {
-  width: 318px;
-  height: 80px;
-  margin-right: 80px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  outline: unset;
-  border: unset;
-  cursor: pointer;
-}
-
-#app .down .btnRow button:active {
-  opacity: .8;
+  margin-bottom: 55px !important;
 }
 
 #app .down .btnRow button:nth-of-type(1) {
-  background-image: url(../../imgs/x2/btn_rewrite.png);
+  background-image: url(../../imgs/x2/btn_rewrite.png) !important;
+  margin-right: 130px;
 }
 
 #app .down .btnRow button:nth-of-type(2) {
-  background-image: url(../../imgs/x2/btn_sure.png);
+  background-image: url(../../imgs/x2/btn_sure.png) !important;
+}
+
+@media all and (max-width: 992px) {
+  #app .banner {
+    height: 180px !important;
+  }
+  #app .banner img.text_fill {
+    bottom: 25px !important;
+    width: 80% !important;
+  }
+  #app .banner img:nth-of-type(2) {
+    display: none;
+  }
+  #app main {
+    max-width: 685px;
+  }
+  #app main .wordBox .wordItem .flxLeft {
+    width: 44%;
+    font-size: 28px;
+  }
+  #app main .wordBox .wordItem .flxRight {
+    font-size: 28px;
+  }
+  #app main .imgBox {
+    width: 39%;
+  }
+  #app main .imgBox img {
+    max-width: 100%;
+    margin-top: 63px;
+  }
+  #app .down {
+    width: 100%;
+    margin-bottom: 54px;
+  }
+  #app .down .btnRow button {
+    width: 257px !important;
+    height: 64px !important;
+  }
+  #app .down .btnRow button:nth-of-type(1) {
+    background-image: url(../../imgs/x2/btn_rewrite.png) !important;
+    margin-right: 130px !important;
+  }
+  #app .down .btnRow button:nth-of-type(2) {
+    background-image: url(../../imgs/x2/btn_sure.png) !important;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #app {
+    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-position: left top 87px, left bottom 117px !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-size: contain !important;
+  }
+  #app .banner {
+    height: 100px !important;
+  }
+  #app .banner img.text_fill {
+    display: none;
+  }
+  #app .banner img:nth-of-type(2) {
+    display: block;
+    max-width: 93%;
+    margin: 50px auto 0px auto;
+  }
+  #app main {
+    display: block;
+  }
+  #app main .wordBox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #app main .wordBox .wordItem:nth-of-type(1) {
+    margin-top: 5px;
+  }
+  #app main .wordBox .wordItem {
+    margin-top: 20px;
+  }
+  #app main .wordBox .wordItem .flxLeft, #app main .wordBox .wordItem .flxRight {
+    font-size: 20px;
+  }
+  #app main .wordBox .wordItem .flxLeft {
+    width: 48%;
+    margin-right: 7px;
+  }
+  #app main .imgBox {
+    display: none;
+  }
+  #app .down {
+    margin-top: 0px;
+    margin-bottom: 106px;
+  }
+  #app .down .btnRow {
+    width: 90% !important;
+  }
+  #app .down .btnRow button {
+    width: 123px !important;
+    height: 33px !important;
+    margin: 25px auto 15px auto;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #app {
+    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-position: left top 70px, left bottom 117px !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-size: contain !important;
+  }
+  #app .banner {
+    height: 100px !important;
+  }
+  #app .banner img.text_fill {
+    display: none;
+  }
+  #app .banner img:nth-of-type(2) {
+    display: block;
+    max-width: 93%;
+    margin: 50px auto 0px auto;
+  }
+  #app main {
+    display: block;
+  }
+  #app main .wordBox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #app main .wordBox .wordItem:nth-of-type(1) {
+    margin-top: 5px;
+  }
+  #app main .wordBox .wordItem {
+    margin-top: 20px;
+  }
+  #app main .wordBox .wordItem .flxLeft, #app main .wordBox .wordItem .flxRight {
+    font-size: 20px;
+  }
+  #app main .wordBox .wordItem .flxLeft {
+    width: 48%;
+    margin-right: 7px;
+  }
+  #app main .imgBox {
+    display: none;
+  }
+  #app .down {
+    margin-top: 0px;
+    margin-bottom: 46px;
+  }
+  #app .down .btnRow {
+    width: 90% !important;
+  }
+  #app .down .btnRow button {
+    width: 123px !important;
+    height: 33px !important;
+    margin: 25px auto 15px auto;
+  }
 }
 
 #app {
@@ -1269,7 +1415,7 @@ input[type=number] {
 #app .allContent #btndetail2 {
   position: absolute;
   width: 150px;
-  bottom: 163px;
+  bottom: 256px;
   cursor: pointer;
 }
 
@@ -1279,11 +1425,11 @@ input[type=number] {
 }
 
 #app .allContent #btndetail1 {
-  left: 205px;
+  left: 19%;
 }
 
 #app .allContent #btndetail2 {
-  left: 43.5%;
+  left: 46%;
 }
 
 #app .down .btnRow {
