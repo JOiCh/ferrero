@@ -1,0 +1,1739 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, a {
+  display: block;
+}
+
+body {
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  /*隱藏滾輪*/
+  display: none;
+}
+
+/*input number消除旁邊箭頭*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+@font-face {
+  font-family: "LiHei";
+  /* 自訂名稱 */
+  src: url("../font/DFLiHeiStd-W5.otf");
+  /* 字體檔路徑 */
+}
+
+#app header {
+  position: relative;
+  height: 240px;
+  z-index: 5;
+  background-image: url(./../imgs/x2/head_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#app header .fullHeader {
+  position: absolute;
+  height: 320px;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#app header .narrowHeader {
+  display: none;
+}
+
+#app footer {
+  background-color: #6b1c1f;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+#app footer div {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app footer div p {
+  margin: 15px 10px;
+}
+
+@media all and (max-width: 1420px) {
+  #app header {
+    height: 200px;
+  }
+  #app header .fullHeader {
+    height: 240px;
+    top: 40%;
+  }
+}
+
+@media all and (max-width: 992px) {
+  #app header {
+    height: 140px;
+  }
+  #app header .fullHeader {
+    height: 220px;
+    top: 20%;
+  }
+}
+
+@media all and (max-width: 910px) {
+  #app header {
+    height: 130px;
+  }
+  #app header .fullHeader {
+    height: 188px;
+  }
+  #app footer div {
+    font-size: 8px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #app header {
+    height: 110px;
+  }
+  #app header .fullHeader {
+    height: 165px;
+  }
+  #app footer {
+    padding: 10px 0;
+    text-align: center;
+  }
+  #app footer div {
+    display: block;
+  }
+  #app footer div p {
+    margin: 0px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #app header {
+    background-image: url(./../imgs/mobile/m_head_bg.png);
+    background-size: cover;
+  }
+  #app header .fullHeader {
+    width: 95%;
+    top: 35%;
+  }
+  #app footer {
+    padding: 10px 0;
+    text-align: center;
+  }
+  #app footer div {
+    display: block !important;
+  }
+  #app footer div p {
+    margin: 0px !important;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #app header {
+    background-size: contain;
+    height: 86px;
+  }
+  #app header .fullHeader {
+    height: 112px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #app header {
+    height: 78px;
+  }
+  #app header .fullHeader {
+    height: 100px;
+    top: 40%;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #app header {
+    height: 66px;
+  }
+  #app header .fullHeader {
+    height: 89px;
+    top: 33%;
+  }
+  #app footer {
+    position: relative;
+  }
+}
+
+#app {
+  font-family: "LiHei", sans-serif;
+  min-height: 100vh;
+}
+
+#app form {
+  background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top, left bottom;
+  background-color: #fbf3dc;
+}
+
+#app form .up,
+#app form .down {
+  border: 1px solid red;
+  width: 55%;
+  margin: 0 auto;
+}
+
+#app form .banner {
+  border: 1px solid green;
+  height: 320px;
+  position: relative;
+}
+
+#app form .banner img.text_fill {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
+  width: 65%;
+}
+
+#app form .banner img#m_text_fill {
+  display: none;
+}
+
+#app form .up {
+  margin-top: 15px;
+}
+
+#app form .up .scan {
+  display: none;
+}
+
+#app form .up .middle {
+  border: 1px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#app form .up .middle .left {
+  width: 65%;
+}
+
+#app form .up .middle .left .input label:nth-of-type(1) {
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+#app form .up .middle .left .input label:nth-of-type(1) select {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#app form .up .middle .left .input label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 80px;
+}
+
+#app form .up .middle .left .input label .flxLeft {
+  width: 40%;
+  text-align: right;
+}
+
+#app form .up .middle .left .input label .flxLeft span {
+  font-size: 38px;
+  color: #6b1c1f;
+  display: inline-block;
+}
+
+#app form .up .middle .left .input label .flxLeft span.secSpan {
+  font-size: 22px;
+  color: black;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  margin-top: 15px;
+}
+
+#app form .up .middle .left .input label .flxLeft span.m_span {
+  display: none;
+}
+
+#app form .up .middle .left .input label .flxRight {
+  position: relative;
+}
+
+#app form .up .middle .left .input label .flxRight select:nth-of-type(1) {
+  margin-left: 5px;
+}
+
+#app form .up .middle .left .input label .flxRight .spanMv {
+  position: absolute;
+}
+
+#app form .up .middle .left .input label .flxRight .spanMv:nth-of-type(1) {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+#app form .up .middle .left .input label .flxRight select {
+  font-size: 22px;
+  padding: 10px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  border: 2px solid #999;
+  outline: none;
+}
+
+#app form .up .middle .left .input label .flxRight select:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+#app form .up .middle .left .input label input {
+  width: 45%;
+  outline: none;
+  border: 2px solid #999;
+  font-size: 38px;
+  padding: 5px 0px 5px 5px;
+  border-radius: 1px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  margin-left: 5px;
+}
+
+#app form .up .middle .right {
+  width: 33%;
+}
+
+#app form .up .middle .right img {
+  width: 100%;
+}
+
+#app form .up .chkbox {
+  border: 1px solid hotpink;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 40px;
+}
+
+#app form .up .chkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+#app form .up .chkbox label input[type="checkbox"] {
+  zoom: 1.5;
+}
+
+#app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#app form .up .chkbox .chkbox2:nth-of-type(1) span {
+  text-decoration: underline;
+  color: #c29138;
+}
+
+#app form .down {
+  margin-top: 60px;
+}
+
+#app form .down .btnRow {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#app form .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  margin-right: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+#app form .down .btnRow button img {
+  width: 100%;
+}
+
+#app form .down .btnRow button img:active {
+  opacity: .8;
+}
+
+@media all and (max-width: 1600px) {
+  #app form {
+    background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top, left bottom;
+    background-color: #fbf3dc;
+    min-height: 100%;
+  }
+  #app form .up,
+  #app form .down {
+    width: 900px;
+  }
+  #app form .banner {
+    height: 310px;
+  }
+  #app form .up .middle .left {
+    width: 72%;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) {
+    font-size: 24px;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) select {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  #app form .up .middle .left .input label .flxLeft {
+    width: 40%;
+  }
+  #app form .up .middle .left .input label .flxLeft span {
+    font-size: 33px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan {
+    -webkit-transform: translateX(-9px);
+            transform: translateX(-9px);
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    width: 255px;
+    white-space: nowrap;
+  }
+  #app form .up .middle .left .input label .flxRight select {
+    font-size: 24px;
+  }
+  #app form .up .middle .left .input label input {
+    font-size: 30px;
+  }
+  #app form .up .middle .right img {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  #app form .up .chkbox {
+    width: 50%;
+    margin-top: 80px;
+    border: unset;
+  }
+  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+    font-weight: 400;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #app form .up,
+  #app form .down {
+    width: 800px;
+  }
+  #app form .banner {
+    height: 280px;
+  }
+  #app form .banner img.text_fill {
+    width: 80%;
+  }
+  #app form .up .middle .left {
+    width: 80%;
+  }
+  #app form .up .middle .left .input label .flxLeft {
+    width: 40%;
+  }
+  #app form .up .middle .left .input label .flxLeft span {
+    font-size: 30px;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    -webkit-transform: translateX(-36px);
+            transform: translateX(-36px);
+  }
+  #app form .up .middle .left .input label .flxRight select {
+    font-size: 22px;
+    padding: 9px;
+  }
+  #app form .up .middle .left .input label input {
+    font-size: 24px;
+    padding: 9px;
+  }
+  #app form .up .middle .right img {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  #app form .up .chkbox {
+    margin-top: 60px;
+  }
+  #app form .up .chkbox label input[type="checkbox"] {
+    margin-left: 10px;
+  }
+  #app form .down .btnRow {
+    margin-bottom: 80px;
+  }
+  #app form .down .btnRow button {
+    width: 286px;
+    height: 72px;
+    margin-right: 140px;
+  }
+  #app form .down .btnRow button:nth-of-type(2) {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  #app form .up,
+  #app form .down {
+    width: 720px;
+  }
+  #app form .banner {
+    height: 263px;
+  }
+  #app form .banner img.text_fill {
+    bottom: 35px;
+  }
+  #app form .up .middle .left .input label {
+    margin-top: 60px;
+  }
+  #app form .up .middle .left .input label .flxLeft span {
+    font-size: 28px;
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan {
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    -webkit-transform: translateX(-57px);
+            transform: translateX(-57px);
+  }
+  #app form .up .middle .left .input label .flxRight select {
+    font-size: 20px;
+    padding: 8px;
+  }
+  #app form .up .middle .left .input label input {
+    font-size: 22px;
+    padding: 7px;
+  }
+  #app form .up .middle .right img {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  #app form .down .btnRow {
+    margin-bottom: 75px;
+  }
+  #app form .down .btnRow button {
+    width: 257px;
+    height: 64px;
+    margin-right: 130px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #app form .up,
+  #app form .down {
+    width: 680px;
+  }
+  #app form .banner {
+    height: 180px;
+  }
+  #app form .banner img.text_fill {
+    bottom: 25px;
+  }
+  #app form .up .middle .left .input label {
+    margin-top: 50px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+  #app form .up .middle .right img {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  #app form .up .chkbox {
+    width: 55%;
+    margin-top: 30px;
+  }
+  #app form .up .chkbox label {
+    margin-top: 30px;
+  }
+  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #app form .banner {
+    height: 155px;
+    position: relative;
+  }
+  #app form .banner img.text_fill {
+    display: none;
+  }
+  #app form .banner img#m_text_fill {
+    position: absolute;
+    display: block;
+    width: 90%;
+    left: 50%;
+    bottom: 24px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #app form .up,
+  #app form .down {
+    width: 80%;
+  }
+  #app form .up {
+    margin: 0 auto;
+  }
+  #app form .up .scan {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #app form .up .scan .scanL {
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  #app form .up .scan .scanL img {
+    width: 120px;
+  }
+  #app form .up .scan .scanR {
+    width: 70%;
+    font-size: 24px;
+    color: #6b1c1f;
+  }
+  #app form .up .scan .scanR p {
+    text-align: center;
+    line-height: 36px;
+  }
+  #app form .up .scan .scanR h4 {
+    text-align: center;
+    margin-top: 8px;
+    color: #c29138;
+    text-decoration: underline;
+  }
+  #app form .up .bill_m {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 53, 53, 0.589);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+  #app form .up .bill_m img.billShow {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 60%;
+  }
+  #app form .up .bill_m img.closeBtn {
+    display: block;
+    position: absolute;
+    width: 10%;
+    top: 20px;
+    right: 20%;
+  }
+  #app form .up .middle {
+    margin-top: 10px;
+  }
+  #app form .up .middle .left {
+    width: 100%;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 22px;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft {
+    width: 27%;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
+    margin-left: 12%;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) select {
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: white;
+  }
+  #app form .up .middle .left .input label {
+    display: block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 40px;
+  }
+  #app form .up .middle .left .input label .flxLeft {
+    width: 100%;
+    text-align: left;
+  }
+  #app form .up .middle .left .input label .flxLeft span {
+    font-size: 24px;
+    color: #6b1c1f;
+    display: inline-block;
+    margin-left: 2.5%;
+  }
+  #app form .up .middle .left .input label .flxLeft span.m_span {
+    display: block;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan,
+  #app form .up .middle .left .input label .flxLeft span.m_span {
+    font-size: 18px;
+    color: black;
+    margin-left: 14px;
+    margin-top: 5px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan {
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px);
+    margin-top: 0px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.m1_span {
+    display: none;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  #app form .up .middle .left .input label .flxRight select:nth-of-type(1) {
+    margin-left: 5px;
+  }
+  #app form .up .middle .left .input label .flxRight select {
+    font-size: 18px;
+    padding: 5px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    border: 2px solid #999;
+    outline: none;
+  }
+  #app form .up .middle .left .input label input {
+    width: 90%;
+    outline: none;
+    border: 2px solid #999;
+    font-size: 24px;
+    padding: 5px 0px 5px 5px;
+    border-radius: 1px;
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    margin-left: 12px;
+  }
+  #app form .up .middle .right {
+    display: none;
+  }
+  #app form .up .chkbox {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 40px;
+  }
+  #app form .up .chkbox label {
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  #app form .up .chkbox label input[type="checkbox"] {
+    zoom: 1;
+    margin-left: 15px;
+  }
+  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+    font-size: 18px;
+  }
+  #app form .up .chkbox label .chkbox2 p.secP {
+    font-size: 14px;
+  }
+  #app form .down {
+    margin-top: 35px;
+    margin-bottom: 110px;
+  }
+  #app form .down .btnRow {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-bottom: 45px;
+  }
+  #app form .down .btnRow button {
+    width: 191px;
+    height: 46px;
+    margin-right: 15%;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #app form .banner {
+    height: 125px;
+  }
+  #app form .banner img.text_fill {
+    display: none;
+  }
+  #app form .banner img#m_text_fill {
+    bottom: 20px;
+  }
+  #app form .up {
+    width: 85%;
+    margin: 0 auto;
+  }
+  #app form .up .scan {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #app form .up .scan .scanL {
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  #app form .up .scan .scanL img {
+    width: 120px;
+  }
+  #app form .up .scan .scanR {
+    font-size: 22px;
+  }
+  #app form .up .scan .scanR p {
+    line-height: 26px;
+    margin-top: 20px;
+  }
+  #app form .up .middle {
+    margin-top: 0px;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) {
+    font-size: 20px;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft {
+    width: 35%;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
+    margin-left: 5%;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  #app form .up .middle .left .input label {
+    margin-top: 35px;
+  }
+  #app form .up .middle .left .input label .flxLeft span {
+    margin-left: 1.8%;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan,
+  #app form .up .middle .left .input label .flxLeft span.m_span {
+    font-size: 15px;
+    margin-left: 8px;
+    margin-top: 2px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  #app form .up .middle .left .input label input {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    margin-left: 9px;
+    font-size: 20px;
+  }
+  #app form .up .chkbox {
+    margin-top: 25px;
+  }
+  #app form .up .chkbox label {
+    margin-top: 18px;
+  }
+  #app form .up .chkbox label input[type="checkbox"] {
+    margin-left: 12px;
+  }
+  #app form .down {
+    width: 95%;
+  }
+  #app form .down .btnRow {
+    margin-bottom: 35px;
+  }
+  #app form .down .btnRow button {
+    width: 171px;
+    height: 41px;
+    margin-right: 9%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #app form .banner {
+    height: 109px;
+  }
+  #app form .banner img#m_text_fill {
+    bottom: 15px;
+    width: 93%;
+  }
+  #app form .up .scan .scanL img {
+    width: 110px;
+  }
+  #app form .up .scan .scanR {
+    font-size: 18px;
+  }
+  #app form .up .scan .scanR p {
+    line-height: 24px;
+    margin-top: 20px;
+  }
+  #app form .up .scan .scanR h4 {
+    margin-top: 0px;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) {
+    font-size: 18px;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
+    margin-left: 9%;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft span.fstSpan {
+    font-size: 20px;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) .flxRight select:nth-of-type(1) {
+    margin-left: -1px;
+  }
+  #app form .up .middle .left .input label {
+    margin-top: 25px;
+  }
+  #app form .up .middle .left .input label .flxLeft span {
+    margin-left: 2.8%;
+    font-size: 20px;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan,
+  #app form .up .middle .left .input label .flxLeft span.m_span {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  #app form .up .middle .left .input label input {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    margin-left: 9px;
+    font-size: 20px;
+  }
+  #app form .down .btnRow button {
+    width: 145px;
+    height: 35px;
+    margin-right: 11%;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #app form .banner {
+    height: 94px;
+  }
+  #app form .up .scan .scanL img {
+    width: 100px;
+  }
+  #app form .up .scan .scanR {
+    font-size: 17px;
+  }
+  #app form .up .middle .left .input label:nth-of-type(1) .flxRight {
+    left: 10px;
+    top: 10px;
+  }
+  #app form .up .middle .left .input label {
+    margin-top: 25px;
+  }
+  #app form .up .middle .left .input label .flxLeft span.secSpan,
+  #app form .up .middle .left .input label .flxLeft span.m_span {
+    font-size: 12px;
+  }
+  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+    font-size: 16px;
+  }
+  #app form .up .chkbox label .chkbox2 p.secP {
+    font-size: 12px;
+  }
+  #app form .down .btnRow button {
+    width: 130px;
+    height: 32px;
+    margin-right: 9%;
+  }
+}
+
+#app {
+  font-family: "LiHei", sans-serif;
+  background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: left bottom 54px;
+  background-color: #fbf3dc;
+  background-size: contain;
+}
+
+#app .banner img.text_fill {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
+  width: 65%;
+}
+
+#app .banner img:nth-of-type(2) {
+  display: none;
+}
+
+#app main {
+  max-width: 1052px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+}
+
+#app main .wordBox {
+  width: 60%;
+  border: 1px solid blue;
+}
+
+#app main .wordBox .wordItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+#app main .wordBox .wordItem .flxLeft {
+  width: 40%;
+  text-align: right;
+  font-size: 38px;
+  color: #6b1c1f;
+}
+
+#app main .wordBox .wordItem .flxRight {
+  width: 59%;
+  font-size: 38px;
+}
+
+#app main .imgBox {
+  width: 39%;
+  border: 1px solid green;
+}
+
+#app main .imgBox img {
+  max-width: 100%;
+}
+
+#app .down {
+  width: 55%;
+  margin: 0px auto;
+}
+
+#app .down .btnRow {
+  margin-bottom: 55px !important;
+}
+
+#app .down .btnRow img {
+  width: 100%;
+}
+
+#app .down .btnRow img:active {
+  opacity: .8;
+}
+
+@media all and (max-width: 992px) {
+  #app .banner {
+    height: 180px !important;
+  }
+  #app .banner img.text_fill {
+    bottom: 25px !important;
+    width: 80% !important;
+  }
+  #app .banner img:nth-of-type(2) {
+    display: none;
+  }
+  #app main {
+    max-width: 685px;
+  }
+  #app main .wordBox .wordItem .flxLeft {
+    width: 44%;
+    font-size: 28px;
+  }
+  #app main .wordBox .wordItem .flxRight {
+    font-size: 28px;
+  }
+  #app main .imgBox {
+    width: 39%;
+  }
+  #app main .imgBox img {
+    max-width: 100%;
+    margin-top: 63px;
+  }
+  #app .down {
+    width: 100%;
+    margin-bottom: 54px;
+  }
+  #app .down .btnRow button {
+    width: 257px !important;
+    height: 64px !important;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #app {
+    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-position: left top 87px, left bottom 117px !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-size: contain !important;
+  }
+  #app .banner {
+    height: 100px !important;
+  }
+  #app .banner img.text_fill {
+    display: none;
+  }
+  #app .banner img:nth-of-type(2) {
+    display: block;
+    max-width: 93%;
+    margin: 50px auto 0px auto;
+  }
+  #app main {
+    display: block;
+  }
+  #app main .wordBox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #app main .wordBox .wordItem:nth-of-type(1) {
+    margin-top: 5px;
+  }
+  #app main .wordBox .wordItem {
+    margin-top: 20px;
+  }
+  #app main .wordBox .wordItem .flxLeft, #app main .wordBox .wordItem .flxRight {
+    font-size: 20px;
+  }
+  #app main .wordBox .wordItem .flxLeft {
+    width: 48%;
+    margin-right: 7px;
+  }
+  #app main .imgBox {
+    display: none;
+  }
+  #app .down {
+    margin-top: 0px;
+    margin-bottom: 106px;
+  }
+  #app .down .btnRow {
+    width: 90% !important;
+  }
+  #app .down .btnRow button {
+    width: 123px !important;
+    height: 33px !important;
+    margin: 25px auto 15px auto;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #app {
+    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-position: left top 70px, left bottom 117px !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-size: contain !important;
+  }
+  #app .banner {
+    height: 100px !important;
+  }
+  #app .banner img.text_fill {
+    display: none;
+  }
+  #app .banner img:nth-of-type(2) {
+    display: block;
+    max-width: 93%;
+    margin: 50px auto 0px auto;
+  }
+  #app main {
+    display: block;
+  }
+  #app main .wordBox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #app main .wordBox .wordItem:nth-of-type(1) {
+    margin-top: 5px;
+  }
+  #app main .wordBox .wordItem {
+    margin-top: 20px;
+  }
+  #app main .wordBox .wordItem .flxLeft, #app main .wordBox .wordItem .flxRight {
+    font-size: 20px;
+  }
+  #app main .wordBox .wordItem .flxLeft {
+    width: 48%;
+    margin-right: 7px;
+  }
+  #app main .imgBox {
+    display: none;
+  }
+  #app .down {
+    margin-top: 0px;
+    margin-bottom: 46px;
+  }
+  #app .down .btnRow {
+    width: 90% !important;
+  }
+  #app .down .btnRow button {
+    width: 123px !important;
+    height: 33px !important;
+    margin: 25px auto 15px auto;
+  }
+}
+
+#app {
+  font-family: "LiHei", sans-serif;
+  background-image: url(../../imgs/x2/blur_bg_up.jpg);
+  background-repeat: no-repeat;
+  background-position: left top 200px;
+  background-color: #fbf3dc;
+  background-size: contain;
+}
+
+#app .banner {
+  border: 1px solid green;
+  height: 250px;
+  position: relative;
+}
+
+#app .banner img.text_fill {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
+  width: 65%;
+}
+
+#app .main_bg {
+  width: 65%;
+  border: 1px solid black;
+  margin: 0 auto;
+  background-image: url(./../../imgs/x2/congratulations_text.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  margin-bottom: 60px;
+}
+
+#app .main_bg main {
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px auto 40px auto;
+}
+
+#app .main_bg main img {
+  max-width: 100%;
+}
+
+#app .main_bg .down {
+  margin-top: 47px;
+  margin-bottom: 320px;
+}
+
+#app .main_bg .down .btnRow {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#app .main_bg .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  margin-right: 20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+#app .main_bg .down .btnRow button:active {
+  opacity: .8;
+}
+
+#app .allcontent {
+  text-align: center;
+}
+
+#app .allcontent img {
+  max-width: 83%;
+}
+
+#app button {
+  display: block;
+  margin: 40px auto 60px auto;
+  width: 318px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+#app button:active {
+  opacity: .8;
+}
+
+#app {
+  background-image: url(../../imgs/1016_landing/landing_bg.jpg);
+  background-position: top left;
+  background-size: cover;
+}
+
+#app .index_m_header {
+  display: none;
+  position: relative;
+}
+
+#app .index_m_header img:nth-of-type(1) {
+  max-width: 100%;
+}
+
+#app .allContent {
+  text-align: center;
+  position: relative;
+}
+
+#app .allContent img.d_bg {
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+#app .allContent img.m_bg {
+  display: none;
+}
+
+#app .allContent #btndetail1,
+#app .allContent #btndetail2 {
+  position: absolute;
+  width: 150px;
+  bottom: 256px;
+  cursor: pointer;
+}
+
+#app .allContent #btndetail1:active,
+#app .allContent #btndetail2:active {
+  opacity: .8;
+}
+
+#app .allContent #btndetail1 {
+  left: 19%;
+}
+
+#app .allContent #btndetail2 {
+  left: 46%;
+}
+
+#app .allContent .m_btnRow {
+  display: none;
+}
+
+#app .down .btnRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#app .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  margin-right: auto;
+}
+
+#app .down .btnRow button img {
+  width: 100%;
+}
+
+#app .down .btnRow button img:active {
+  opacity: .8;
+}
+
+#app .showAwards {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 53, 53, 0.589);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 6;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+#app .showAwards .wrap {
+  width: 67%;
+  margin: 0 auto;
+}
+
+#app .showAwards .wrap header {
+  margin-top: 50px;
+}
+
+#app .showAwards .wrap header .fullHeader {
+  max-width: 90%;
+  max-height: 100%;
+  top: 44%;
+}
+
+#app .showAwards .wrap .banner {
+  height: 152px;
+  position: relative;
+  background-color: white;
+  border: unset;
+}
+
+#app .showAwards .wrap .banner.part2 {
+  height: 120px;
+}
+
+#app .showAwards .wrap .wordBox {
+  width: 100%;
+  height: 450px;
+  background-color: white;
+  overflow-y: auto;
+  padding: 0px 50px 50px 50px;
+}
+
+#app .showAwards .wrap .wordBox h6 {
+  color: #6b1c1f;
+  font-weight: bold;
+}
+
+#app .showAwards .wrap .wordBox p.yellow {
+  color: #c29138;
+  font-weight: bold;
+}
+
+#app .showAwards .wrap .wordBox p.item {
+  margin-top: 20px;
+}
+
+#app .showAwards .wrap .picBox {
+  width: 100%;
+  text-align: center;
+  height: 450px;
+  background-color: white;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+#app .showAwards .wrap .picBox img {
+  width: 80%;
+}
+
+#app .showAwards #btn_close,
+#app .showAwards #btn_close2 {
+  position: absolute;
+  cursor: pointer;
+  top: 28px;
+  right: 17%;
+  z-index: 6;
+}
+
+@media all and (max-width: 1600px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    width: 120px;
+    bottom: 157px;
+  }
+  #app .allContent #btndetail1 {
+    left: 17.5%;
+  }
+  #app .allContent #btndetail2 {
+    left: 45%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    width: 110px;
+    bottom: 130px;
+  }
+  #app .allContent #btndetail1 {
+    left: 17%;
+  }
+  #app .allContent #btndetail2 {
+    left: 44.5%;
+  }
+  #app .showAwards .wrap header .fullHeader {
+    max-height: 82%;
+    top: 56%;
+  }
+  #app .showAwards #btn_close,
+  #app .showAwards #btn_close2 {
+    position: absolute;
+    cursor: pointer;
+    top: 28px;
+    right: 17%;
+    z-index: 6;
+  }
+}
+
+@media all and (max-width: 992px) {
+  #app .allContent img.d_bg {
+    max-width: 97%;
+    margin-top: 40px;
+  }
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    width: 90px;
+    bottom: 109px;
+  }
+  #app .allContent #btndetail1 {
+    left: 15%;
+  }
+  #app .allContent #btndetail2 {
+    left: 44%;
+  }
+  #app .down .btnRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #app .down .btnRow button {
+    width: 257px;
+    height: 64px;
+    margin-right: 130px;
+  }
+  #app .down .btnRow button:nth-of-type(2) {
+    margin-right: 0px;
+  }
+  #app .showAwards .wrap {
+    width: 70%;
+  }
+  #app .showAwards .wrap .banner {
+    height: 80px !important;
+  }
+  #app .showAwards .wrap .wordBox {
+    height: 500px;
+    background-color: white;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #app {
+    background-image: url(../../imgs/mobile/m_landing_bg2.jpg) !important;
+    background-position: bottom 40px left !important;
+    background-size: contain !important;
+  }
+  #app .index_m_header {
+    display: block;
+  }
+  #app .index_m_header #logo {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 8;
+    width: 60px;
+  }
+  #app .allContent img.d_bg {
+    display: none;
+  }
+  #app .allContent img.m_bg {
+    display: block;
+    width: 100%;
+  }
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    width: 100px;
+    bottom: 199px;
+  }
+  #app .allContent #btndetail1 {
+    left: 11%;
+  }
+  #app .allContent #btndetail2 {
+    left: 64%;
+  }
+  #app .m_btnRow {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  #app .down {
+    display: none;
+  }
+  #app .down .btnRow button {
+    width: 171px !important;
+    height: 41px !important;
+    margin-right: 9% !important;
+  }
+  #app .down .btnRow button:nth-of-type(2) {
+    margin-right: unset !important;
+  }
+  #app .showAwards {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 53, 53, 0.589);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+  #app .showAwards .wrap {
+    width: 67%;
+    margin: 0 auto;
+  }
+  #app .showAwards .wrap header {
+    margin-top: 50px;
+  }
+  #app .showAwards .wrap header .fullHeader {
+    max-width: 90%;
+    max-height: 100%;
+    top: 44%;
+  }
+  #app .showAwards .wrap .banner {
+    height: 152px;
+    position: relative;
+    background-color: white;
+    border: unset;
+  }
+  #app .showAwards .wrap .banner.part2 {
+    height: 120px;
+  }
+  #app .showAwards .wrap .wordBox {
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    overflow-y: auto;
+    padding: 0px 50px 50px 50px;
+  }
+  #app .showAwards .wrap .wordBox h6 {
+    color: #6b1c1f;
+    font-weight: bold;
+  }
+  #app .showAwards .wrap .wordBox p.yellow {
+    color: #c29138;
+    font-weight: bold;
+  }
+  #app .showAwards .wrap .wordBox p.item {
+    margin-top: 20px;
+  }
+  #app .showAwards .wrap .picBox {
+    width: 100%;
+    text-align: center;
+    height: 450px;
+    background-color: white;
+    overflow-y: auto;
+    padding-bottom: 50px;
+  }
+  #app .showAwards .wrap .picBox img {
+    width: 80%;
+  }
+  #app .showAwards #btn_close,
+  #app .showAwards #btn_close2 {
+    position: absolute;
+    cursor: pointer;
+    top: 28px;
+    right: 17%;
+    z-index: 6;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -11,15 +11,32 @@
 
 <body>
     <div id="app">
+        <div class="index_m_header">
+            <img src="./imgs/mobile/m_golden_top.png" alt="">
+            <img src="./imgs/mobile/logo.png" id="logo">
+        </div>
         <div class="allContent">
-            <img src="./imgs/1016_landing/landing_contentx2.jpg" alt="">
+            <img src="./imgs/1016_landing/landing_contentx2.jpg" class="d_bg">
+            <img src="./imgs/mobile/m_landing_bg.jpg" class="m_bg">
             <img src="./imgs/x2/btn_award_detail.png" id="btndetail1" @click="openAwards">
             <img src="./imgs/x2/btn_award_detail.png" id="btndetail2" @click="openAwards">
+            <div class="m_btnRow">
+                <button type="button" @click="openDetails">
+                    <img src="./imgs/x2/btn_note.png" alt="">
+                </button>
+                <button type="button" @click="link">
+                    <img src="./imgs/x2/btn_join.png" alt="">
+                </button>
+            </div>
         </div>
         <div class="down">
             <div class="btnRow">
-                <button type="button" @click="openDetails"></button>
-                <button type="button" @click="link"></button>
+                <button type="button" @click="openDetails">
+                    <img src="./imgs/x2/btn_note.png" alt="">
+                </button>
+                <button type="button" @click="link">
+                    <img src="./imgs/x2/btn_join.png" alt="">
+                </button>
             </div>
         </div>
         <div class="showAwards" v-if="this.showAwards === true">

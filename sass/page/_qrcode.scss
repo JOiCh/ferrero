@@ -191,17 +191,13 @@
                     border: unset;
                     cursor: pointer;
 
-                    &:active {
-                        opacity: .8;
+                    img{
+                        width: 100%;
+                        &:active {
+                            opacity: .8;
+                        }
                     }
-                }
-
-                button:nth-of-type(1) {
-                    background-image: url(../../imgs/x2/btn_rewrite.png);
-                }
-
-                button:nth-of-type(2) {
-                    background-image: url(../../imgs/x2/btn_send.png);
+                 
                 }
             }
         }
@@ -785,7 +781,7 @@
 
             .down {
                 margin-top: 35px;
-                margin-bottom: 0px;
+                margin-bottom: 110px;
 
                 .btnRow {
                     flex-wrap: nowrap;

@@ -66,14 +66,11 @@
 
         .btnRow {
             margin-bottom: 55px !important;
-
-            button:nth-of-type(1) {
-                background-image: url(../../imgs/x2/btn_rewrite.png) !important;
-                margin-right: 130px;
-            }
-
-            button:nth-of-type(2) {
-                background-image: url(../../imgs/x2/btn_sure.png) !important;
+            img{
+                width: 100%;
+                &:active{
+                    opacity: .8;
+                }
             }
         }
     }
@@ -136,15 +133,6 @@
                     width: 257px !important;
                     height: 64px !important;
                    
-                }
-    
-                button:nth-of-type(1) {
-                    background-image: url(../../imgs/x2/btn_rewrite.png) !important;
-                    margin-right: 130px !important;
-                }
-    
-                button:nth-of-type(2) {
-                    background-image: url(../../imgs/x2/btn_sure.png) !important;
                 }
             }
         }
