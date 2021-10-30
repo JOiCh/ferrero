@@ -1710,7 +1710,7 @@ input[type=number] {
     -webkit-transform: translateY(-26px);
             transform: translateY(-26px);
     width: 100%;
-    height: 500px;
+    height: 445px;
     padding: 0px 15px 15px 15px;
     font-size: 12px;
     line-height: 18px;
@@ -1762,6 +1762,13 @@ input[type=number] {
   }
   #app .allContent #btndetail2 {
     left: 64%;
+  }
+}
+
+@media all and (max-width: 360px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    top: 240px;
   }
 }
 
