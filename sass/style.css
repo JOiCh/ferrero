@@ -1629,8 +1629,13 @@ input[type=number] {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    z-index: 8;
+    z-index: 5;
     width: 60px;
+  }
+  #app .allContent {
+    background-image: url(../../imgs/mobile/m_landing_bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
   }
   #app .allContent img.d_bg {
     display: none;
@@ -1642,7 +1647,8 @@ input[type=number] {
   #app .allContent #btndetail1,
   #app .allContent #btndetail2 {
     width: 100px;
-    bottom: 199px;
+    bottom: unset;
+    top: 248px;
   }
   #app .allContent #btndetail1 {
     left: 11%;
@@ -1654,86 +1660,129 @@ input[type=number] {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    text-align: center;
+  }
+  #app .m_btnRow button {
+    width: 145px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    outline: unset;
+    border: unset;
+    cursor: pointer;
+  }
+  #app .m_btnRow button img {
+    width: 100%;
+  }
+  #app .m_btnRow button img:active {
+    opacity: .8;
+  }
+  #app .m_btnRow button:nth-of-type(1) {
+    margin-right: 6%;
+  }
+  #app .m_btnRow button:nth-of-type(2) {
+    margin-left: 6%;
   }
   #app .down {
     display: none;
   }
-  #app .down .btnRow button {
-    width: 171px !important;
-    height: 41px !important;
-    margin-right: 9% !important;
-  }
-  #app .down .btnRow button:nth-of-type(2) {
-    margin-right: unset !important;
-  }
-  #app .showAwards {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(53, 53, 53, 0.589);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 6;
-    -webkit-transition: .1s;
-    transition: .1s;
-  }
   #app .showAwards .wrap {
-    width: 67%;
+    width: 80%;
     margin: 0 auto;
   }
   #app .showAwards .wrap header {
     margin-top: 50px;
   }
   #app .showAwards .wrap header .fullHeader {
-    max-width: 90%;
     max-height: 100%;
-    top: 44%;
+    top: 28%;
   }
   #app .showAwards .wrap .banner {
-    height: 152px;
-    position: relative;
-    background-color: white;
-    border: unset;
+    -webkit-transform: translateY(-26px);
+            transform: translateY(-26px);
+    height: 65px !important;
   }
   #app .showAwards .wrap .banner.part2 {
     height: 120px;
   }
   #app .showAwards .wrap .wordBox {
+    -webkit-transform: translateY(-26px);
+            transform: translateY(-26px);
     width: 100%;
-    height: 450px;
-    background-color: white;
-    overflow-y: auto;
-    padding: 0px 50px 50px 50px;
-  }
-  #app .showAwards .wrap .wordBox h6 {
-    color: #6b1c1f;
-    font-weight: bold;
-  }
-  #app .showAwards .wrap .wordBox p.yellow {
-    color: #c29138;
-    font-weight: bold;
-  }
-  #app .showAwards .wrap .wordBox p.item {
-    margin-top: 20px;
+    height: 500px;
+    padding: 0px 15px 15px 15px;
+    font-size: 12px;
+    line-height: 18px;
   }
   #app .showAwards .wrap .picBox {
-    width: 100%;
-    text-align: center;
-    height: 450px;
-    background-color: white;
-    overflow-y: auto;
-    padding-bottom: 50px;
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
   }
   #app .showAwards .wrap .picBox img {
-    width: 80%;
+    width: 90%;
   }
   #app .showAwards #btn_close,
   #app .showAwards #btn_close2 {
-    position: absolute;
-    cursor: pointer;
-    top: 28px;
-    right: 17%;
+    width: 30px;
+    top: 36px;
+    right: 12%;
     z-index: 6;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    width: 100px;
+    top: 274px;
+  }
+  #app .allContent #btndetail1 {
+    left: 12%;
+  }
+  #app .allContent #btndetail2 {
+    left: 64%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    top: 244px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    top: 254px;
+  }
+  #app .allContent #btndetail1 {
+    left: 11.5%;
+  }
+  #app .allContent #btndetail2 {
+    left: 64%;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    width: 90px;
+    top: 213px;
+  }
+  #app .allContent #btndetail1 {
+    left: 10.5%;
+  }
+  #app .m_btnRow button {
+    width: 130px;
+    height: 32px;
+  }
+  #app .m_btnRow button:nth-of-type(1) {
+    margin-right: 4.5%;
+  }
+  #app .m_btnRow button:nth-of-type(2) {
+    margin-left: 4.5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
