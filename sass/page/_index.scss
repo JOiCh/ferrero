@@ -1,6 +1,6 @@
 #app {
-    background-image: url(../../imgs/1016_landing/landing_bg.jpg);
-    background-position: top left;
+    background-image: url(../../imgs/1016_landing/landing_bg.jpg) !important;
+    background-position: bottom  left -400px;
     background-size: cover;
 
     .index_m_header {
@@ -59,7 +59,6 @@
             button {
                 width: 318px;
                 height: 80px;
-                margin-right: auto;
 
                 img {
                     width: 100%;
@@ -68,6 +67,13 @@
                         opacity: .8;
                     }
                 }
+            }
+
+            button:nth-of-type(1){
+                margin-right: 8%;
+            }
+            button:nth-of-type(2){
+                margin-left: 8%;
             }
         }
     }
@@ -179,6 +185,27 @@
     }
 
 }
+
+@media all and (max-width: 1440px) {
+    #app {
+
+        .allContent {
+
+            #btndetail1,
+            #btndetail2 {
+                top: unset;
+                bottom: 25%
+            }
+
+            #btndetail1 {
+                left: 18%;
+            }
+            #btndetail2 {
+                left: 45%;
+            }
+        }
+    }
+ }
 
 @include middle_screen {
     #app {
