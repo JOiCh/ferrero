@@ -1,7 +1,8 @@
 #app {
     background-image: url(../../imgs/1016_landing/landing_bg.jpg) !important;
-    background-position: bottom  left -400px;
+    background-position: bottom left -400px;
     background-size: cover;
+    padding-bottom: 120px;
 
     .index_m_header {
         display: none;
@@ -53,12 +54,18 @@
     .down {
         .btnRow {
             display: flex;
-            width: 80%;
+            width: 50%;
             margin: 0 auto;
 
             button {
                 width: 318px;
                 height: 80px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                outline: unset;
+                border: unset;
+                cursor: pointer;
 
                 img {
                     width: 100%;
@@ -69,10 +76,11 @@
                 }
             }
 
-            button:nth-of-type(1){
+            button:nth-of-type(1) {
                 margin-right: 8%;
             }
-            button:nth-of-type(2){
+
+            button:nth-of-type(2) {
                 margin-left: 8%;
             }
         }
@@ -200,12 +208,13 @@
             #btndetail1 {
                 left: 18%;
             }
+
             #btndetail2 {
                 left: 45%;
             }
         }
     }
- }
+}
 
 @include middle_screen {
     #app {
@@ -259,7 +268,7 @@
 
 @include laptop {
     #app {
-
+        padding-bottom: 80px;
         .allContent {
             img.d_bg {
                 max-width: 97%;
@@ -269,15 +278,15 @@
             #btndetail1,
             #btndetail2 {
                 width: 90px;
-                bottom: 109px;
+                bottom: 143px;
             }
 
             #btndetail1 {
-                left: 15%;
+                left: 15.5%;
             }
 
             #btndetail2 {
-                left: 44%;
+                left: 45%;
             }
 
         }
@@ -286,7 +295,7 @@
 
             .btnRow {
                 display: flex;
-                width: 80%;
+                width: 65%;
                 margin: 0 auto;
 
                 button {
@@ -321,11 +330,35 @@
     }
 }
 
+@include ipad{
+    #app{
+        padding-bottom: 158px;
+        .allContent {
+
+            #btndetail1,
+            #btndetail2 {
+
+                bottom: 110px;
+            }
+
+            #btndetail1 {
+                left: 14.5%;
+            }
+
+            #btndetail2 {
+                left: 44%;
+            }
+
+        }
+    }
+}
+
 @include mobile {
     #app {
         background-image: url(../../imgs/mobile/m_landing_bg2.jpg) !important;
         background-position: bottom 40px left !important;
         background-size: contain !important;
+        padding-bottom: 40px;
 
         .index_m_header {
             display: block;
@@ -358,27 +391,26 @@
             #btndetail2 {
                 width: 100px;
                 bottom: unset;
-                top: 248px;
+                top:365px
             }
 
             #btndetail1 {
-                left: 11%;
+                left: 15%;
             }
 
             #btndetail2 {
-                left: 64%;
+                left: 68%;
             }
 
         }
 
         .m_btnRow {
             display: flex !important;
-            text-align: center;
+            justify-content: center;
 
             button {
                 width: 145px;
                 height: 35px;
-                
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-color: transparent;
@@ -395,10 +427,12 @@
                 }
 
             }
-            button:nth-of-type(1){
+
+            button:nth-of-type(1) {
                 margin-right: 6%;
-            };
-            button:nth-of-type(2){
+            }
+
+            button:nth-of-type(2) {
                 margin-left: 6%;
             }
         }
@@ -462,11 +496,11 @@
     }
 }
 
-@include mobile_m{
+@include mobile_m {
     #app {
 
         .allContent {
-
+            min-height: 90vh;
             #btndetail1,
             #btndetail2 {
                 width: 100px;
@@ -485,11 +519,11 @@
     }
 }
 
-@include mobile_s{
+@include mobile_s {
     #app {
 
         .allContent {
-
+            min-height: 82vh;
             #btndetail1,
             #btndetail2 {
                 top: 244px;
@@ -511,14 +545,15 @@
             #btndetail1 {
                 left: 11.5%;
             }
+
             #btndetail2 {
                 left: 64%;
             }
         }
     }
- }
+}
 
- @media all and (max-width: 360px) {
+@media all and (max-width: 360px) {
     #app {
 
         .allContent {
@@ -529,12 +564,13 @@
             }
         }
     }
- }
+}
 
-@include mobile_xs{
+@include mobile_xs {
     #app {
-
+        padding-bottom: unset;
         .allContent {
+            min-height: 75vh;
 
             #btndetail1,
             #btndetail2 {
@@ -553,10 +589,14 @@
                 width: 130px;
                 height: 32px;
             }
-            button:nth-of-type(1){
+
+            button:nth-of-type(1) {
                 margin-right: 4.5%;
-            };
-            button:nth-of-type(2){
+            }
+
+            ;
+
+            button:nth-of-type(2) {
                 margin-left: 4.5%;
             }
         }
