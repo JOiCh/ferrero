@@ -1,4 +1,4 @@
-#app {
+#winapp {
     .winpage {
 
         font-family: "LiHei", sans-serif;
@@ -66,6 +66,13 @@
                         outline: unset;
                         border: unset;
                         cursor: pointer;
+                      
+                        img{
+                            width: 100%;
+                            &:active {
+                                opacity: .8;
+                            }
+                        }
                     }
 
                     button:nth-of-type(1) {
@@ -249,7 +256,7 @@
 }
 
 @include mobile {
-    #app {
+    #winapp {
         background-image: unset !important;
 
         .winpage {
@@ -315,7 +322,7 @@
 }
 
 @media all and (max-width: 400px) {
-    #app {
+    #winapp {
         .winpage {
             background-position: left top 75px, left bottom 0px !important;
         }
@@ -323,7 +330,7 @@
 }
 
 @include mobile_xs {
-    #app {
+    #winapp {
         background: unset !important;
 
         .winpage {

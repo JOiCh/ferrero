@@ -89,7 +89,7 @@ input[type=number] {
   /* 字體檔路徑 */
 }
 
-#app header {
+#indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header {
   position: relative;
   height: 240px;
   z-index: 5;
@@ -98,7 +98,7 @@ input[type=number] {
   background-size: cover;
 }
 
-#app header .fullHeader {
+#indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader {
   position: absolute;
   height: 320px;
   left: 50%;
@@ -107,11 +107,11 @@ input[type=number] {
           transform: translateX(-50%);
 }
 
-#app header .narrowHeader {
+#indexapp header .narrowHeader, #chkapp header .narrowHeader, #scanapp header .narrowHeader, #loseapp header .narrowHeader, #winapp header .narrowHeader {
   display: none;
 }
 
-#app footer {
+#indexapp footer, #chkapp footer, #scanapp footer, #loseapp footer, #winapp footer {
   background-color: #6b1c1f;
   position: fixed;
   left: 0px;
@@ -119,7 +119,7 @@ input[type=number] {
   width: 100%;
 }
 
-#app footer div {
+#indexapp footer div, #chkapp footer div, #scanapp footer div, #loseapp footer div, #winapp footer div {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,121 +130,121 @@ input[type=number] {
           justify-content: center;
 }
 
-#app footer div p {
+#indexapp footer div p, #chkapp footer div p, #scanapp footer div p, #loseapp footer div p, #winapp footer div p {
   margin: 15px 10px;
 }
 
 @media all and (max-width: 1420px) {
-  #app header {
+  #indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header {
     height: 200px;
   }
-  #app header .fullHeader {
+  #indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader {
     height: 240px;
     top: 40%;
   }
 }
 
 @media all and (max-width: 992px) {
-  #app header {
+  #indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header {
     height: 140px;
   }
-  #app header .fullHeader {
+  #indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader {
     height: 220px;
     top: 20%;
   }
 }
 
 @media all and (max-width: 910px) {
-  #app header {
+  #indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header {
     height: 130px;
   }
-  #app header .fullHeader {
+  #indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader {
     height: 188px;
   }
-  #app footer div {
+  #indexapp footer div, #chkapp footer div, #scanapp footer div, #loseapp footer div, #winapp footer div {
     font-size: 8px;
   }
 }
 
 @media all and (max-width: 768px) {
-  #app header {
+  #indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header {
     height: 110px;
   }
-  #app header .fullHeader {
+  #indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader {
     height: 165px;
   }
-  #app footer {
+  #indexapp footer, #chkapp footer, #scanapp footer, #loseapp footer, #winapp footer {
     padding: 10px 0;
     text-align: center;
   }
-  #app footer div {
+  #indexapp footer div, #chkapp footer div, #scanapp footer div, #loseapp footer div, #winapp footer div {
     display: block;
   }
-  #app footer div p {
+  #indexapp footer div p, #chkapp footer div p, #scanapp footer div p, #loseapp footer div p, #winapp footer div p {
     margin: 0px;
   }
 }
 
 @media all and (max-width: 576px) {
-  #app header {
+  #indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header {
     background-image: url(./../imgs/mobile/m_head_bg.png);
     background-size: cover;
   }
-  #app header .fullHeader {
+  #indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader {
     width: 95%;
     top: 35%;
   }
-  #app footer {
+  #indexapp footer, #chkapp footer, #scanapp footer, #loseapp footer, #winapp footer {
     padding: 10px 0;
     text-align: center;
   }
-  #app footer div {
+  #indexapp footer div, #chkapp footer div, #scanapp footer div, #loseapp footer div, #winapp footer div {
     display: block !important;
   }
-  #app footer div p {
+  #indexapp footer div p, #chkapp footer div p, #scanapp footer div p, #loseapp footer div p, #winapp footer div p {
     margin: 0px !important;
   }
 }
 
 @media all and (max-width: 414px) {
-  #app header {
+  #indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header {
     background-size: contain;
     height: 86px;
   }
-  #app header .fullHeader {
+  #indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader {
     height: 112px;
   }
 }
 
 @media all and (max-width: 375px) {
-  #app header {
+  #indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header {
     height: 78px;
   }
-  #app header .fullHeader {
+  #indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader {
     height: 100px;
     top: 40%;
   }
 }
 
 @media all and (max-width: 320px) {
-  #app header {
+  #indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header {
     height: 66px;
   }
-  #app header .fullHeader {
+  #indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader {
     height: 89px;
     top: 33%;
   }
-  #app footer {
+  #indexapp footer, #chkapp footer, #scanapp footer, #loseapp footer, #winapp footer {
     position: relative;
   }
 }
 
-#app {
+#scanapp {
   font-family: "LiHei", sans-serif;
   min-height: 100vh;
 }
 
-#app form {
+#scanapp form {
   background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -253,20 +253,20 @@ input[type=number] {
   padding-bottom: 59px;
 }
 
-#app form .up,
-#app form .down {
+#scanapp form .up,
+#scanapp form .down {
   border: 1px solid transparent;
   width: 55%;
   margin: 0 auto;
 }
 
-#app form .banner {
+#scanapp form .banner {
   border: 1px solid transparent;
   height: 320px;
   position: relative;
 }
 
-#app form .banner img.text_fill {
+#scanapp form .banner img.text_fill {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -275,40 +275,40 @@ input[type=number] {
   width: 65%;
 }
 
-#app form .banner img#m_text_fill {
+#scanapp form .banner img#m_text_fill {
   display: none;
 }
 
-#app form .up {
+#scanapp form .up {
   margin-top: 15px;
 }
 
-#app form .up .scan {
+#scanapp form .up .scan {
   display: none;
 }
 
-#app form .up .middle {
+#scanapp form .up .middle {
   border: 1px solid transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#app form .up .middle .left {
+#scanapp form .up .middle .left {
   width: 65%;
 }
 
-#app form .up .middle .left .input label:nth-of-type(1) {
+#scanapp form .up .middle .left .input label:nth-of-type(1) {
   font-size: 22px;
   margin-top: 25px;
 }
 
-#app form .up .middle .left .input label:nth-of-type(1) select {
+#scanapp form .up .middle .left .input label:nth-of-type(1) select {
   margin-right: 5px;
   margin-left: 5px;
 }
 
-#app form .up .middle .left .input label {
+#scanapp form .up .middle .left .input label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,18 +318,18 @@ input[type=number] {
   margin-top: 80px;
 }
 
-#app form .up .middle .left .input label .flxLeft {
+#scanapp form .up .middle .left .input label .flxLeft {
   width: 40%;
   text-align: right;
 }
 
-#app form .up .middle .left .input label .flxLeft span {
+#scanapp form .up .middle .left .input label .flxLeft span {
   font-size: 38px;
   color: #6b1c1f;
   display: inline-block;
 }
 
-#app form .up .middle .left .input label .flxLeft span.secSpan {
+#scanapp form .up .middle .left .input label .flxLeft span.secSpan {
   font-size: 22px;
   color: black;
   -webkit-transform: translateX(-15px);
@@ -337,28 +337,28 @@ input[type=number] {
   margin-top: 15px;
 }
 
-#app form .up .middle .left .input label .flxLeft span.m_span {
+#scanapp form .up .middle .left .input label .flxLeft span.m_span {
   display: none;
 }
 
-#app form .up .middle .left .input label .flxRight {
+#scanapp form .up .middle .left .input label .flxRight {
   position: relative;
 }
 
-#app form .up .middle .left .input label .flxRight select:nth-of-type(1) {
+#scanapp form .up .middle .left .input label .flxRight select:nth-of-type(1) {
   margin-left: 5px;
 }
 
-#app form .up .middle .left .input label .flxRight .spanMv {
+#scanapp form .up .middle .left .input label .flxRight .spanMv {
   position: absolute;
 }
 
-#app form .up .middle .left .input label .flxRight .spanMv:nth-of-type(1) {
+#scanapp form .up .middle .left .input label .flxRight .spanMv:nth-of-type(1) {
   -webkit-transform: translateX(-20px);
           transform: translateX(-20px);
 }
 
-#app form .up .middle .left .input label .flxRight select {
+#scanapp form .up .middle .left .input label .flxRight select {
   font-size: 22px;
   padding: 10px;
   -webkit-transform: translateY(-15px);
@@ -367,11 +367,11 @@ input[type=number] {
   outline: none;
 }
 
-#app form .up .middle .left .input label .flxRight select:nth-of-type(1) {
+#scanapp form .up .middle .left .input label .flxRight select:nth-of-type(1) {
   margin-right: 20px;
 }
 
-#app form .up .middle .left .input label input {
+#scanapp form .up .middle .left .input label input {
   width: 45%;
   outline: none;
   border: 2px solid #999;
@@ -383,22 +383,22 @@ input[type=number] {
   margin-left: 5px;
 }
 
-#app form .up .middle .right {
+#scanapp form .up .middle .right {
   width: 33%;
 }
 
-#app form .up .middle .right img {
+#scanapp form .up .middle .right img {
   width: 100%;
 }
 
-#app form .up .chkbox {
+#scanapp form .up .chkbox {
   border: 1px solid transparent;
   margin: 0 auto;
   width: 50%;
   margin-top: 40px;
 }
 
-#app form .up .chkbox label {
+#scanapp form .up .chkbox label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,30 +406,30 @@ input[type=number] {
   cursor: pointer;
 }
 
-#app form .up .chkbox label input[type="checkbox"] {
+#scanapp form .up .chkbox label input[type="checkbox"] {
   zoom: 1.5;
 }
 
-#app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+#scanapp form .up .chkbox label .chkbox2 p:nth-of-type(1) {
   font-size: 22px;
   font-weight: bold;
 }
 
-#app form .up .chkbox .chkbox2:nth-of-type(1) span {
+#scanapp form .up .chkbox .chkbox2:nth-of-type(1) span {
   text-decoration: underline;
   color: #c29138;
 }
 
-#app form .down {
+#scanapp form .down {
   margin-top: 60px;
 }
 
-#app form .down .btnRow {
+#scanapp form .down .btnRow {
   text-align: center;
   margin-bottom: 80px;
 }
 
-#app form .down .btnRow button {
+#scanapp form .down .btnRow button {
   width: 318px;
   height: 80px;
   margin-right: 80px;
@@ -441,16 +441,16 @@ input[type=number] {
   cursor: pointer;
 }
 
-#app form .down .btnRow button img {
+#scanapp form .down .btnRow button img {
   width: 100%;
 }
 
-#app form .down .btnRow button img:active {
+#scanapp form .down .btnRow button img:active {
   opacity: .8;
 }
 
 @media all and (max-width: 1600px) {
-  #app form {
+  #scanapp form {
     background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -459,169 +459,169 @@ input[type=number] {
     min-height: 100%;
     padding-bottom: 59px;
   }
-  #app form .up,
-  #app form .down {
+  #scanapp form .up,
+  #scanapp form .down {
     width: 900px;
   }
-  #app form .banner {
+  #scanapp form .banner {
     height: 310px;
   }
-  #app form .up .middle .left {
+  #scanapp form .up .middle .left {
     width: 72%;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) {
     font-size: 24px;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) select {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) select {
     margin-right: 8px;
     margin-left: 8px;
   }
-  #app form .up .middle .left .input label .flxLeft {
+  #scanapp form .up .middle .left .input label .flxLeft {
     width: 40%;
   }
-  #app form .up .middle .left .input label .flxLeft span {
+  #scanapp form .up .middle .left .input label .flxLeft span {
     font-size: 33px;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan {
     -webkit-transform: translateX(-9px);
             transform: translateX(-9px);
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
     width: 255px;
     white-space: nowrap;
   }
-  #app form .up .middle .left .input label .flxRight select {
+  #scanapp form .up .middle .left .input label .flxRight select {
     font-size: 24px;
   }
-  #app form .up .middle .left .input label input {
+  #scanapp form .up .middle .left .input label input {
     font-size: 30px;
   }
-  #app form .up .middle .right img {
+  #scanapp form .up .middle .right img {
     -webkit-transform: translateX(30px);
             transform: translateX(30px);
   }
-  #app form .up .chkbox {
+  #scanapp form .up .chkbox {
     width: 50%;
     margin-top: 80px;
     border: unset;
   }
-  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+  #scanapp form .up .chkbox label .chkbox2 p:nth-of-type(1) {
     font-weight: 400;
   }
 }
 
 @media all and (max-width: 1200px) {
-  #app form {
+  #scanapp form {
     background-position: left top, left bottom 54px;
     padding-bottom: 59px;
   }
-  #app form .up,
-  #app form .down {
+  #scanapp form .up,
+  #scanapp form .down {
     width: 800px;
   }
-  #app form .banner {
+  #scanapp form .banner {
     height: 280px;
   }
-  #app form .banner img.text_fill {
+  #scanapp form .banner img.text_fill {
     width: 80%;
   }
-  #app form .up .middle .left {
+  #scanapp form .up .middle .left {
     width: 80%;
   }
-  #app form .up .middle .left .input label .flxLeft {
+  #scanapp form .up .middle .left .input label .flxLeft {
     width: 40%;
   }
-  #app form .up .middle .left .input label .flxLeft span {
+  #scanapp form .up .middle .left .input label .flxLeft span {
     font-size: 30px;
     -webkit-transform: translateY(-2px);
             transform: translateY(-2px);
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan {
     font-size: 18px;
     margin-top: 10px;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
     -webkit-transform: translateX(-36px);
             transform: translateX(-36px);
   }
-  #app form .up .middle .left .input label .flxRight select {
+  #scanapp form .up .middle .left .input label .flxRight select {
     font-size: 22px;
     padding: 9px;
   }
-  #app form .up .middle .left .input label input {
+  #scanapp form .up .middle .left .input label input {
     font-size: 24px;
     padding: 9px;
   }
-  #app form .up .middle .right img {
+  #scanapp form .up .middle .right img {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
   }
-  #app form .up .chkbox {
+  #scanapp form .up .chkbox {
     margin-top: 60px;
   }
-  #app form .up .chkbox label input[type="checkbox"] {
+  #scanapp form .up .chkbox label input[type="checkbox"] {
     margin-left: 10px;
   }
-  #app form .down .btnRow {
+  #scanapp form .down .btnRow {
     margin-bottom: 80px;
   }
-  #app form .down .btnRow button {
+  #scanapp form .down .btnRow button {
     width: 286px;
     height: 72px;
     margin-right: 140px;
   }
-  #app form .down .btnRow button:nth-of-type(2) {
+  #scanapp form .down .btnRow button:nth-of-type(2) {
     margin-right: 0px;
   }
 }
 
 @media all and (max-width: 992px) {
-  #app form {
+  #scanapp form {
     background-position: left top, left bottom 54px;
     padding-bottom: 59px;
   }
-  #app form .up,
-  #app form .down {
+  #scanapp form .up,
+  #scanapp form .down {
     width: 720px;
   }
-  #app form .banner {
+  #scanapp form .banner {
     height: 263px;
   }
-  #app form .banner img.text_fill {
+  #scanapp form .banner img.text_fill {
     bottom: 35px;
   }
-  #app form .up .middle .left .input label {
+  #scanapp form .up .middle .left .input label {
     margin-top: 60px;
   }
-  #app form .up .middle .left .input label .flxLeft span {
+  #scanapp form .up .middle .left .input label .flxLeft span {
     font-size: 28px;
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px);
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan {
     font-size: 16px;
     margin-top: 2px;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
     -webkit-transform: translateX(-57px);
             transform: translateX(-57px);
   }
-  #app form .up .middle .left .input label .flxRight select {
+  #scanapp form .up .middle .left .input label .flxRight select {
     font-size: 20px;
     padding: 8px;
   }
-  #app form .up .middle .left .input label input {
+  #scanapp form .up .middle .left .input label input {
     font-size: 22px;
     padding: 7px;
   }
-  #app form .up .middle .right img {
+  #scanapp form .up .middle .right img {
     -webkit-transform: translateX(20px);
             transform: translateX(20px);
   }
-  #app form .down .btnRow {
+  #scanapp form .down .btnRow {
     margin-bottom: 75px;
   }
-  #app form .down .btnRow button {
+  #scanapp form .down .btnRow button {
     width: 257px;
     height: 64px;
     margin-right: 130px;
@@ -629,52 +629,52 @@ input[type=number] {
 }
 
 @media all and (max-width: 768px) {
-  #app form {
+  #scanapp form {
     background-position: left top, left bottom 96px;
     padding-bottom: 128px;
   }
-  #app form .up,
-  #app form .down {
+  #scanapp form .up,
+  #scanapp form .down {
     width: 680px;
   }
-  #app form .banner {
+  #scanapp form .banner {
     height: 180px;
   }
-  #app form .banner img.text_fill {
+  #scanapp form .banner img.text_fill {
     bottom: 25px;
   }
-  #app form .up .middle .left .input label {
+  #scanapp form .up .middle .left .input label {
     margin-top: 50px;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
     -webkit-transform: translateX(-70px);
             transform: translateX(-70px);
   }
-  #app form .up .middle .right img {
+  #scanapp form .up .middle .right img {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
   }
-  #app form .up .chkbox {
+  #scanapp form .up .chkbox {
     width: 55%;
     margin-top: 30px;
   }
-  #app form .up .chkbox label {
+  #scanapp form .up .chkbox label {
     margin-top: 30px;
   }
-  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+  #scanapp form .up .chkbox label .chkbox2 p:nth-of-type(1) {
     font-size: 18px;
   }
 }
 
 @media all and (max-width: 576px) {
-  #app form .banner {
+  #scanapp form .banner {
     height: 155px;
     position: relative;
   }
-  #app form .banner img.text_fill {
+  #scanapp form .banner img.text_fill {
     display: none;
   }
-  #app form .banner img#m_text_fill {
+  #scanapp form .banner img#m_text_fill {
     position: absolute;
     display: block;
     width: 90%;
@@ -683,14 +683,14 @@ input[type=number] {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  #app form .up,
-  #app form .down {
+  #scanapp form .up,
+  #scanapp form .down {
     width: 80%;
   }
-  #app form .up {
+  #scanapp form .up {
     margin: 0 auto;
   }
-  #app form .up .scan {
+  #scanapp form .up .scan {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -698,29 +698,29 @@ input[type=number] {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #app form .up .scan .scanL {
+  #scanapp form .up .scan .scanL {
     margin: 0 auto;
     cursor: pointer;
   }
-  #app form .up .scan .scanL img {
+  #scanapp form .up .scan .scanL img {
     width: 120px;
   }
-  #app form .up .scan .scanR {
+  #scanapp form .up .scan .scanR {
     width: 70%;
     font-size: 24px;
     color: #6b1c1f;
   }
-  #app form .up .scan .scanR p {
+  #scanapp form .up .scan .scanR p {
     text-align: center;
     line-height: 36px;
   }
-  #app form .up .scan .scanR h4 {
+  #scanapp form .up .scan .scanR h4 {
     text-align: center;
     margin-top: 8px;
     color: #c29138;
     text-decoration: underline;
   }
-  #app form .up .bill_m {
+  #scanapp form .up .bill_m {
     width: 100%;
     height: 100%;
     background-color: rgba(53, 53, 53, 0.589);
@@ -731,44 +731,44 @@ input[type=number] {
     -webkit-transition: .1s;
     transition: .1s;
   }
-  #app form .up .bill_m img.billShow {
+  #scanapp form .up .bill_m img.billShow {
     display: block;
     margin: 30px auto 0 auto;
     width: 60%;
   }
-  #app form .up .bill_m img.closeBtn {
+  #scanapp form .up .bill_m img.closeBtn {
     display: block;
     position: absolute;
     width: 10%;
     top: 20px;
     right: 20%;
   }
-  #app form .up .middle {
+  #scanapp form .up .middle {
     margin-top: 10px;
   }
-  #app form .up .middle .left {
+  #scanapp form .up .middle .left {
     width: 100%;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 22px;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) .flxLeft {
     width: 27%;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
     margin-left: 12%;
     -webkit-transform: translateY(1px);
             transform: translateY(1px);
   }
-  #app form .up .middle .left .input label:nth-of-type(1) select {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) select {
     margin-right: 5px;
     margin-left: 5px;
     background-color: white;
   }
-  #app form .up .middle .left .input label {
+  #scanapp form .up .middle .left .input label {
     display: block;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -777,42 +777,42 @@ input[type=number] {
             align-items: flex-start;
     margin-top: 40px;
   }
-  #app form .up .middle .left .input label .flxLeft {
+  #scanapp form .up .middle .left .input label .flxLeft {
     width: 100%;
     text-align: left;
   }
-  #app form .up .middle .left .input label .flxLeft span {
+  #scanapp form .up .middle .left .input label .flxLeft span {
     font-size: 24px;
     color: #6b1c1f;
     display: inline-block;
     margin-left: 2.5%;
   }
-  #app form .up .middle .left .input label .flxLeft span.m_span {
+  #scanapp form .up .middle .left .input label .flxLeft span.m_span {
     display: block;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan,
-  #app form .up .middle .left .input label .flxLeft span.m_span {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan,
+  #scanapp form .up .middle .left .input label .flxLeft span.m_span {
     font-size: 18px;
     color: black;
     margin-left: 14px;
     margin-top: 5px;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan {
     -webkit-transform: translateX(-1px);
             transform: translateX(-1px);
     margin-top: 0px;
   }
-  #app form .up .middle .left .input label .flxLeft span.m1_span {
+  #scanapp form .up .middle .left .input label .flxLeft span.m1_span {
     display: none;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-  #app form .up .middle .left .input label .flxRight select:nth-of-type(1) {
+  #scanapp form .up .middle .left .input label .flxRight select:nth-of-type(1) {
     margin-left: 5px;
   }
-  #app form .up .middle .left .input label .flxRight select {
+  #scanapp form .up .middle .left .input label .flxRight select {
     font-size: 18px;
     padding: 5px;
     -webkit-transform: translateY(-5px);
@@ -820,7 +820,7 @@ input[type=number] {
     border: 2px solid #999;
     outline: none;
   }
-  #app form .up .middle .left .input label input {
+  #scanapp form .up .middle .left .input label input {
     width: 90%;
     outline: none;
     border: 2px solid #999;
@@ -831,39 +831,39 @@ input[type=number] {
             transform: translateY(3px);
     margin-left: 12px;
   }
-  #app form .up .middle .right {
+  #scanapp form .up .middle .right {
     display: none;
   }
-  #app form .up .chkbox {
+  #scanapp form .up .chkbox {
     margin: 0 auto;
     width: 100%;
     margin-top: 40px;
   }
-  #app form .up .chkbox label {
+  #scanapp form .up .chkbox label {
     margin-top: 25px;
     cursor: pointer;
   }
-  #app form .up .chkbox label input[type="checkbox"] {
+  #scanapp form .up .chkbox label input[type="checkbox"] {
     zoom: 1;
     margin-left: 15px;
   }
-  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+  #scanapp form .up .chkbox label .chkbox2 p:nth-of-type(1) {
     font-size: 18px;
   }
-  #app form .up .chkbox label .chkbox2 p.secP {
+  #scanapp form .up .chkbox label .chkbox2 p.secP {
     font-size: 14px;
   }
-  #app form .down {
+  #scanapp form .down {
     margin-top: 35px;
     display: block;
   }
-  #app form .down .btnRow {
+  #scanapp form .down .btnRow {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-bottom: 45px;
     width: 100%;
   }
-  #app form .down .btnRow button {
+  #scanapp form .down .btnRow button {
     width: 191px;
     height: 46px;
     margin-right: 15%;
@@ -871,23 +871,23 @@ input[type=number] {
 }
 
 @media all and (max-width: 414px) {
-  #app form {
+  #scanapp form {
     background-position: left top, left bottom 116px;
   }
-  #app form .banner {
+  #scanapp form .banner {
     height: 125px;
   }
-  #app form .banner img.text_fill {
+  #scanapp form .banner img.text_fill {
     display: none;
   }
-  #app form .banner img#m_text_fill {
+  #scanapp form .banner img#m_text_fill {
     bottom: 20px;
   }
-  #app form .up {
+  #scanapp form .up {
     width: 85%;
     margin: 0 auto;
   }
-  #app form .up .scan {
+  #scanapp form .up .scan {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -895,72 +895,72 @@ input[type=number] {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #app form .up .scan .scanL {
+  #scanapp form .up .scan .scanL {
     margin: 0 auto;
     cursor: pointer;
   }
-  #app form .up .scan .scanL img {
+  #scanapp form .up .scan .scanL img {
     width: 120px;
   }
-  #app form .up .scan .scanR {
+  #scanapp form .up .scan .scanR {
     font-size: 22px;
   }
-  #app form .up .scan .scanR p {
+  #scanapp form .up .scan .scanR p {
     line-height: 26px;
     margin-top: 20px;
   }
-  #app form .up .middle {
+  #scanapp form .up .middle {
     margin-top: 0px;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) {
     font-size: 20px;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) .flxLeft {
     width: 35%;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
     margin-left: 5%;
     -webkit-transform: translateY(1px);
             transform: translateY(1px);
   }
-  #app form .up .middle .left .input label {
+  #scanapp form .up .middle .left .input label {
     margin-top: 35px;
   }
-  #app form .up .middle .left .input label .flxLeft span {
+  #scanapp form .up .middle .left .input label .flxLeft span {
     margin-left: 1.8%;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan,
-  #app form .up .middle .left .input label .flxLeft span.m_span {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan,
+  #scanapp form .up .middle .left .input label .flxLeft span.m_span {
     font-size: 15px;
     margin-left: 8px;
     margin-top: 2px;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan.nowrap {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-  #app form .up .middle .left .input label input {
+  #scanapp form .up .middle .left .input label input {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     margin-left: 9px;
     font-size: 20px;
   }
-  #app form .up .chkbox {
+  #scanapp form .up .chkbox {
     margin-top: 25px;
   }
-  #app form .up .chkbox label {
+  #scanapp form .up .chkbox label {
     margin-top: 18px;
   }
-  #app form .up .chkbox label input[type="checkbox"] {
+  #scanapp form .up .chkbox label input[type="checkbox"] {
     margin-left: 12px;
   }
-  #app form .down {
+  #scanapp form .down {
     width: 95%;
   }
-  #app form .down .btnRow {
+  #scanapp form .down .btnRow {
     margin-bottom: 35px;
   }
-  #app form .down .btnRow button {
+  #scanapp form .down .btnRow button {
     width: 171px;
     height: 41px;
     margin-right: 9%;
@@ -968,62 +968,62 @@ input[type=number] {
 }
 
 @media all and (max-width: 375px) {
-  #app form .banner {
+  #scanapp form .banner {
     height: 109px;
   }
-  #app form .banner img#m_text_fill {
+  #scanapp form .banner img#m_text_fill {
     bottom: 15px;
     width: 93%;
   }
-  #app form .up .scan .scanL img {
+  #scanapp form .up .scan .scanL img {
     width: 110px;
   }
-  #app form .up .scan .scanR {
+  #scanapp form .up .scan .scanR {
     font-size: 18px;
   }
-  #app form .up .scan .scanR p {
+  #scanapp form .up .scan .scanR p {
     line-height: 24px;
     margin-top: 20px;
   }
-  #app form .up .scan .scanR h4 {
+  #scanapp form .up .scan .scanR h4 {
     margin-top: 0px;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) {
     font-size: 18px;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
     margin-left: 9%;
     -webkit-transform: translateY(1px);
             transform: translateY(1px);
   }
-  #app form .up .middle .left .input label:nth-of-type(1) .flxLeft span.fstSpan {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) .flxLeft span.fstSpan {
     font-size: 20px;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) .flxRight select:nth-of-type(1) {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) .flxRight select:nth-of-type(1) {
     margin-left: -1px;
   }
-  #app form .up .middle .left .input label {
+  #scanapp form .up .middle .left .input label {
     margin-top: 25px;
   }
-  #app form .up .middle .left .input label .flxLeft span {
+  #scanapp form .up .middle .left .input label .flxLeft span {
     margin-left: 2.8%;
     font-size: 20px;
     -webkit-transform: translateY(2px);
             transform: translateY(2px);
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan,
-  #app form .up .middle .left .input label .flxLeft span.m_span {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan,
+  #scanapp form .up .middle .left .input label .flxLeft span.m_span {
     font-size: 14px;
     margin-left: 10px;
     margin-top: 0px;
   }
-  #app form .up .middle .left .input label input {
+  #scanapp form .up .middle .left .input label input {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     margin-left: 9px;
     font-size: 20px;
   }
-  #app form .down .btnRow button {
+  #scanapp form .down .btnRow button {
     width: 145px;
     height: 35px;
     margin-right: 11%;
@@ -1031,266 +1031,44 @@ input[type=number] {
 }
 
 @media all and (max-width: 320px) {
-  #app form {
+  #scanapp form {
     background-position: left top, left bottom 0px;
     padding-bottom: 10px;
   }
-  #app form .banner {
+  #scanapp form .banner {
     height: 94px;
   }
-  #app form .up .scan .scanL img {
+  #scanapp form .up .scan .scanL img {
     width: 100px;
   }
-  #app form .up .scan .scanR {
+  #scanapp form .up .scan .scanR {
     font-size: 17px;
   }
-  #app form .up .middle .left .input label:nth-of-type(1) .flxRight {
+  #scanapp form .up .middle .left .input label:nth-of-type(1) .flxRight {
     left: 10px;
     top: 10px;
   }
-  #app form .up .middle .left .input label {
+  #scanapp form .up .middle .left .input label {
     margin-top: 25px;
   }
-  #app form .up .middle .left .input label .flxLeft span.secSpan,
-  #app form .up .middle .left .input label .flxLeft span.m_span {
+  #scanapp form .up .middle .left .input label .flxLeft span.secSpan,
+  #scanapp form .up .middle .left .input label .flxLeft span.m_span {
     font-size: 12px;
   }
-  #app form .up .chkbox label .chkbox2 p:nth-of-type(1) {
+  #scanapp form .up .chkbox label .chkbox2 p:nth-of-type(1) {
     font-size: 16px;
   }
-  #app form .up .chkbox label .chkbox2 p.secP {
+  #scanapp form .up .chkbox label .chkbox2 p.secP {
     font-size: 12px;
   }
-  #app form .down .btnRow button {
+  #scanapp form .down .btnRow button {
     width: 130px;
     height: 32px;
     margin-right: 9%;
   }
 }
 
-#app .chkpage {
-  font-family: "LiHei", sans-serif;
-  background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
-  background-repeat: no-repeat;
-  background-position: left bottom 0px;
-  background-color: #fbf3dc;
-  padding-bottom: 50px;
-}
-
-#app .chkpage .banner {
-  height: 320px;
-  position: relative;
-}
-
-#app .chkpage .banner img.text_fill {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 50px;
-  width: 65%;
-}
-
-#app .chkpage .banner img:nth-of-type(2) {
-  display: none;
-}
-
-#app .chkpage main {
-  max-width: 1052px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid transparent;
-}
-
-#app .chkpage main .wordBox {
-  width: 60%;
-  border: 1px solid transparent;
-}
-
-#app .chkpage main .wordBox .wordItem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 60px;
-}
-
-#app .chkpage main .wordBox .wordItem .flxLeft {
-  width: 40%;
-  text-align: right;
-  font-size: 38px;
-  color: #6b1c1f;
-}
-
-#app .chkpage main .wordBox .wordItem .flxRight {
-  width: 59%;
-  font-size: 38px;
-}
-
-#app .chkpage main .imgBox {
-  width: 39%;
-  border: 1px solid transparent;
-}
-
-#app .chkpage main .imgBox img {
-  max-width: 100%;
-}
-
-#app .chkpage .down {
-  width: 55%;
-  margin: 60px auto 0 auto;
-}
-
-#app .chkpage .down .btnRow {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-#app .chkpage .down .btnRow button {
-  width: 318px;
-  height: 80px;
-  margin-right: 80px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  outline: unset;
-  border: unset;
-  cursor: pointer;
-}
-
-#app .chkpage .down .btnRow button img {
-  width: 100%;
-}
-
-#app .chkpage .down .btnRow button img:active {
-  opacity: .8;
-}
-
-@media all and (max-width: 992px) {
-  #app .chkpage .banner {
-    height: 180px !important;
-  }
-  #app .chkpage .banner img.text_fill {
-    bottom: 25px !important;
-    width: 80% !important;
-  }
-  #app .chkpage main {
-    max-width: 685px;
-  }
-  #app .chkpage main .wordBox .wordItem .flxLeft {
-    width: 44%;
-    font-size: 28px;
-  }
-  #app .chkpage main .wordBox .wordItem .flxRight {
-    font-size: 28px;
-  }
-  #app .chkpage main .imgBox {
-    width: 39%;
-  }
-  #app .chkpage main .imgBox img {
-    max-width: 100%;
-    margin-top: 63px;
-  }
-  #app .chkpage .down {
-    width: 80%;
-    margin-bottom: 54px;
-  }
-  #app .chkpage .down .btnRow button {
-    width: 257px !important;
-    height: 64px !important;
-  }
-}
-
-@media all and (max-width: 576px) {
-  #app .chkpage {
-    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
-    background-position: left top, left bottom !important;
-    background-repeat: no-repeat, no-repeat !important;
-    background-size: contain !important;
-    padding-bottom: 50px;
-    min-height: 75vh;
-  }
-  #app .chkpage .banner {
-    height: 147px !important;
-    position: relative;
-  }
-  #app .chkpage .banner img.text_fill {
-    display: none;
-  }
-  #app .chkpage .banner img:nth-of-type(2) {
-    display: block;
-    max-width: 90%;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    bottom: 10px;
-  }
-  #app .chkpage main {
-    display: block;
-  }
-  #app .chkpage main .wordBox {
-    width: 90%;
-    margin: 0 auto;
-  }
-  #app .chkpage main .wordBox .wordItem:nth-of-type(1) {
-    margin-top: 5px;
-  }
-  #app .chkpage main .wordBox .wordItem {
-    margin-top: 20px;
-  }
-  #app .chkpage main .wordBox .wordItem .flxLeft,
-  #app .chkpage main .wordBox .wordItem .flxRight {
-    font-size: 20px;
-  }
-  #app .chkpage main .wordBox .wordItem .flxLeft {
-    width: 48%;
-    margin-right: 7px;
-  }
-  #app .chkpage main .imgBox {
-    display: none;
-  }
-  #app .chkpage .down {
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 106px;
-  }
-  #app .chkpage .down .btnRow {
-    width: 90% !important;
-  }
-  #app .chkpage .down .btnRow button {
-    height: 33px !important;
-    margin: 25px auto 15px auto;
-  }
-}
-
-@media all and (max-width: 414px) {
-  #app .chkpage {
-    min-height: 78vh;
-  }
-}
-
-@media all and (max-width: 375px) {
-  #app .chkpage {
-    min-height: 78vh;
-  }
-  #app .chkpage .banner {
-    height: 100px !important;
-    position: relative;
-  }
-  #app .chkpage .down .btnRow {
-    width: 100% !important;
-  }
-}
-
-@media all and (max-width: 320px) {
-  #app .chkpage .down .btnRow {
-    width: 108% !important;
-  }
-}
-
-#app .winpage {
+#winapp .winpage {
   font-family: "LiHei", sans-serif;
   background-image: url(../../imgs/x2/blur_bg_up.jpg) !important;
   background-repeat: no-repeat;
@@ -1299,13 +1077,13 @@ input[type=number] {
   background-size: contain;
 }
 
-#app .winpage .banner {
+#winapp .winpage .banner {
   border: 1px solid transparent;
   height: 250px;
   position: relative;
 }
 
-#app .winpage .banner img.text_fill {
+#winapp .winpage .banner img.text_fill {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1314,11 +1092,11 @@ input[type=number] {
   width: 80% !important;
 }
 
-#app .winpage .banner img.m_text_fill {
+#winapp .winpage .banner img.m_text_fill {
   display: none;
 }
 
-#app .winpage .main_bg {
+#winapp .winpage .main_bg {
   width: 65%;
   border: 1px solid transparent;
   margin: 0 auto;
@@ -1329,7 +1107,7 @@ input[type=number] {
   margin-bottom: 110px;
 }
 
-#app .winpage .main_bg main {
+#winapp .winpage .main_bg main {
   width: 70%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1337,21 +1115,21 @@ input[type=number] {
   margin: 100px auto 40px auto;
 }
 
-#app .winpage .main_bg main img {
+#winapp .winpage .main_bg main img {
   max-width: 100%;
 }
 
-#app .winpage .main_bg .down {
+#winapp .winpage .main_bg .down {
   margin-top: 47px;
   margin-bottom: 320px;
   width: 100%;
 }
 
-#app .winpage .main_bg .down .btnRow {
+#winapp .winpage .main_bg .down .btnRow {
   width: 100%;
 }
 
-#app .winpage .main_bg .down .btnRow button {
+#winapp .winpage .main_bg .down .btnRow button {
   display: block;
   margin: 0px auto 100px auto;
   width: 318px;
@@ -1365,15 +1143,23 @@ input[type=number] {
   cursor: pointer;
 }
 
-#app .winpage .main_bg .down .btnRow button:nth-of-type(1) {
+#winapp .winpage .main_bg .down .btnRow button img {
+  width: 100%;
+}
+
+#winapp .winpage .main_bg .down .btnRow button img:active {
+  opacity: .8;
+}
+
+#winapp .winpage .main_bg .down .btnRow button:nth-of-type(1) {
   margin-right: 6%;
 }
 
-#app .winpage .main_bg .down .btnRow button:nth-of-type(2) {
+#winapp .winpage .main_bg .down .btnRow button:nth-of-type(2) {
   margin-left: 6%;
 }
 
-#app .winpage .showAwards {
+#winapp .winpage .showAwards {
   width: 100%;
   height: 100%;
   background-color: rgba(53, 53, 53, 0.589);
@@ -1385,33 +1171,33 @@ input[type=number] {
   transition: .1s;
 }
 
-#app .winpage .showAwards .wrap {
+#winapp .winpage .showAwards .wrap {
   width: 67%;
   margin: 0 auto;
 }
 
-#app .winpage .showAwards .wrap header {
+#winapp .winpage .showAwards .wrap header {
   margin-top: 50px;
 }
 
-#app .winpage .showAwards .wrap header .fullHeader {
+#winapp .winpage .showAwards .wrap header .fullHeader {
   max-width: 90%;
   max-height: 100%;
   top: 44%;
 }
 
-#app .winpage .showAwards .wrap .banner {
+#winapp .winpage .showAwards .wrap .banner {
   height: 152px;
   position: relative;
   background-color: white;
   border: unset;
 }
 
-#app .winpage .showAwards .wrap .banner.part2 {
+#winapp .winpage .showAwards .wrap .banner.part2 {
   height: 120px;
 }
 
-#app .winpage .showAwards .wrap .wordBox {
+#winapp .winpage .showAwards .wrap .wordBox {
   width: 100%;
   height: 450px;
   background-color: white;
@@ -1419,21 +1205,21 @@ input[type=number] {
   padding: 0px 50px 50px 50px;
 }
 
-#app .winpage .showAwards .wrap .wordBox h6 {
+#winapp .winpage .showAwards .wrap .wordBox h6 {
   color: #6b1c1f;
   font-weight: bold;
 }
 
-#app .winpage .showAwards .wrap .wordBox p.yellow {
+#winapp .winpage .showAwards .wrap .wordBox p.yellow {
   color: #c29138;
   font-weight: bold;
 }
 
-#app .winpage .showAwards .wrap .wordBox p.item {
+#winapp .winpage .showAwards .wrap .wordBox p.item {
   margin-top: 20px;
 }
 
-#app .winpage .showAwards .wrap .picBox {
+#winapp .winpage .showAwards .wrap .picBox {
   width: 100%;
   text-align: center;
   height: 450px;
@@ -1442,12 +1228,12 @@ input[type=number] {
   padding-bottom: 50px;
 }
 
-#app .winpage .showAwards .wrap .picBox img {
+#winapp .winpage .showAwards .wrap .picBox img {
   width: 80%;
 }
 
-#app .winpage .showAwards #btn_close,
-#app .winpage .showAwards #btn_close2 {
+#winapp .winpage .showAwards #btn_close,
+#winapp .winpage .showAwards #btn_close2 {
   position: absolute;
   cursor: pointer;
   top: 28px;
@@ -1456,26 +1242,26 @@ input[type=number] {
 }
 
 @media all and (max-width: 1426px) {
-  #app .winpage {
+  #winapp .winpage {
     background-position: left top 21%;
   }
 }
 
 @media all and (max-width: 1418px) {
-  #app .winpage {
+  #winapp .winpage {
     background-position: left top 18%;
   }
 }
 
 @media all and (max-width: 1200px) {
-  #app .winpage {
+  #winapp .winpage {
     background-position: left top 18%;
   }
-  #app .winpage .main_bg .down {
+  #winapp .winpage .main_bg .down {
     margin-top: 40px;
     margin-bottom: 150px;
   }
-  #app .winpage .main_bg .down .btnRow button {
+  #winapp .winpage .main_bg .down .btnRow button {
     margin: 0px auto 100px auto;
     width: 257px !important;
     height: 64px !important;
@@ -1483,44 +1269,44 @@ input[type=number] {
 }
 
 @media all and (max-width: 1190px) {
-  #app .winpage {
+  #winapp .winpage {
     background-position: left top 22%;
   }
 }
 
 @media all and (max-width: 992px) {
-  #app .winpage {
+  #winapp .winpage {
     background-position: left top 14%;
   }
-  #app .winpage .main_bg .down {
+  #winapp .winpage .main_bg .down {
     margin-bottom: 196px;
   }
-  #app .winpage .main_bg .down .btnRow button {
+  #winapp .winpage .main_bg .down .btnRow button {
     width: 257px;
     height: 64px;
   }
 }
 
 @media all and (max-width: 768px) {
-  #app .winpage {
+  #winapp .winpage {
     background-position: left top 14%;
   }
-  #app .winpage .banner {
+  #winapp .winpage .banner {
     height: 152px !important;
   }
-  #app .winpage .main_bg main {
+  #winapp .winpage .main_bg main {
     margin: 50px auto 40px auto;
   }
-  #app .winpage .main_bg .down {
+  #winapp .winpage .main_bg .down {
     margin-bottom: 150px;
   }
 }
 
 @media all and (max-width: 576px) {
-  #app {
+  #winapp {
     background-image: unset !important;
   }
-  #app .winpage {
+  #winapp .winpage {
     position: relative;
     background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
     background-position: left top 87px, left bottom 0px !important;
@@ -1528,36 +1314,36 @@ input[type=number] {
     background-size: contain !important;
     min-height: 100vh;
   }
-  #app .winpage .banner {
+  #winapp .winpage .banner {
     height: 100px !important;
   }
-  #app .winpage .banner img.text_fill {
+  #winapp .winpage .banner img.text_fill {
     display: none;
   }
-  #app .winpage .banner img.m_text_fill {
+  #winapp .winpage .banner img.m_text_fill {
     display: block;
     width: 80% !important;
     margin: 60px auto 0px auto;
   }
-  #app .winpage .main_bg {
+  #winapp .winpage .main_bg {
     width: 100%;
     background-image: url(../../imgs/mobile/m_congratulations_text.png);
     background-size: 88%;
     min-height: 81vh;
   }
-  #app .winpage .main_bg main {
+  #winapp .winpage .main_bg main {
     width: 65%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 100px auto 0px auto;
   }
-  #app .winpage .main_bg main img {
+  #winapp .winpage .main_bg main img {
     max-width: 95%;
     margin: 0 auto;
     display: block;
   }
-  #app .winpage .main_bg .down {
+  #winapp .winpage .main_bg .down {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -1565,75 +1351,75 @@ input[type=number] {
     position: absolute;
     bottom: -33px;
   }
-  #app .winpage .main_bg .down .btnRow {
+  #winapp .winpage .main_bg .down .btnRow {
     width: 100%;
   }
-  #app .winpage .main_bg .down .btnRow button {
+  #winapp .winpage .main_bg .down .btnRow button {
     margin: 0px auto 0px auto;
     cursor: pointer;
   }
 }
 
 @media all and (max-width: 400px) {
-  #app .winpage {
+  #winapp .winpage {
     background-position: left top 75px, left bottom 0px !important;
   }
 }
 
 @media all and (max-width: 320px) {
-  #app {
+  #winapp {
     background: unset !important;
   }
-  #app .winpage {
+  #winapp .winpage {
     background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
     background-position: left top 67px, left bottom 0px !important;
     background-repeat: no-repeat, no-repeat !important;
     background-size: contain !important;
     min-height: 100vh;
   }
-  #app .winpage .banner {
+  #winapp .winpage .banner {
     height: 100px !important;
   }
-  #app .winpage .banner img.text_fill {
+  #winapp .winpage .banner img.text_fill {
     display: none;
   }
-  #app .winpage .banner img.m_text_fill {
+  #winapp .winpage .banner img.m_text_fill {
     display: block;
     width: 80% !important;
     margin: 60px auto 0px auto;
   }
-  #app .winpage .main_bg {
+  #winapp .winpage .main_bg {
     width: 100%;
     background-image: url(../../imgs/mobile/m_congratulations_text.png);
     background-size: 88%;
     min-height: 71vh;
     margin-bottom: 0px;
   }
-  #app .winpage .main_bg main {
+  #winapp .winpage .main_bg main {
     width: 65%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 80px auto 0px auto;
   }
-  #app .winpage .main_bg main img {
+  #winapp .winpage .main_bg main img {
     max-width: 95%;
     margin: 0 auto;
     display: block;
   }
-  #app .winpage .main_bg .down {
+  #winapp .winpage .main_bg .down {
     bottom: 70px;
   }
-  #app .winpage .main_bg .down .btnRow {
+  #winapp .winpage .main_bg .down .btnRow {
     width: 100%;
   }
-  #app .winpage .main_bg .down .btnRow button {
+  #winapp .winpage .main_bg .down .btnRow button {
     margin: 0px auto 0px auto;
     cursor: pointer;
   }
 }
 
-#app .losepage {
+#loseapp .losepage {
   font-family: "LiHei", sans-serif;
   background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
   background-size: contain;
@@ -1643,12 +1429,12 @@ input[type=number] {
   padding-bottom: 80px;
 }
 
-#app .losepage .banner {
+#loseapp .losepage .banner {
   height: 250px;
   position: relative;
 }
 
-#app .losepage .banner img.text_fill {
+#loseapp .losepage .banner img.text_fill {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1657,23 +1443,23 @@ input[type=number] {
   width: 80%;
 }
 
-#app .losepage .banner img.m_text_fill {
+#loseapp .losepage .banner img.m_text_fill {
   display: none;
 }
 
-#app .losepage .allcontent {
+#loseapp .losepage .allcontent {
   text-align: center;
 }
 
-#app .losepage .allcontent img {
+#loseapp .losepage .allcontent img {
   max-width: 65%;
 }
 
-#app .losepage .allcontent img.m_award {
+#loseapp .losepage .allcontent img.m_award {
   display: none;
 }
 
-#app .losepage .btnRow button {
+#loseapp .losepage .btnRow button {
   display: block;
   margin: 40px auto 60px auto;
   width: 318px;
@@ -1686,43 +1472,43 @@ input[type=number] {
   cursor: pointer;
 }
 
-#app .losepage .btnRow button img {
+#loseapp .losepage .btnRow button img {
   width: 100%;
 }
 
-#app .losepage .btnRow button img:active {
+#loseapp .losepage .btnRow button img:active {
   opacity: .8;
 }
 
 @media all and (max-width: 1200px) {
-  #app .losepage .btnRow button {
+  #loseapp .losepage .btnRow button {
     width: 286px;
     height: 72px;
   }
 }
 
 @media all and (max-width: 992px) {
-  #app .losepage .btnRow button {
+  #loseapp .losepage .btnRow button {
     width: 257px;
     height: 64px;
   }
 }
 
 @media all and (max-width: 768px) {
-  #app .losepage .banner {
+  #loseapp .losepage .banner {
     height: 180px !important;
   }
-  #app .losepage .banner img.text_fill {
+  #loseapp .losepage .banner img.text_fill {
     bottom: 25px;
   }
-  #app .losepage .btnRow button {
+  #loseapp .losepage .btnRow button {
     width: 257px;
     height: 64px;
   }
 }
 
 @media all and (max-width: 576px) {
-  #app .losepage {
+  #loseapp .losepage {
     background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg);
     background-position: left top, left bottom 65px;
     background-color: #fbf3dc;
@@ -1730,10 +1516,10 @@ input[type=number] {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
-  #app .losepage .banner {
+  #loseapp .losepage .banner {
     height: 155px !important;
   }
-  #app .losepage .banner img.m_text_fill {
+  #loseapp .losepage .banner img.m_text_fill {
     position: absolute;
     bottom: 25px;
     left: 50%;
@@ -1741,112 +1527,112 @@ input[type=number] {
             transform: translateX(-50%);
     max-width: 88%;
   }
-  #app .losepage .allcontent img {
+  #loseapp .losepage .allcontent img {
     max-width: 80%;
   }
-  #app .losepage .allcontent img:nth-of-type(1) {
+  #loseapp .losepage .allcontent img:nth-of-type(1) {
     display: none;
   }
-  #app .losepage .allcontent img.m_award {
+  #loseapp .losepage .allcontent img.m_award {
     display: block;
     margin: 0 auto;
   }
-  #app .losepage .btnRow button {
+  #loseapp .losepage .btnRow button {
     width: 191px;
     height: 46px;
   }
 }
 
 @media all and (max-width: 414px) {
-  #app .losepage .banner {
+  #loseapp .losepage .banner {
     height: 125px !important;
   }
-  #app .losepage .btnRow button {
+  #loseapp .losepage .btnRow button {
     width: 171px;
     height: 41px;
   }
 }
 
 @media all and (max-width: 375px) {
-  #app .losepage .banner {
+  #loseapp .losepage .banner {
     height: 109px !important;
   }
-  #app .losepage .btnRow button {
+  #loseapp .losepage .btnRow button {
     width: 145px;
     height: 35px;
   }
 }
 
 @media all and (max-width: 320px) {
-  #app .losepage {
+  #loseapp .losepage {
     background-position: left top, left bottom 0px;
     padding-bottom: 2px;
   }
-  #app .losepage .banner {
+  #loseapp .losepage .banner {
     height: 94px !important;
   }
-  #app .losepage .btnRow button {
+  #loseapp .losepage .btnRow button {
     width: 130px;
     height: 32px;
   }
 }
 
-#app {
+#indexapp {
   background-image: url(../../imgs/1016_landing/landing_bg.jpg) !important;
   background-position: bottom left -400px;
   background-size: cover;
   padding-bottom: 120px;
 }
 
-#app .index_m_header {
+#indexapp .landing .index_m_header {
   display: none;
   position: relative;
 }
 
-#app .index_m_header img:nth-of-type(1) {
+#indexapp .landing .index_m_header img:nth-of-type(1) {
   max-width: 100%;
 }
 
-#app .allContent {
+#indexapp .landing .allContent {
   text-align: center;
   position: relative;
 }
 
-#app .allContent img.d_bg {
+#indexapp .landing .allContent img.d_bg {
   max-width: 90%;
   margin-top: 20px;
 }
 
-#app .allContent img.m_bg {
+#indexapp .landing .allContent img.m_bg {
   display: none;
 }
 
-#app .allContent #btndetail1,
-#app .allContent #btndetail2 {
+#indexapp .landing .allContent #btndetail1,
+#indexapp .landing .allContent #btndetail2 {
   position: absolute;
   width: 150px;
   bottom: 256px;
   cursor: pointer;
 }
 
-#app .allContent #btndetail1:active,
-#app .allContent #btndetail2:active {
+#indexapp .landing .allContent #btndetail1:active,
+#indexapp .landing .allContent #btndetail2:active {
   opacity: .8;
 }
 
-#app .allContent #btndetail1 {
+#indexapp .landing .allContent #btndetail1 {
   left: 19%;
 }
 
-#app .allContent #btndetail2 {
+#indexapp .landing .allContent #btndetail2 {
   left: 46%;
 }
 
-#app .allContent .m_btnRow {
+#indexapp .landing .allContent .m_btnRow {
   display: none;
 }
 
-#app .down .btnRow {
+#indexapp .landing .down .btnRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1854,7 +1640,7 @@ input[type=number] {
   margin: 0 auto;
 }
 
-#app .down .btnRow button {
+#indexapp .landing .down .btnRow button {
   width: 318px;
   height: 80px;
   background-size: contain;
@@ -1865,23 +1651,23 @@ input[type=number] {
   cursor: pointer;
 }
 
-#app .down .btnRow button img {
+#indexapp .landing .down .btnRow button img {
   width: 100%;
 }
 
-#app .down .btnRow button img:active {
+#indexapp .landing .down .btnRow button img:active {
   opacity: .8;
 }
 
-#app .down .btnRow button:nth-of-type(1) {
+#indexapp .landing .down .btnRow button:nth-of-type(1) {
   margin-right: 8%;
 }
 
-#app .down .btnRow button:nth-of-type(2) {
+#indexapp .landing .down .btnRow button:nth-of-type(2) {
   margin-left: 8%;
 }
 
-#app .showAwards {
+#indexapp .landing .showAwards {
   width: 100%;
   height: 100%;
   background-color: rgba(53, 53, 53, 0.589);
@@ -1893,33 +1679,33 @@ input[type=number] {
   transition: .1s;
 }
 
-#app .showAwards .wrap {
+#indexapp .landing .showAwards .wrap {
   width: 67%;
   margin: 0 auto;
 }
 
-#app .showAwards .wrap header {
+#indexapp .landing .showAwards .wrap header {
   margin-top: 50px;
 }
 
-#app .showAwards .wrap header .fullHeader {
+#indexapp .landing .showAwards .wrap header .fullHeader {
   max-width: 90%;
   max-height: 100%;
   top: 44%;
 }
 
-#app .showAwards .wrap .banner {
+#indexapp .landing .showAwards .wrap .banner {
   height: 152px;
   position: relative;
   background-color: white;
   border: unset;
 }
 
-#app .showAwards .wrap .banner.part2 {
+#indexapp .landing .showAwards .wrap .banner.part2 {
   height: 120px;
 }
 
-#app .showAwards .wrap .wordBox {
+#indexapp .landing .showAwards .wrap .wordBox {
   width: 100%;
   height: 450px;
   background-color: white;
@@ -1927,21 +1713,21 @@ input[type=number] {
   padding: 0px 50px 50px 50px;
 }
 
-#app .showAwards .wrap .wordBox h6 {
+#indexapp .landing .showAwards .wrap .wordBox h6 {
   color: #6b1c1f;
   font-weight: bold;
 }
 
-#app .showAwards .wrap .wordBox p.yellow {
+#indexapp .landing .showAwards .wrap .wordBox p.yellow {
   color: #c29138;
   font-weight: bold;
 }
 
-#app .showAwards .wrap .wordBox p.item {
+#indexapp .landing .showAwards .wrap .wordBox p.item {
   margin-top: 20px;
 }
 
-#app .showAwards .wrap .picBox {
+#indexapp .landing .showAwards .wrap .picBox {
   width: 100%;
   text-align: center;
   height: 450px;
@@ -1950,12 +1736,12 @@ input[type=number] {
   padding-bottom: 50px;
 }
 
-#app .showAwards .wrap .picBox img {
+#indexapp .landing .showAwards .wrap .picBox img {
   width: 80%;
 }
 
-#app .showAwards #btn_close,
-#app .showAwards #btn_close2 {
+#indexapp .landing .showAwards #btn_close,
+#indexapp .landing .showAwards #btn_close2 {
   position: absolute;
   cursor: pointer;
   top: 28px;
@@ -1964,51 +1750,51 @@ input[type=number] {
 }
 
 @media all and (max-width: 1600px) {
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     width: 120px;
     bottom: 157px;
   }
-  #app .allContent #btndetail1 {
+  #indexapp .landing .allContent #btndetail1 {
     left: 17.5%;
   }
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail2 {
     left: 45%;
   }
 }
 
 @media all and (max-width: 1440px) {
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     top: unset;
     bottom: 25%;
   }
-  #app .allContent #btndetail1 {
+  #indexapp .landing .allContent #btndetail1 {
     left: 18%;
   }
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail2 {
     left: 45%;
   }
 }
 
 @media all and (max-width: 1200px) {
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     width: 110px;
     bottom: 130px;
   }
-  #app .allContent #btndetail1 {
+  #indexapp .landing .allContent #btndetail1 {
     left: 17%;
   }
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail2 {
     left: 44.5%;
   }
-  #app .showAwards .wrap header .fullHeader {
+  #indexapp .landing .showAwards .wrap header .fullHeader {
     max-height: 82%;
     top: 56%;
   }
-  #app .showAwards #btn_close,
-  #app .showAwards #btn_close2 {
+  #indexapp .landing .showAwards #btn_close,
+  #indexapp .landing .showAwards #btn_close2 {
     position: absolute;
     cursor: pointer;
     top: 28px;
@@ -2018,78 +1804,78 @@ input[type=number] {
 }
 
 @media all and (max-width: 992px) {
-  #app {
+  #indexapp {
     padding-bottom: 80px;
   }
-  #app .allContent img.d_bg {
+  #indexapp .landing .allContent img.d_bg {
     max-width: 97%;
     margin-top: 40px;
   }
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     width: 90px;
     bottom: 143px;
   }
-  #app .allContent #btndetail1 {
+  #indexapp .landing .allContent #btndetail1 {
     left: 15.5%;
   }
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail2 {
     left: 45%;
   }
-  #app .down .btnRow {
+  #indexapp .landing .down .btnRow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 65%;
     margin: 0 auto;
   }
-  #app .down .btnRow button {
+  #indexapp .landing .down .btnRow button {
     width: 257px;
     height: 64px;
     margin-right: 130px;
   }
-  #app .down .btnRow button:nth-of-type(2) {
+  #indexapp .landing .down .btnRow button:nth-of-type(2) {
     margin-right: 0px;
   }
-  #app .showAwards .wrap {
+  #indexapp .landing .showAwards .wrap {
     width: 70%;
   }
-  #app .showAwards .wrap .banner {
+  #indexapp .landing .showAwards .wrap .banner {
     height: 80px !important;
   }
-  #app .showAwards .wrap .wordBox {
+  #indexapp .landing .showAwards .wrap .wordBox {
     height: 500px;
     background-color: white;
   }
 }
 
 @media all and (max-width: 768px) {
-  #app {
+  #indexapp {
     padding-bottom: 158px;
   }
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     bottom: 110px;
   }
-  #app .allContent #btndetail1 {
+  #indexapp .landing .allContent #btndetail1 {
     left: 14.5%;
   }
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail2 {
     left: 44%;
   }
 }
 
 @media all and (max-width: 576px) {
-  #app {
+  #indexapp {
     background-image: url(../../imgs/mobile/m_landing_bg2.jpg) !important;
     background-position: bottom 40px left !important;
     background-size: contain !important;
     padding-bottom: 40px;
   }
-  #app .index_m_header {
+  #indexapp .landing .index_m_header {
     display: block;
   }
-  #app .index_m_header #logo {
+  #indexapp .landing .index_m_header #logo {
     position: absolute;
     top: 7px;
     left: 50%;
@@ -2098,31 +1884,31 @@ input[type=number] {
     z-index: 5;
     width: 60px;
   }
-  #app .allContent {
+  #indexapp .landing .allContent {
     background-image: url(../../imgs/mobile/m_landing_bg.jpg);
     background-size: cover;
     min-height: 100vh;
   }
-  #app .allContent img.d_bg {
+  #indexapp .landing .allContent img.d_bg {
     display: none;
   }
-  #app .allContent img.m_bg {
+  #indexapp .landing .allContent img.m_bg {
     display: block;
     width: 100%;
   }
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     width: 100px;
     bottom: unset;
     top: 365px;
   }
-  #app .allContent #btndetail1 {
+  #indexapp .landing .allContent #btndetail1 {
     left: 15%;
   }
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail2 {
     left: 68%;
   }
-  #app .m_btnRow {
+  #indexapp .landing .m_btnRow {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -2130,7 +1916,7 @@ input[type=number] {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #app .m_btnRow button {
+  #indexapp .landing .m_btnRow button {
     width: 145px;
     height: 35px;
     background-size: contain;
@@ -2140,41 +1926,41 @@ input[type=number] {
     border: unset;
     cursor: pointer;
   }
-  #app .m_btnRow button img {
+  #indexapp .landing .m_btnRow button img {
     width: 100%;
   }
-  #app .m_btnRow button img:active {
+  #indexapp .landing .m_btnRow button img:active {
     opacity: .8;
   }
-  #app .m_btnRow button:nth-of-type(1) {
+  #indexapp .landing .m_btnRow button:nth-of-type(1) {
     margin-right: 6%;
   }
-  #app .m_btnRow button:nth-of-type(2) {
+  #indexapp .landing .m_btnRow button:nth-of-type(2) {
     margin-left: 6%;
   }
-  #app .down {
+  #indexapp .landing .down {
     display: none;
   }
-  #app .showAwards .wrap {
+  #indexapp .landing .showAwards .wrap {
     width: 80%;
     margin: 0 auto;
   }
-  #app .showAwards .wrap header {
+  #indexapp .landing .showAwards .wrap header {
     margin-top: 50px;
   }
-  #app .showAwards .wrap header .fullHeader {
+  #indexapp .landing .showAwards .wrap header .fullHeader {
     max-height: 100%;
     top: 28%;
   }
-  #app .showAwards .wrap .banner {
+  #indexapp .landing .showAwards .wrap .banner {
     -webkit-transform: translateY(-26px);
             transform: translateY(-26px);
     height: 65px !important;
   }
-  #app .showAwards .wrap .banner.part2 {
+  #indexapp .landing .showAwards .wrap .banner.part2 {
     height: 120px;
   }
-  #app .showAwards .wrap .wordBox {
+  #indexapp .landing .showAwards .wrap .wordBox {
     -webkit-transform: translateY(-26px);
             transform: translateY(-26px);
     width: 100%;
@@ -2183,15 +1969,15 @@ input[type=number] {
     font-size: 12px;
     line-height: 18px;
   }
-  #app .showAwards .wrap .picBox {
+  #indexapp .landing .showAwards .wrap .picBox {
     -webkit-transform: translateY(-28px);
             transform: translateY(-28px);
   }
-  #app .showAwards .wrap .picBox img {
+  #indexapp .landing .showAwards .wrap .picBox img {
     width: 90%;
   }
-  #app .showAwards #btn_close,
-  #app .showAwards #btn_close2 {
+  #indexapp .landing .showAwards #btn_close,
+  #indexapp .landing .showAwards #btn_close2 {
     width: 30px;
     top: 36px;
     right: 12%;
@@ -2200,76 +1986,361 @@ input[type=number] {
 }
 
 @media all and (max-width: 414px) {
-  #app .allContent {
+  #indexapp .landing .allContent {
     min-height: 90vh;
   }
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     width: 100px;
     top: 274px;
   }
-  #app .allContent #btndetail1 {
+  #indexapp .landing .allContent #btndetail1 {
     left: 12%;
   }
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail2 {
     left: 64%;
   }
 }
 
 @media all and (max-width: 375px) {
-  #app .allContent {
+  #indexapp .landing .allContent {
     min-height: 82vh;
   }
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     top: 244px;
   }
 }
 
 @media all and (max-width: 390px) {
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     top: 254px;
   }
-  #app .allContent #btndetail1 {
+  #indexapp .landing .allContent #btndetail1 {
     left: 11.5%;
   }
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail2 {
     left: 64%;
   }
 }
 
 @media all and (max-width: 360px) {
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     top: 240px;
   }
 }
 
 @media all and (max-width: 320px) {
-  #app {
+  #indexapp {
     padding-bottom: unset;
   }
-  #app .allContent {
+  #indexapp .landing .allContent {
     min-height: 75vh;
   }
-  #app .allContent #btndetail1,
-  #app .allContent #btndetail2 {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
     width: 90px;
     top: 213px;
   }
-  #app .allContent #btndetail1 {
+  #indexapp .landing .allContent #btndetail1 {
     left: 10.5%;
   }
-  #app .m_btnRow button {
+  #indexapp .landing .m_btnRow button {
     width: 130px;
     height: 32px;
   }
-  #app .m_btnRow button:nth-of-type(1) {
+  #indexapp .landing .m_btnRow button:nth-of-type(1) {
     margin-right: 4.5%;
   }
-  #app .m_btnRow button:nth-of-type(2) {
+  #indexapp .landing .m_btnRow button:nth-of-type(2) {
     margin-left: 4.5%;
+  }
+}
+
+#chkapp .chkpage {
+  font-family: "LiHei", sans-serif;
+  background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: left bottom 0px;
+  background-color: #fbf3dc;
+  padding-bottom: 50px;
+}
+
+#chkapp .chkpage .banner {
+  height: 320px;
+  position: relative;
+}
+
+#chkapp .chkpage .banner img.text_fill {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
+  width: 65%;
+}
+
+#chkapp .chkpage .banner img:nth-of-type(2) {
+  display: none;
+}
+
+#chkapp .chkpage main {
+  max-width: 1052px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid transparent;
+}
+
+#chkapp .chkpage main .wordBox {
+  width: 60%;
+  border: 1px solid transparent;
+}
+
+#chkapp .chkpage main .wordBox .wordItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+#chkapp .chkpage main .wordBox .wordItem .flxLeft {
+  width: 40%;
+  text-align: right;
+  font-size: 38px;
+  color: #6b1c1f;
+}
+
+#chkapp .chkpage main .wordBox .wordItem .flxRight {
+  width: 59%;
+  font-size: 38px;
+}
+
+#chkapp .chkpage main .imgBox {
+  width: 39%;
+  border: 1px solid transparent;
+}
+
+#chkapp .chkpage main .imgBox img {
+  max-width: 100%;
+}
+
+#chkapp .chkpage .down {
+  width: 55%;
+  margin: 60px auto 0 auto;
+}
+
+#chkapp .chkpage .down .btnRow {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#chkapp .chkpage .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  margin-right: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+#chkapp .chkpage .down .btnRow button img {
+  width: 100%;
+}
+
+#chkapp .chkpage .down .btnRow button img:active {
+  opacity: .8;
+}
+
+@media all and (max-width: 992px) {
+  #chkapp .chkpage .banner {
+    height: 180px !important;
+  }
+  #chkapp .chkpage .banner img.text_fill {
+    bottom: 25px !important;
+    width: 80% !important;
+  }
+  #chkapp .chkpage main {
+    max-width: 685px;
+  }
+  #chkapp .chkpage main .wordBox .wordItem .flxLeft {
+    width: 44%;
+    font-size: 28px;
+  }
+  #chkapp .chkpage main .wordBox .wordItem .flxRight {
+    font-size: 28px;
+  }
+  #chkapp .chkpage main .imgBox {
+    width: 39%;
+  }
+  #chkapp .chkpage main .imgBox img {
+    max-width: 100%;
+    margin-top: 63px;
+  }
+  #chkapp .chkpage .down {
+    width: 80%;
+    margin-bottom: 54px;
+  }
+  #chkapp .chkpage .down .btnRow button {
+    width: 257px !important;
+    height: 64px !important;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #chkapp .chkpage {
+    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-position: left top, left bottom !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-size: contain !important;
+    padding-bottom: 50px;
+    min-height: 75vh;
+  }
+  #chkapp .chkpage .banner {
+    height: 147px !important;
+    position: relative;
+  }
+  #chkapp .chkpage .banner img.text_fill {
+    display: none;
+  }
+  #chkapp .chkpage .banner img:nth-of-type(2) {
+    display: block;
+    max-width: 90%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 10px;
+  }
+  #chkapp .chkpage main {
+    display: block;
+  }
+  #chkapp .chkpage main .wordBox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #chkapp .chkpage main .wordBox .wordItem:nth-of-type(1) {
+    margin-top: 5px;
+  }
+  #chkapp .chkpage main .wordBox .wordItem {
+    margin-top: 20px;
+  }
+  #chkapp .chkpage main .wordBox .wordItem .flxLeft,
+  #chkapp .chkpage main .wordBox .wordItem .flxRight {
+    font-size: 20px;
+  }
+  #chkapp .chkpage main .wordBox .wordItem .flxLeft {
+    width: 48%;
+    margin-right: 7px;
+  }
+  #chkapp .chkpage main .imgBox {
+    display: none;
+  }
+  #chkapp .chkpage .down {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 106px;
+  }
+  #chkapp .chkpage .down .btnRow {
+    width: 90% !important;
+  }
+  #chkapp .chkpage .down .btnRow button {
+    height: 33px !important;
+    margin: 25px auto 15px auto;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #chkapp .chkpage {
+    min-height: 78vh;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #chkapp .chkpage {
+    min-height: 78vh;
+  }
+  #chkapp .chkpage .banner {
+    height: 100px !important;
+    position: relative;
+  }
+  #chkapp .chkpage .down .btnRow {
+    width: 100% !important;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #chkapp .chkpage .down .btnRow {
+    width: 108% !important;
+  }
+}
+
+/* loadpage */
+#app {
+  border: 2px solid transparent;
+  height: 100%;
+  font-family: "LiHei", sans-serif;
+  background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: left bottom 0px;
+  background-color: #fbf3dc;
+  background-size: contain;
+}
+
+#app .load {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+#app .load .loadingbar {
+  border: 2px solid #d09535;
+  width: 100%;
+  height: 27px;
+  padding: 5px;
+  border-radius: 5%;
+  margin-top: 310px;
+}
+
+@media all and (max-width: 992px) {
+  #app {
+    background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+    border: 2px solid blue;
+  }
+  #app .load {
+    max-width: 400px;
+    margin: 100px auto;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #app {
+    border: 2px solid brown;
+  }
+  #app .load {
+    max-width: 300px;
+    margin: 50px auto;
+  }
+  #app .load .loadingbar {
+    margin-top: 230px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #app {
+    border: 1px solid transparent;
+  }
+  #app .load {
+    max-width: 300px;
+    margin: 50px auto;
+  }
+  #app .load .loadingbar {
+    margin-top: 230px;
   }
 }
 /*# sourceMappingURL=style.css.map */

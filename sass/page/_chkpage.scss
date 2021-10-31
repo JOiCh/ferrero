@@ -1,4 +1,4 @@
-#app {
+#chkapp {
     .chkpage {
         font-family: "LiHei", sans-serif;
         background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
@@ -97,7 +97,7 @@
 }
 
 @include laptop {
-    #app {
+    #chkapp {
         .chkpage {
 
             .banner {
@@ -159,7 +159,7 @@
 }
 
 @include mobile {
-    #app {
+    #chkapp {
 
         .chkpage {
             background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
@@ -239,7 +239,7 @@
 }
 
 @include mobile_m{
-    #app {
+    #chkapp {
 
         .chkpage {
             min-height: 78vh;
@@ -249,7 +249,7 @@
 }
 
 @include mobile_s {
-    #app {
+    #chkapp {
 
         .chkpage {
             min-height: 78vh;
@@ -273,7 +273,7 @@
 }
 
 @include mobile_xs {
-    #app {
+    #chkapp {
 
         .chkpage {
             .down {
