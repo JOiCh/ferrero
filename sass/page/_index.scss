@@ -1,12 +1,13 @@
 #app {
-    background-image: url(../../imgs/1016_landing/landing_bg.jpg);
-    background-position: top left;
+    background-image: url(../../imgs/1016_landing/landing_bg.jpg) !important;
+    background-position: bottom  left -400px;
     background-size: cover;
 
-    .index_m_header{
+    .index_m_header {
         display: none;
         position: relative;
-        img:nth-of-type(1){
+
+        img:nth-of-type(1) {
             max-width: 100%;
         }
     }
@@ -20,7 +21,7 @@
             margin-top: 20px;
         }
 
-        img.m_bg{
+        img.m_bg {
             display: none;
         }
 
@@ -43,7 +44,8 @@
         #btndetail2 {
             left: 46%;
         }
-        .m_btnRow{
+
+        .m_btnRow {
             display: none;
         }
     }
@@ -57,13 +59,21 @@
             button {
                 width: 318px;
                 height: 80px;
-                margin-right: auto;
-                img{
+
+                img {
                     width: 100%;
-                    &:active{
+
+                    &:active {
                         opacity: .8;
                     }
                 }
+            }
+
+            button:nth-of-type(1){
+                margin-right: 8%;
+            }
+            button:nth-of-type(2){
+                margin-left: 8%;
             }
         }
     }
@@ -108,17 +118,19 @@
                 height: 450px;
                 background-color: white;
                 overflow-y: auto;
-                padding:0px 50px 50px 50px;
-                h6{
+                padding: 0px 50px 50px 50px;
+
+                h6 {
                     color: $main;
                     font-weight: bold;
                 }
-                p.yellow{
-                    color:$notice;
+
+                p.yellow {
+                    color: $notice;
                     font-weight: bold;
                 }
 
-                p.item{
+                p.item {
                     margin-top: 20px;
                 }
             }
@@ -149,9 +161,9 @@
     }
 }
 
-@include full_screen{
+@include full_screen {
     #app {
-    
+
         .allContent {
 
             #btndetail1,
@@ -159,24 +171,45 @@
                 width: 120px;
                 bottom: 157px;
             }
-    
+
             #btndetail1 {
                 left: 17.5%;
             }
-    
+
             #btndetail2 {
                 left: 45%;
             }
-    
+
         }
-    
+
     }
 
 }
 
-@include middle_screen{
+@media all and (max-width: 1440px) {
     #app {
-    
+
+        .allContent {
+
+            #btndetail1,
+            #btndetail2 {
+                top: unset;
+                bottom: 25%
+            }
+
+            #btndetail1 {
+                left: 18%;
+            }
+            #btndetail2 {
+                left: 45%;
+            }
+        }
+    }
+ }
+
+@include middle_screen {
+    #app {
+
         .allContent {
 
             #btndetail1,
@@ -184,23 +217,23 @@
                 width: 110px;
                 bottom: 130px;
             }
-    
+
             #btndetail1 {
                 left: 17%;
             }
-    
+
             #btndetail2 {
                 left: 44.5%;
             }
-    
+
         }
 
         .showAwards {
-    
+
             .wrap {
-    
+
                 header {
-    
+
                     .fullHeader {
                         max-height: 82%;
                         top: 56%;
@@ -208,7 +241,7 @@
                 }
 
             }
-    
+
             #btn_close,
             #btn_close2 {
                 position: absolute;
@@ -217,66 +250,67 @@
                 right: 17%;
                 z-index: 6;
             }
-    
+
         }
-    
+
     }
 
 }
 
-@include laptop{
+@include laptop {
     #app {
-    
+
         .allContent {
             img.d_bg {
                 max-width: 97%;
                 margin-top: 40px;
             }
-    
+
             #btndetail1,
             #btndetail2 {
                 width: 90px;
                 bottom: 109px;
             }
-    
+
             #btndetail1 {
                 left: 15%;
             }
-    
+
             #btndetail2 {
                 left: 44%;
             }
-    
+
         }
-    
+
         .down {
-    
+
             .btnRow {
                 display: flex;
                 width: 80%;
                 margin: 0 auto;
-    
+
                 button {
                     width: 257px;
                     height: 64px;
                     margin-right: 130px;
                 }
-                button:nth-of-type(2){
+
+                button:nth-of-type(2) {
                     margin-right: 0px;
                 }
 
             }
         }
-    
+
         .showAwards {
-    
+
             .wrap {
                 width: 70%;
-    
+
                 .banner {
                     height: 80px !important;
                 }
-    
+
                 .wordBox {
                     height: 500px;
                     background-color: white;
@@ -287,146 +321,245 @@
     }
 }
 
-@include mobile{
+@include mobile {
     #app {
-        background-image: url(../../imgs/mobile/m_landing_bg2.jpg)!important;
+        background-image: url(../../imgs/mobile/m_landing_bg2.jpg) !important;
         background-position: bottom 40px left !important;
-        background-size: contain!important;
-    
-        .index_m_header{
+        background-size: contain !important;
+
+        .index_m_header {
             display: block;
-            #logo{
+
+            #logo {
                 position: absolute;
-                top:7px;
+                top: 7px;
                 left: 50%;
                 transform: translateX(-50%);
-                z-index: 8;
+                z-index: 5;
                 width: 60px;
             }
         }
+
         .allContent {
+            background-image: url(../../imgs/mobile/m_landing_bg.jpg);
+            background-size: cover;
+            min-height: 100vh;
+
             img.d_bg {
                 display: none;
             }
-    
-            img.m_bg{
+
+            img.m_bg {
                 display: block;
                 width: 100%;
             }
-    
+
             #btndetail1,
             #btndetail2 {
                 width: 100px;
-                bottom: 199px;
+                bottom: unset;
+                top: 248px;
             }
-    
+
             #btndetail1 {
                 left: 11%;
             }
-    
+
             #btndetail2 {
                 left: 64%;
             }
-    
+
         }
-    
-        .m_btnRow{
+
+        .m_btnRow {
             display: flex !important;
+            text-align: center;
+
+            button {
+                width: 145px;
+                height: 35px;
+                
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                outline: unset;
+                border: unset;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+
+                    &:active {
+                        opacity: .8;
+                    }
+                }
+
+            }
+            button:nth-of-type(1){
+                margin-right: 6%;
+            };
+            button:nth-of-type(2){
+                margin-left: 6%;
+            }
         }
 
         .down {
             display: none;
-            .btnRow {
-
-                button {
-                    width: 171px !important;
-                    height: 41px !important;
-                    margin-right: 9% !important;
-                }
-                button:nth-of-type(2){
-                    margin-right: unset !important;
-                }
-            }
         }
-    
+
         .showAwards {
-            width: 100%;
-            height: 100%;
-            background-color: rgba(53, 53, 53, 0.589);
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            z-index: 6;
-            transition: .1s;
-    
+
             .wrap {
-                width: 67%;
+                width: 80%;
                 margin: 0 auto;
-    
+
                 header {
                     margin-top: 50px;
-    
+
                     .fullHeader {
-                        max-width: 90%;
                         max-height: 100%;
-                        top: 44%;
+                        top: 28%;
                     }
                 }
-    
+
                 .banner {
-                    height: 152px;
-                    position: relative;
-                    background-color: white;
-                    border: unset;
+                    transform: translateY(-26px);
+                    height: 65px !important;
                 }
-    
+
                 .banner.part2 {
                     height: 120px;
                 }
-    
+
                 .wordBox {
+                    transform: translateY(-26px);
                     width: 100%;
-                    height: 450px;
-                    background-color: white;
-                    overflow-y: auto;
-                    padding:0px 50px 50px 50px;
-                    h6{
-                        color: $main;
-                        font-weight: bold;
-                    }
-                    p.yellow{
-                        color:$notice;
-                        font-weight: bold;
-                    }
-    
-                    p.item{
-                        margin-top: 20px;
-                    }
+                    height: 445px;
+                    padding: 0px 15px 15px 15px;
+                    font-size: 12px;
+                    line-height: 18px;
+
                 }
-    
+
                 .picBox {
-                    width: 100%;
-                    text-align: center;
-                    height: 450px;
-                    background-color: white;
-                    overflow-y: auto;
-                    padding-bottom: 50px;
-    
+                    transform: translateY(-28px);
+
                     img {
-                        width: 80%;
+                        width: 90%;
                     }
                 }
             }
-    
+
             #btn_close,
             #btn_close2 {
-                position: absolute;
-                cursor: pointer;
-                top: 28px;
-                right: 17%;
+                width: 30px;
+                top: 36px;
+                right: 12%;
                 z-index: 6;
             }
-    
+
         }
+    }
+}
+
+@include mobile_m{
+    #app {
+
+        .allContent {
+
+            #btndetail1,
+            #btndetail2 {
+                width: 100px;
+                top: 274px;
+            }
+
+            #btndetail1 {
+                left: 12%;
+            }
+
+            #btndetail2 {
+                left: 64%;
+            }
+
+        }
+    }
+}
+
+@include mobile_s{
+    #app {
+
+        .allContent {
+
+            #btndetail1,
+            #btndetail2 {
+                top: 244px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 390px) {
+    #app {
+
+        .allContent {
+
+            #btndetail1,
+            #btndetail2 {
+                top: 254px;
+            }
+
+            #btndetail1 {
+                left: 11.5%;
+            }
+            #btndetail2 {
+                left: 64%;
+            }
+        }
+    }
+ }
+
+ @media all and (max-width: 360px) {
+    #app {
+
+        .allContent {
+
+            #btndetail1,
+            #btndetail2 {
+                top: 240px;
+            }
+        }
+    }
+ }
+
+@include mobile_xs{
+    #app {
+
+        .allContent {
+
+            #btndetail1,
+            #btndetail2 {
+                width: 90px;
+                top: 213px;
+            }
+
+            #btndetail1 {
+                left: 10.5%;
+            }
+        }
+
+        .m_btnRow {
+
+            button {
+                width: 130px;
+                height: 32px;
+            }
+            button:nth-of-type(1){
+                margin-right: 4.5%;
+            };
+            button:nth-of-type(2){
+                margin-left: 4.5%;
+            }
+        }
+
     }
 }

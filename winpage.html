@@ -9,35 +9,68 @@
     <title>Award Page</title>
 </head>
 
-<body>
+<body style="background-color: #fbf3dc;">
     <div id="app">
-        <header>
-            <the-header></the-header>
-        </header>
-        <div class="banner">
-            <img src="./imgs/x2/text_result.png" class="text_fill">
-        </div>
-        <div class="main_bg">
-            <main>
-                <img src="./imgs/x2/award1.png" alt="">
-            </main>
-            <div class="down">
-                <div class="btnRow">
-                    <button type="button"></button>
-                    <button type="button"></button>
+        <div class="winpage">
+            <header>
+                <the-header></the-header>
+            </header>
+            <div class="banner">
+                <img src="./imgs/x2/text_result.png" class="text_fill">
+                <img src="./imgs/mobile/m_text_result.png" class="m_text_fill">
+            </div>
+            <div class="main_bg">
+                <main>
+                    <img src="./imgs/x2/award1.png" alt="">
+                </main>
+                <div class="down">
+                    <div class="btnRow">
+                        <button type="button">
+                            <img src="./imgs/x2/btn_more.png" @click="openAwards">
+                        </button>
+                        <button type="button">
+                            <img src="./imgs/x2/btn_another_bill.png" @click="link">
+                        </button>
+                    </div>
                 </div>
             </div>
+            <div class="showAwards" v-if="this.showAwards === true">
+                <div class="wrap">
+                    <header>
+                        <img src="./imgs/x2/head_title.png" class="fullHeader">
+                    </header>
+                    <div class="banner">
+                    </div>
+                    <div class="picBox">
+                        <img src="./imgs/x2/pop_award_detail.png" alt="">
+                    </div>
+                    <img src="./imgs/pop_close.png" id="btn_close" @click="closeAwards">
+                </div>
+            </div>
+            <footer>
+                <the-footer></the-footer>
+            </footer>
         </div>
-        
-        <footer>
-            <the-footer></the-footer>
-        </footer>
     </div>
     <script src="./js/vue.js"></script>
     <script src="./js/header_footer.js"></script>
     <script>
         new Vue({
             el: '#app',
+            data: {
+                showAwards: false,
+            },
+            methods: {
+                link() {
+                    location.href = "./qrcode.html"
+                },
+                openAwards() {
+                    this.showAwards = true;
+                },
+                closeAwards() {
+                    this.showAwards = false;
+                },
+            },
         })
     </script>
 </body>

@@ -1275,31 +1275,35 @@ input[type=number] {
   }
 }
 
-#app {
+#app .winpage {
   font-family: "LiHei", sans-serif;
-  background-image: url(../../imgs/x2/blur_bg_up.jpg);
+  background-image: url(../../imgs/x2/blur_bg_up.jpg) !important;
   background-repeat: no-repeat;
-  background-position: left top 200px;
+  background-position: left top 20%;
   background-color: #fbf3dc;
   background-size: contain;
 }
 
-#app .banner {
+#app .winpage .banner {
   border: 1px solid green;
   height: 250px;
   position: relative;
 }
 
-#app .banner img.text_fill {
+#app .winpage .banner img.text_fill {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 50px;
-  width: 65%;
+  bottom: 17px !important;
+  width: 90% !important;
 }
 
-#app .main_bg {
+#app .winpage .banner img.m_text_fill {
+  display: none;
+}
+
+#app .winpage .main_bg {
   width: 65%;
   border: 1px solid black;
   margin: 0 auto;
@@ -1307,10 +1311,10 @@ input[type=number] {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
-  margin-bottom: 60px;
+  margin-bottom: 110px;
 }
 
-#app .main_bg main {
+#app .winpage .main_bg main {
   width: 70%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1318,34 +1322,291 @@ input[type=number] {
   margin: 100px auto 40px auto;
 }
 
-#app .main_bg main img {
+#app .winpage .main_bg main img {
   max-width: 100%;
 }
 
-#app .main_bg .down {
+#app .winpage .main_bg .down {
   margin-top: 47px;
   margin-bottom: 320px;
+  width: 100%;
 }
 
-#app .main_bg .down .btnRow {
-  text-align: center;
-  margin-bottom: 80px;
+#app .winpage .main_bg .down .btnRow {
+  width: 100%;
 }
 
-#app .main_bg .down .btnRow button {
-  width: 318px;
-  height: 80px;
-  margin-right: 20%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  outline: unset;
-  border: unset;
+#app .winpage .main_bg .down .btnRow button {
+  margin: 0px auto 100px auto;
   cursor: pointer;
 }
 
-#app .main_bg .down .btnRow button:active {
-  opacity: .8;
+#app .winpage .main_bg .down .btnRow button:nth-of-type(1) {
+  margin-right: 6%;
+}
+
+#app .winpage .main_bg .down .btnRow button:nth-of-type(2) {
+  margin-left: 6%;
+}
+
+#app .winpage .showAwards {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 53, 53, 0.589);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 6;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+#app .winpage .showAwards .wrap {
+  width: 67%;
+  margin: 0 auto;
+}
+
+#app .winpage .showAwards .wrap header {
+  margin-top: 50px;
+}
+
+#app .winpage .showAwards .wrap header .fullHeader {
+  max-width: 90%;
+  max-height: 100%;
+  top: 44%;
+}
+
+#app .winpage .showAwards .wrap .banner {
+  height: 152px;
+  position: relative;
+  background-color: white;
+  border: unset;
+}
+
+#app .winpage .showAwards .wrap .banner.part2 {
+  height: 120px;
+}
+
+#app .winpage .showAwards .wrap .wordBox {
+  width: 100%;
+  height: 450px;
+  background-color: white;
+  overflow-y: auto;
+  padding: 0px 50px 50px 50px;
+}
+
+#app .winpage .showAwards .wrap .wordBox h6 {
+  color: #6b1c1f;
+  font-weight: bold;
+}
+
+#app .winpage .showAwards .wrap .wordBox p.yellow {
+  color: #c29138;
+  font-weight: bold;
+}
+
+#app .winpage .showAwards .wrap .wordBox p.item {
+  margin-top: 20px;
+}
+
+#app .winpage .showAwards .wrap .picBox {
+  width: 100%;
+  text-align: center;
+  height: 450px;
+  background-color: white;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+#app .winpage .showAwards .wrap .picBox img {
+  width: 80%;
+}
+
+#app .winpage .showAwards #btn_close,
+#app .winpage .showAwards #btn_close2 {
+  position: absolute;
+  cursor: pointer;
+  top: 28px;
+  right: 17%;
+  z-index: 6;
+}
+
+@media all and (max-width: 1426px) {
+  #app .winpage {
+    background-position: left top 21%;
+  }
+}
+
+@media all and (max-width: 1418px) {
+  #app .winpage {
+    background-position: left top 18%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #app .winpage {
+    background-position: left top 18%;
+  }
+  #app .winpage .main_bg .down {
+    margin-top: 40px;
+    margin-bottom: 150px;
+  }
+  #app .winpage .main_bg .down .btnRow button {
+    margin: 0px auto 100px auto;
+    width: 257px !important;
+    height: 64px !important;
+  }
+}
+
+@media all and (max-width: 1190px) {
+  #app .winpage {
+    background-position: left top 22%;
+  }
+}
+
+@media all and (max-width: 992px) {
+  #app .winpage {
+    background-position: left top 14%;
+  }
+  #app .winpage .main_bg .down {
+    margin-bottom: 196px;
+  }
+  #app .winpage .main_bg .down .btnRow button {
+    width: 257px;
+    height: 64px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #app .winpage {
+    background-position: left top 14%;
+  }
+  #app .winpage .banner {
+    height: 152px !important;
+  }
+  #app .winpage .main_bg main {
+    margin: 50px auto 40px auto;
+  }
+  #app .winpage .main_bg .down {
+    margin-bottom: 150px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #app {
+    background-image: unset !important;
+  }
+  #app .winpage {
+    position: relative;
+    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-position: left top 87px, left bottom 0px !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-size: contain !important;
+    min-height: 100vh;
+  }
+  #app .winpage .banner {
+    height: 100px !important;
+  }
+  #app .winpage .banner img.text_fill {
+    display: none;
+  }
+  #app .winpage .banner img.m_text_fill {
+    display: block;
+    width: 80% !important;
+    margin: 60px auto 0px auto;
+  }
+  #app .winpage .main_bg {
+    width: 100%;
+    background-image: url(../../imgs/mobile/m_congratulations_text.png);
+    background-size: 88%;
+    min-height: 81vh;
+  }
+  #app .winpage .main_bg main {
+    width: 65%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 100px auto 0px auto;
+  }
+  #app .winpage .main_bg main img {
+    max-width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+  #app .winpage .main_bg .down {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: -33px;
+  }
+  #app .winpage .main_bg .down .btnRow {
+    width: 100%;
+  }
+  #app .winpage .main_bg .down .btnRow button {
+    margin: 0px auto 0px auto;
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #app .winpage {
+    background-position: left top 75px, left bottom 0px !important;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #app {
+    background: unset !important;
+  }
+  #app .winpage {
+    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-position: left top 67px, left bottom 0px !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-size: contain !important;
+    min-height: 100vh;
+  }
+  #app .winpage .banner {
+    height: 100px !important;
+  }
+  #app .winpage .banner img.text_fill {
+    display: none;
+  }
+  #app .winpage .banner img.m_text_fill {
+    display: block;
+    width: 80% !important;
+    margin: 60px auto 0px auto;
+  }
+  #app .winpage .main_bg {
+    width: 100%;
+    background-image: url(../../imgs/mobile/m_congratulations_text.png);
+    background-size: 88%;
+    min-height: 71vh;
+    margin-bottom: 0px;
+  }
+  #app .winpage .main_bg main {
+    width: 65%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 80px auto 0px auto;
+  }
+  #app .winpage .main_bg main img {
+    max-width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+  #app .winpage .main_bg .down {
+    bottom: 70px;
+  }
+  #app .winpage .main_bg .down .btnRow {
+    width: 100%;
+  }
+  #app .winpage .main_bg .down .btnRow button {
+    margin: 0px auto 0px auto;
+    cursor: pointer;
+  }
 }
 
 #app .allcontent {
@@ -1374,8 +1635,8 @@ input[type=number] {
 }
 
 #app {
-  background-image: url(../../imgs/1016_landing/landing_bg.jpg);
-  background-position: top left;
+  background-image: url(../../imgs/1016_landing/landing_bg.jpg) !important;
+  background-position: bottom  left -400px;
   background-size: cover;
 }
 
@@ -1438,7 +1699,6 @@ input[type=number] {
 #app .down .btnRow button {
   width: 318px;
   height: 80px;
-  margin-right: auto;
 }
 
 #app .down .btnRow button img {
@@ -1447,6 +1707,14 @@ input[type=number] {
 
 #app .down .btnRow button img:active {
   opacity: .8;
+}
+
+#app .down .btnRow button:nth-of-type(1) {
+  margin-right: 8%;
+}
+
+#app .down .btnRow button:nth-of-type(2) {
+  margin-left: 8%;
 }
 
 #app .showAwards {
@@ -1545,6 +1813,20 @@ input[type=number] {
   }
 }
 
+@media all and (max-width: 1440px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    top: unset;
+    bottom: 25%;
+  }
+  #app .allContent #btndetail1 {
+    left: 18%;
+  }
+  #app .allContent #btndetail2 {
+    left: 45%;
+  }
+}
+
 @media all and (max-width: 1200px) {
   #app .allContent #btndetail1,
   #app .allContent #btndetail2 {
@@ -1629,8 +1911,13 @@ input[type=number] {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    z-index: 8;
+    z-index: 5;
     width: 60px;
+  }
+  #app .allContent {
+    background-image: url(../../imgs/mobile/m_landing_bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
   }
   #app .allContent img.d_bg {
     display: none;
@@ -1642,7 +1929,8 @@ input[type=number] {
   #app .allContent #btndetail1,
   #app .allContent #btndetail2 {
     width: 100px;
-    bottom: 199px;
+    bottom: unset;
+    top: 248px;
   }
   #app .allContent #btndetail1 {
     left: 11%;
@@ -1654,86 +1942,136 @@ input[type=number] {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    text-align: center;
+  }
+  #app .m_btnRow button {
+    width: 145px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    outline: unset;
+    border: unset;
+    cursor: pointer;
+  }
+  #app .m_btnRow button img {
+    width: 100%;
+  }
+  #app .m_btnRow button img:active {
+    opacity: .8;
+  }
+  #app .m_btnRow button:nth-of-type(1) {
+    margin-right: 6%;
+  }
+  #app .m_btnRow button:nth-of-type(2) {
+    margin-left: 6%;
   }
   #app .down {
     display: none;
   }
-  #app .down .btnRow button {
-    width: 171px !important;
-    height: 41px !important;
-    margin-right: 9% !important;
-  }
-  #app .down .btnRow button:nth-of-type(2) {
-    margin-right: unset !important;
-  }
-  #app .showAwards {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(53, 53, 53, 0.589);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 6;
-    -webkit-transition: .1s;
-    transition: .1s;
-  }
   #app .showAwards .wrap {
-    width: 67%;
+    width: 80%;
     margin: 0 auto;
   }
   #app .showAwards .wrap header {
     margin-top: 50px;
   }
   #app .showAwards .wrap header .fullHeader {
-    max-width: 90%;
     max-height: 100%;
-    top: 44%;
+    top: 28%;
   }
   #app .showAwards .wrap .banner {
-    height: 152px;
-    position: relative;
-    background-color: white;
-    border: unset;
+    -webkit-transform: translateY(-26px);
+            transform: translateY(-26px);
+    height: 65px !important;
   }
   #app .showAwards .wrap .banner.part2 {
     height: 120px;
   }
   #app .showAwards .wrap .wordBox {
+    -webkit-transform: translateY(-26px);
+            transform: translateY(-26px);
     width: 100%;
-    height: 450px;
-    background-color: white;
-    overflow-y: auto;
-    padding: 0px 50px 50px 50px;
-  }
-  #app .showAwards .wrap .wordBox h6 {
-    color: #6b1c1f;
-    font-weight: bold;
-  }
-  #app .showAwards .wrap .wordBox p.yellow {
-    color: #c29138;
-    font-weight: bold;
-  }
-  #app .showAwards .wrap .wordBox p.item {
-    margin-top: 20px;
+    height: 445px;
+    padding: 0px 15px 15px 15px;
+    font-size: 12px;
+    line-height: 18px;
   }
   #app .showAwards .wrap .picBox {
-    width: 100%;
-    text-align: center;
-    height: 450px;
-    background-color: white;
-    overflow-y: auto;
-    padding-bottom: 50px;
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
   }
   #app .showAwards .wrap .picBox img {
-    width: 80%;
+    width: 90%;
   }
   #app .showAwards #btn_close,
   #app .showAwards #btn_close2 {
-    position: absolute;
-    cursor: pointer;
-    top: 28px;
-    right: 17%;
+    width: 30px;
+    top: 36px;
+    right: 12%;
     z-index: 6;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    width: 100px;
+    top: 274px;
+  }
+  #app .allContent #btndetail1 {
+    left: 12%;
+  }
+  #app .allContent #btndetail2 {
+    left: 64%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    top: 244px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    top: 254px;
+  }
+  #app .allContent #btndetail1 {
+    left: 11.5%;
+  }
+  #app .allContent #btndetail2 {
+    left: 64%;
+  }
+}
+
+@media all and (max-width: 360px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    top: 240px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    width: 90px;
+    top: 213px;
+  }
+  #app .allContent #btndetail1 {
+    left: 10.5%;
+  }
+  #app .m_btnRow button {
+    width: 130px;
+    height: 32px;
+  }
+  #app .m_btnRow button:nth-of-type(1) {
+    margin-right: 4.5%;
+  }
+  #app .m_btnRow button:nth-of-type(2) {
+    margin-left: 4.5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
