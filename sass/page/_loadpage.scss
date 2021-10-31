@@ -1,0 +1,68 @@
+/* loadpage */
+
+#app {
+    border: 2px solid transparent;
+    height: 100%;
+    font-family: "LiHei", sans-serif;
+    background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+    background-repeat: no-repeat;
+    background-position: left bottom 0px;
+    background-color: $bg;
+    background-size: contain;
+
+    .load {
+        max-width: 400px;
+        margin: 50px auto;
+
+        .loadingbar {
+            border: 2px solid rgb(208, 149, 53);
+            width: 100%;
+            height: 27px;
+            padding: 5px;
+            border-radius: 5%;
+            margin-top: 310px;
+        }
+    }
+}
+
+
+@include laptop {
+    #app {
+        background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+        border: 2px solid blue;
+        .load {
+            max-width: 400px;
+            margin: 100px auto;
+        }
+    }
+
+}
+
+@include mobile {
+    #app {
+
+        border: 2px solid brown;
+        .load {
+            max-width: 300px;
+            margin: 50px auto;
+
+            .loadingbar {
+                margin-top: 230px;
+            }
+        }
+    }
+}
+
+@include mobile_s {
+    #app {
+        border: 1px solid transparent;
+        .load {
+            max-width: 300px;
+            margin: 50px auto;
+
+            .loadingbar {
+                margin-top: 230px;
+            }
+        }
+    }
+}

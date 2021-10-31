@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 進度條 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@2.5.10/dist/vuetify.min.css">
+    <title>Check Page</title>
+</head>
+
+<body>
+    <div id="app">
+        <v-app id="progressbar" class="load" style="background: none;">
+            <v-container>
+                <div class="load">
+                    <v-img src="./imgs/x2/loading_deco.png"align-content="center" justify="center">
+                        <div class="loadingbar">
+                            <v-progress-linear color="amber accent-3 lighten-2" border- indeterminate rounded striped height="15">
+                            </v-progress-linear>
+                        </div>
+                </div>
+            </v-container>
+        </v-app>
+        <footer>
+            <the-footer></the-footer>
+        </footer>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.5.10/dist/vuetify.min.js"></script>
+
+    <script src="./js/header_footer.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify(),
+            data: {
+            },
+        })
+    </script>
+</body>
+
+</html>
