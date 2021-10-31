@@ -9,7 +9,7 @@
         background-size: contain;
 
         .banner {
-            border: 1px solid green;
+            border: 1px solid transparent;
             height: 250px;
             position: relative;
 
@@ -18,16 +18,17 @@
                 left: 50%;
                 transform: translateX(-50%);
                 bottom: 17px !important;
-                width: 90% !important;
+                width: 80% !important;
             }
-            img.m_text_fill{
+
+            img.m_text_fill {
                 display: none;
             }
         }
 
         .main_bg {
             width: 65%;
-            border: 1px solid black;
+            border: 1px solid transparent;
             margin: 0 auto;
             background-image: url(./../../imgs/x2/congratulations_text.png);
             background-repeat: no-repeat;
@@ -54,7 +55,16 @@
                     width: 100%;
 
                     button {
+                        display: block;
                         margin: 0px auto 100px auto;
+                        width: 318px;
+                        height: 80px;
+                        cursor: pointer;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-color: transparent;
+                        outline: unset;
+                        border: unset;
                         cursor: pointer;
                     }
 
@@ -78,54 +88,54 @@
             left: 0px;
             z-index: 6;
             transition: .1s;
-    
+
             .wrap {
                 width: 67%;
                 margin: 0 auto;
-    
+
                 header {
                     margin-top: 50px;
-    
+
                     .fullHeader {
                         max-width: 90%;
                         max-height: 100%;
                         top: 44%;
                     }
                 }
-    
+
                 .banner {
                     height: 152px;
                     position: relative;
                     background-color: white;
                     border: unset;
                 }
-    
+
                 .banner.part2 {
                     height: 120px;
                 }
-    
+
                 .wordBox {
                     width: 100%;
                     height: 450px;
                     background-color: white;
                     overflow-y: auto;
                     padding: 0px 50px 50px 50px;
-    
+
                     h6 {
                         color: $main;
                         font-weight: bold;
                     }
-    
+
                     p.yellow {
                         color: $notice;
                         font-weight: bold;
                     }
-    
+
                     p.item {
                         margin-top: 20px;
                     }
                 }
-    
+
                 .picBox {
                     width: 100%;
                     text-align: center;
@@ -133,13 +143,13 @@
                     background-color: white;
                     overflow-y: auto;
                     padding-bottom: 50px;
-    
+
                     img {
                         width: 80%;
                     }
                 }
             }
-    
+
             #btn_close,
             #btn_close2 {
                 position: absolute;
@@ -148,7 +158,7 @@
                 right: 17%;
                 z-index: 6;
             }
-    
+
         }
     }
 
@@ -257,7 +267,8 @@
                 img.text_fill {
                     display: none;
                 }
-                img.m_text_fill{
+
+                img.m_text_fill {
                     display: block;
                     width: 80% !important;
                     margin: 60px auto 0px auto;
@@ -265,12 +276,12 @@
             }
 
             .main_bg {
-               
+
                 width: 100%;
                 background-image: url(../../imgs/mobile/m_congratulations_text.png);
                 background-size: 88%;
                 min-height: 81vh;
-                
+
                 main {
                     width: 65%;
                     justify-content: center;
@@ -303,7 +314,7 @@
     }
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 400px) {
     #app {
         .winpage {
             background-position: left top 75px, left bottom 0px !important;
@@ -311,9 +322,10 @@
     }
 }
 
-@include mobile_xs{
+@include mobile_xs {
     #app {
         background: unset !important;
+
         .winpage {
             background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
                 url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
@@ -328,7 +340,8 @@
                 img.text_fill {
                     display: none;
                 }
-                img.m_text_fill{
+
+                img.m_text_fill {
                     display: block;
                     width: 80% !important;
                     margin: 60px auto 0px auto;
@@ -336,13 +349,13 @@
             }
 
             .main_bg {
-               
+
                 width: 100%;
                 background-image: url(../../imgs/mobile/m_congratulations_text.png);
                 background-size: 88%;
                 min-height: 71vh;
                 margin-bottom: 0px;
-                
+
                 main {
                     width: 65%;
                     justify-content: center;

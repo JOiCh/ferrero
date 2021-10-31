@@ -248,19 +248,20 @@ input[type=number] {
   background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left top, left bottom;
+  background-position: left top, left bottom 54px;
   background-color: #fbf3dc;
+  padding-bottom: 59px;
 }
 
 #app form .up,
 #app form .down {
-  border: 1px solid red;
+  border: 1px solid transparent;
   width: 55%;
   margin: 0 auto;
 }
 
 #app form .banner {
-  border: 1px solid green;
+  border: 1px solid transparent;
   height: 320px;
   position: relative;
 }
@@ -287,7 +288,7 @@ input[type=number] {
 }
 
 #app form .up .middle {
-  border: 1px solid blue;
+  border: 1px solid transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,7 +392,7 @@ input[type=number] {
 }
 
 #app form .up .chkbox {
-  border: 1px solid hotpink;
+  border: 1px solid transparent;
   margin: 0 auto;
   width: 50%;
   margin-top: 40px;
@@ -453,9 +454,10 @@ input[type=number] {
     background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left top, left bottom;
+    background-position: left top, left bottom 54px;
     background-color: #fbf3dc;
     min-height: 100%;
+    padding-bottom: 59px;
   }
   #app form .up,
   #app form .down {
@@ -509,6 +511,10 @@ input[type=number] {
 }
 
 @media all and (max-width: 1200px) {
+  #app form {
+    background-position: left top, left bottom 54px;
+    padding-bottom: 59px;
+  }
   #app form .up,
   #app form .down {
     width: 800px;
@@ -570,6 +576,10 @@ input[type=number] {
 }
 
 @media all and (max-width: 992px) {
+  #app form {
+    background-position: left top, left bottom 54px;
+    padding-bottom: 59px;
+  }
   #app form .up,
   #app form .down {
     width: 720px;
@@ -619,6 +629,10 @@ input[type=number] {
 }
 
 @media all and (max-width: 768px) {
+  #app form {
+    background-position: left top, left bottom 96px;
+    padding-bottom: 128px;
+  }
   #app form .up,
   #app form .down {
     width: 680px;
@@ -841,12 +855,13 @@ input[type=number] {
   }
   #app form .down {
     margin-top: 35px;
-    margin-bottom: 110px;
+    display: block;
   }
   #app form .down .btnRow {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-bottom: 45px;
+    width: 100%;
   }
   #app form .down .btnRow button {
     width: 191px;
@@ -856,6 +871,9 @@ input[type=number] {
 }
 
 @media all and (max-width: 414px) {
+  #app form {
+    background-position: left top, left bottom 116px;
+  }
   #app form .banner {
     height: 125px;
   }
@@ -1013,6 +1031,10 @@ input[type=number] {
 }
 
 @media all and (max-width: 320px) {
+  #app form {
+    background-position: left top, left bottom 0px;
+    padding-bottom: 10px;
+  }
   #app form .banner {
     height: 94px;
   }
@@ -1046,16 +1068,21 @@ input[type=number] {
   }
 }
 
-#app {
+#app .chkpage {
   font-family: "LiHei", sans-serif;
   background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
   background-repeat: no-repeat;
-  background-position: left bottom 54px;
+  background-position: left bottom 0px;
   background-color: #fbf3dc;
-  background-size: contain;
+  padding-bottom: 50px;
 }
 
-#app .banner img.text_fill {
+#app .chkpage .banner {
+  height: 320px;
+  position: relative;
+}
+
+#app .chkpage .banner img.text_fill {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1064,214 +1091,202 @@ input[type=number] {
   width: 65%;
 }
 
-#app .banner img:nth-of-type(2) {
+#app .chkpage .banner img:nth-of-type(2) {
   display: none;
 }
 
-#app main {
+#app .chkpage main {
   max-width: 1052px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
+  border: 1px solid transparent;
 }
 
-#app main .wordBox {
+#app .chkpage main .wordBox {
   width: 60%;
-  border: 1px solid blue;
+  border: 1px solid transparent;
 }
 
-#app main .wordBox .wordItem {
+#app .chkpage main .wordBox .wordItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 60px;
 }
 
-#app main .wordBox .wordItem .flxLeft {
+#app .chkpage main .wordBox .wordItem .flxLeft {
   width: 40%;
   text-align: right;
   font-size: 38px;
   color: #6b1c1f;
 }
 
-#app main .wordBox .wordItem .flxRight {
+#app .chkpage main .wordBox .wordItem .flxRight {
   width: 59%;
   font-size: 38px;
 }
 
-#app main .imgBox {
+#app .chkpage main .imgBox {
   width: 39%;
-  border: 1px solid green;
+  border: 1px solid transparent;
 }
 
-#app main .imgBox img {
+#app .chkpage main .imgBox img {
   max-width: 100%;
 }
 
-#app .down {
+#app .chkpage .down {
   width: 55%;
-  margin: 0px auto;
+  margin: 60px auto 0 auto;
 }
 
-#app .down .btnRow {
-  margin-bottom: 55px !important;
+#app .chkpage .down .btnRow {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
-#app .down .btnRow img {
+#app .chkpage .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  margin-right: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+#app .chkpage .down .btnRow button img {
   width: 100%;
 }
 
-#app .down .btnRow img:active {
+#app .chkpage .down .btnRow button img:active {
   opacity: .8;
 }
 
 @media all and (max-width: 992px) {
-  #app .banner {
+  #app .chkpage .banner {
     height: 180px !important;
   }
-  #app .banner img.text_fill {
+  #app .chkpage .banner img.text_fill {
     bottom: 25px !important;
     width: 80% !important;
   }
-  #app .banner img:nth-of-type(2) {
-    display: none;
-  }
-  #app main {
+  #app .chkpage main {
     max-width: 685px;
   }
-  #app main .wordBox .wordItem .flxLeft {
+  #app .chkpage main .wordBox .wordItem .flxLeft {
     width: 44%;
     font-size: 28px;
   }
-  #app main .wordBox .wordItem .flxRight {
+  #app .chkpage main .wordBox .wordItem .flxRight {
     font-size: 28px;
   }
-  #app main .imgBox {
+  #app .chkpage main .imgBox {
     width: 39%;
   }
-  #app main .imgBox img {
+  #app .chkpage main .imgBox img {
     max-width: 100%;
     margin-top: 63px;
   }
-  #app .down {
-    width: 100%;
+  #app .chkpage .down {
+    width: 80%;
     margin-bottom: 54px;
   }
-  #app .down .btnRow button {
+  #app .chkpage .down .btnRow button {
     width: 257px !important;
     height: 64px !important;
   }
 }
 
 @media all and (max-width: 576px) {
-  #app {
+  #app .chkpage {
     background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
-    background-position: left top 87px, left bottom 117px !important;
+    background-position: left top, left bottom !important;
     background-repeat: no-repeat, no-repeat !important;
     background-size: contain !important;
+    padding-bottom: 50px;
+    min-height: 75vh;
   }
-  #app .banner {
-    height: 100px !important;
+  #app .chkpage .banner {
+    height: 147px !important;
+    position: relative;
   }
-  #app .banner img.text_fill {
+  #app .chkpage .banner img.text_fill {
     display: none;
   }
-  #app .banner img:nth-of-type(2) {
+  #app .chkpage .banner img:nth-of-type(2) {
     display: block;
-    max-width: 93%;
-    margin: 50px auto 0px auto;
+    max-width: 90%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 10px;
   }
-  #app main {
+  #app .chkpage main {
     display: block;
   }
-  #app main .wordBox {
+  #app .chkpage main .wordBox {
     width: 90%;
     margin: 0 auto;
   }
-  #app main .wordBox .wordItem:nth-of-type(1) {
+  #app .chkpage main .wordBox .wordItem:nth-of-type(1) {
     margin-top: 5px;
   }
-  #app main .wordBox .wordItem {
+  #app .chkpage main .wordBox .wordItem {
     margin-top: 20px;
   }
-  #app main .wordBox .wordItem .flxLeft, #app main .wordBox .wordItem .flxRight {
+  #app .chkpage main .wordBox .wordItem .flxLeft,
+  #app .chkpage main .wordBox .wordItem .flxRight {
     font-size: 20px;
   }
-  #app main .wordBox .wordItem .flxLeft {
+  #app .chkpage main .wordBox .wordItem .flxLeft {
     width: 48%;
     margin-right: 7px;
   }
-  #app main .imgBox {
+  #app .chkpage main .imgBox {
     display: none;
   }
-  #app .down {
+  #app .chkpage .down {
+    display: block;
     margin-top: 0px;
     margin-bottom: 106px;
   }
-  #app .down .btnRow {
+  #app .chkpage .down .btnRow {
     width: 90% !important;
   }
-  #app .down .btnRow button {
-    width: 123px !important;
+  #app .chkpage .down .btnRow button {
     height: 33px !important;
     margin: 25px auto 15px auto;
   }
 }
 
+@media all and (max-width: 414px) {
+  #app .chkpage {
+    min-height: 78vh;
+  }
+}
+
 @media all and (max-width: 375px) {
-  #app {
-    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
-    background-position: left top 70px, left bottom 117px !important;
-    background-repeat: no-repeat, no-repeat !important;
-    background-size: contain !important;
+  #app .chkpage {
+    min-height: 78vh;
   }
-  #app .banner {
+  #app .chkpage .banner {
     height: 100px !important;
+    position: relative;
   }
-  #app .banner img.text_fill {
-    display: none;
+  #app .chkpage .down .btnRow {
+    width: 100% !important;
   }
-  #app .banner img:nth-of-type(2) {
-    display: block;
-    max-width: 93%;
-    margin: 50px auto 0px auto;
-  }
-  #app main {
-    display: block;
-  }
-  #app main .wordBox {
-    width: 90%;
-    margin: 0 auto;
-  }
-  #app main .wordBox .wordItem:nth-of-type(1) {
-    margin-top: 5px;
-  }
-  #app main .wordBox .wordItem {
-    margin-top: 20px;
-  }
-  #app main .wordBox .wordItem .flxLeft, #app main .wordBox .wordItem .flxRight {
-    font-size: 20px;
-  }
-  #app main .wordBox .wordItem .flxLeft {
-    width: 48%;
-    margin-right: 7px;
-  }
-  #app main .imgBox {
-    display: none;
-  }
-  #app .down {
-    margin-top: 0px;
-    margin-bottom: 46px;
-  }
-  #app .down .btnRow {
-    width: 90% !important;
-  }
-  #app .down .btnRow button {
-    width: 123px !important;
-    height: 33px !important;
-    margin: 25px auto 15px auto;
+}
+
+@media all and (max-width: 320px) {
+  #app .chkpage .down .btnRow {
+    width: 108% !important;
   }
 }
 
@@ -1285,7 +1300,7 @@ input[type=number] {
 }
 
 #app .winpage .banner {
-  border: 1px solid green;
+  border: 1px solid transparent;
   height: 250px;
   position: relative;
 }
@@ -1296,7 +1311,7 @@ input[type=number] {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 17px !important;
-  width: 90% !important;
+  width: 80% !important;
 }
 
 #app .winpage .banner img.m_text_fill {
@@ -1305,7 +1320,7 @@ input[type=number] {
 
 #app .winpage .main_bg {
   width: 65%;
-  border: 1px solid black;
+  border: 1px solid transparent;
   margin: 0 auto;
   background-image: url(./../../imgs/x2/congratulations_text.png);
   background-repeat: no-repeat;
@@ -1337,7 +1352,16 @@ input[type=number] {
 }
 
 #app .winpage .main_bg .down .btnRow button {
+  display: block;
   margin: 0px auto 100px auto;
+  width: 318px;
+  height: 80px;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
   cursor: pointer;
 }
 
@@ -1609,15 +1633,47 @@ input[type=number] {
   }
 }
 
-#app .allcontent {
+#app .losepage {
+  font-family: "LiHei", sans-serif;
+  background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top, left bottom 50px;
+  background-color: #fbf3dc;
+  padding-bottom: 80px;
+}
+
+#app .losepage .banner {
+  height: 250px;
+  position: relative;
+}
+
+#app .losepage .banner img.text_fill {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 30px;
+  width: 80%;
+}
+
+#app .losepage .banner img.m_text_fill {
+  display: none;
+}
+
+#app .losepage .allcontent {
   text-align: center;
 }
 
-#app .allcontent img {
-  max-width: 83%;
+#app .losepage .allcontent img {
+  max-width: 65%;
 }
 
-#app button {
+#app .losepage .allcontent img.m_award {
+  display: none;
+}
+
+#app .losepage .btnRow button {
   display: block;
   margin: 40px auto 60px auto;
   width: 318px;
@@ -1630,14 +1686,116 @@ input[type=number] {
   cursor: pointer;
 }
 
-#app button:active {
+#app .losepage .btnRow button img {
+  width: 100%;
+}
+
+#app .losepage .btnRow button img:active {
   opacity: .8;
+}
+
+@media all and (max-width: 1200px) {
+  #app .losepage .btnRow button {
+    width: 286px;
+    height: 72px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  #app .losepage .btnRow button {
+    width: 257px;
+    height: 64px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #app .losepage .banner {
+    height: 180px !important;
+  }
+  #app .losepage .banner img.text_fill {
+    bottom: 25px;
+  }
+  #app .losepage .btnRow button {
+    width: 257px;
+    height: 64px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #app .losepage {
+    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg);
+    background-position: left top, left bottom 65px;
+    background-color: #fbf3dc;
+    padding-bottom: 80px;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  #app .losepage .banner {
+    height: 155px !important;
+  }
+  #app .losepage .banner img.m_text_fill {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    max-width: 88%;
+  }
+  #app .losepage .allcontent img {
+    max-width: 80%;
+  }
+  #app .losepage .allcontent img:nth-of-type(1) {
+    display: none;
+  }
+  #app .losepage .allcontent img.m_award {
+    display: block;
+    margin: 0 auto;
+  }
+  #app .losepage .btnRow button {
+    width: 191px;
+    height: 46px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #app .losepage .banner {
+    height: 125px !important;
+  }
+  #app .losepage .btnRow button {
+    width: 171px;
+    height: 41px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #app .losepage .banner {
+    height: 109px !important;
+  }
+  #app .losepage .btnRow button {
+    width: 145px;
+    height: 35px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #app .losepage {
+    background-position: left top, left bottom 0px;
+    padding-bottom: 2px;
+  }
+  #app .losepage .banner {
+    height: 94px !important;
+  }
+  #app .losepage .btnRow button {
+    width: 130px;
+    height: 32px;
+  }
 }
 
 #app {
   background-image: url(../../imgs/1016_landing/landing_bg.jpg) !important;
-  background-position: bottom  left -400px;
+  background-position: bottom left -400px;
   background-size: cover;
+  padding-bottom: 120px;
 }
 
 #app .index_m_header {
@@ -1692,13 +1850,19 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 
 #app .down .btnRow button {
   width: 318px;
   height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
 }
 
 #app .down .btnRow button img {
@@ -1854,6 +2018,9 @@ input[type=number] {
 }
 
 @media all and (max-width: 992px) {
+  #app {
+    padding-bottom: 80px;
+  }
   #app .allContent img.d_bg {
     max-width: 97%;
     margin-top: 40px;
@@ -1861,19 +2028,19 @@ input[type=number] {
   #app .allContent #btndetail1,
   #app .allContent #btndetail2 {
     width: 90px;
-    bottom: 109px;
+    bottom: 143px;
   }
   #app .allContent #btndetail1 {
-    left: 15%;
+    left: 15.5%;
   }
   #app .allContent #btndetail2 {
-    left: 44%;
+    left: 45%;
   }
   #app .down .btnRow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
   }
   #app .down .btnRow button {
@@ -1896,11 +2063,28 @@ input[type=number] {
   }
 }
 
+@media all and (max-width: 768px) {
+  #app {
+    padding-bottom: 158px;
+  }
+  #app .allContent #btndetail1,
+  #app .allContent #btndetail2 {
+    bottom: 110px;
+  }
+  #app .allContent #btndetail1 {
+    left: 14.5%;
+  }
+  #app .allContent #btndetail2 {
+    left: 44%;
+  }
+}
+
 @media all and (max-width: 576px) {
   #app {
     background-image: url(../../imgs/mobile/m_landing_bg2.jpg) !important;
     background-position: bottom 40px left !important;
     background-size: contain !important;
+    padding-bottom: 40px;
   }
   #app .index_m_header {
     display: block;
@@ -1930,19 +2114,21 @@ input[type=number] {
   #app .allContent #btndetail2 {
     width: 100px;
     bottom: unset;
-    top: 248px;
+    top: 365px;
   }
   #app .allContent #btndetail1 {
-    left: 11%;
+    left: 15%;
   }
   #app .allContent #btndetail2 {
-    left: 64%;
+    left: 68%;
   }
   #app .m_btnRow {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #app .m_btnRow button {
     width: 145px;
@@ -2014,6 +2200,9 @@ input[type=number] {
 }
 
 @media all and (max-width: 414px) {
+  #app .allContent {
+    min-height: 90vh;
+  }
   #app .allContent #btndetail1,
   #app .allContent #btndetail2 {
     width: 100px;
@@ -2028,6 +2217,9 @@ input[type=number] {
 }
 
 @media all and (max-width: 375px) {
+  #app .allContent {
+    min-height: 82vh;
+  }
   #app .allContent #btndetail1,
   #app .allContent #btndetail2 {
     top: 244px;
@@ -2055,6 +2247,12 @@ input[type=number] {
 }
 
 @media all and (max-width: 320px) {
+  #app {
+    padding-bottom: unset;
+  }
+  #app .allContent {
+    min-height: 75vh;
+  }
   #app .allContent #btndetail1,
   #app .allContent #btndetail2 {
     width: 90px;

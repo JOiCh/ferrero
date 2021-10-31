@@ -1,28 +1,214 @@
 #app {
-
-    .allcontent {
-        text-align: center;
-        img {
-            max-width: 83%;
-        }
-    }
-
-    button {
-        display: block;
-        margin: 40px auto 60px auto;
-        width: 318px;
-        height: 80px;
+    .losepage {
+        font-family: "LiHei", sans-serif;
+        background-image: url(../../imgs/x2/blur_bg_up.jpg),
+            url(../../imgs/x2/blur_bg_down.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        background-color: transparent;
-        outline: unset;
-        border: unset;
-        cursor: pointer;
+        background-position: left top, left bottom 50px;
+        background-color: $bg;
+        padding-bottom: 80px;
 
-        &:active {
-            opacity: .8;
+        .banner {
+            height: 250px;
+            position: relative;
+
+            img.text_fill {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 30px;
+                width: 80%;
+            }
+
+            img.m_text_fill{
+                display: none;
+            }
+        }
+
+        .allcontent {
+            text-align: center;
+
+            img {
+                max-width: 65%;
+            }
+
+            img.m_award{
+                display: none;
+            }
+        }
+
+        .btnRow {
+
+            button {
+                display: block;
+                margin: 40px auto 60px auto;
+                width: 318px;
+                height: 80px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                outline: unset;
+                border: unset;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+
+                    &:active {
+                        opacity: .8;
+                    }
+                }
+
+            }
         }
     }
 
+    @include middle_screen {
+        .losepage {
 
+            .btnRow {
+
+                button {
+                    width: 286px;
+                    height: 72px;
+                }
+            }
+        }
+    }
+
+    @include laptop{
+        .losepage {
+
+            .btnRow {
+
+                button {
+                    width: 257px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+
+    @include ipad{
+        .losepage {
+
+            .banner {
+                height: 180px !important;
+    
+                img.text_fill {
+                    bottom:25px;
+                }
+            }
+            .btnRow {
+
+                button {
+                    width: 257px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+
+    @include mobile{
+        .losepage {
+            background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
+                url(../../imgs/mobile/m_blur_bg_down.jpg);
+            background-position: left top, left bottom 65px;
+            background-color: $bg;
+            padding-bottom: 80px;    
+            transform: translateY(0%);
+    
+            .banner {
+                height: 155px !important;
+    
+                img.m_text_fill {
+                    position: absolute;
+                    bottom: 25px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    max-width: 88%;
+                }
+            }
+    
+            .allcontent {
+                // text-align: center;
+    
+                img {
+                    max-width: 80%;
+                }
+                img:nth-of-type(1){
+                    display: none;
+                }
+                img.m_award{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+    
+            .btnRow {
+    
+                button {
+                    // margin: 40px auto 60px auto;
+                    width: 191px;
+                    height: 46px;
+    
+                }
+            }
+        }
+    }
+
+    @include mobile_m{
+        .losepage {
+    
+            .banner {
+                height: 125px !important;
+            }
+    
+            .btnRow {
+    
+                button {
+                    width: 171px;
+                    height: 41px;
+    
+                }
+            }
+        }
+    }
+
+    @include mobile_s{
+        .losepage {
+    
+            .banner {
+                height: 109px !important;
+            }
+    
+            .btnRow {
+    
+                button {
+                    width: 145px;
+                    height: 35px;
+    
+                }
+            }
+        }
+    }
+
+    @include mobile_xs{
+        .losepage {
+            background-position: left top, left bottom 0px;
+            padding-bottom: 2px;
+            .banner {
+                height: 94px !important;
+            }
+    
+            .btnRow {
+    
+                button {
+                    width: 130px;
+                    height: 32px;
+                }
+            }
+        }
+    }
 }
