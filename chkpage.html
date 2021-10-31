@@ -10,77 +10,79 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="chkapp">
         <header>
             <the-header></the-header>
         </header>
-        <div class="banner">
-            <img src="./imgs/x2/text_check.png" class="text_fill">
-            <img src="./imgs/mobile/m_text_check.png" alt="">
-        </div>
-        <main>
-            <div class="wordBox">
-                <div class="wordItem">
-                    <div class="flxLeft">
-                        發票日期:
-                    </div>
-                    <div class="flxRight">
-                        2021年12月15日
-                    </div>
-                </div>
-                <div class="wordItem">
-                    <div class="flxLeft">
-                        發票號碼:   
-                    </div>
-                    <div class="flxRight">
-                        FN0000123
-                    </div>
-                </div>
-                <div class="wordItem">
-                    <div class="flxLeft">
-                        發票隨機碼:
-                    </div>
-                    <div class="flxRight">
-                        8132
-                    </div>
-                </div>
-                <div class="wordItem">
-                    <div class="flxLeft">
-                        真實姓名:
-                    </div>
-                    <div class="flxRight">
-                        王小明
-                    </div>
-                </div>
-                <div class="wordItem">
-                    <div class="flxLeft">
-                        手機號碼:
-                    </div>
-                    <div class="flxRight">
-                        0912345678
-                    </div>
-                </div>
-                <div class="wordItem">
-                    <div class="flxLeft">
-                        電子郵件地址:
-                    </div>
-                    <div class="flxRight">
-                        award@gmail.com
-                    </div>
-                </div>
+        <div class="chkpage">
+            <div class="banner">
+                <img src="./imgs/x2/text_check.png" class="text_fill">
+                <img src="./imgs/mobile/m_text_check.png" alt="">
             </div>
-            <div class="imgBox">
-                <img src="./imgs/x2/check_deco.png" alt="">
-            </div>
-        </main>
-        <div class="down">
-            <div class="btnRow">
-                <button type="button">
-                    <img src="./imgs/x2/btn_rewrite.png" alt="">
-                </button>
-                <button type="button">
-                    <img src="./imgs/x2/btn_sure.png" alt="">
-                </button>
+            <main>
+                <div class="wordBox">
+                    <div class="wordItem">
+                        <div class="flxLeft">
+                            發票日期:
+                        </div>
+                        <div class="flxRight">
+                            2021年12月15日
+                        </div>
+                    </div>
+                    <div class="wordItem">
+                        <div class="flxLeft">
+                            發票號碼:
+                        </div>
+                        <div class="flxRight">
+                            FN0000123
+                        </div>
+                    </div>
+                    <div class="wordItem">
+                        <div class="flxLeft">
+                            發票隨機碼:
+                        </div>
+                        <div class="flxRight">
+                            8132
+                        </div>
+                    </div>
+                    <div class="wordItem">
+                        <div class="flxLeft">
+                            真實姓名:
+                        </div>
+                        <div class="flxRight">
+                            王小明
+                        </div>
+                    </div>
+                    <div class="wordItem">
+                        <div class="flxLeft">
+                            手機號碼:
+                        </div>
+                        <div class="flxRight">
+                            0912345678
+                        </div>
+                    </div>
+                    <div class="wordItem">
+                        <div class="flxLeft">
+                            電子郵件地址:
+                        </div>
+                        <div class="flxRight">
+                            award@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <div class="imgBox">
+                    <img src="./imgs/x2/check_deco.png" alt="">
+                </div>
+            </main>
+            <div class="down">
+                <div class="btnRow">
+                    <button type="button">
+                        <img src="./imgs/x2/btn_rewrite.png" @click="link">
+                    </button>
+                    <button type="button">
+                        <img src="./imgs/x2/btn_sure.png" alt="">
+                    </button>
+                </div>
             </div>
         </div>
         <footer>
@@ -91,7 +93,12 @@
     <script src="./js/header_footer.js"></script>
     <script>
         new Vue({
-            el: '#app',
+            el: '#chkapp',
+            methods: {
+                link() {
+                    location.href = "./qrcode.html"
+                },
+            },
         })
     </script>
 </body>

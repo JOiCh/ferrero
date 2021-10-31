@@ -10,17 +10,25 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="loseapp">
         <header>
             <the-header></the-header>
         </header>
-        <div class="banner">
-            <img src="./imgs/x2/text_result.png" class="text_fill">
+        <div class="losepage">
+            <div class="banner">
+                <img src="./imgs/x2/text_result.png" class="text_fill">
+                <img src="./imgs/mobile/m_text_result.png" class="m_text_fill">
+            </div>
+            <div class="allcontent">
+                <img src="./imgs/x2/award_detail.png" alt="">
+                <img src="./imgs/mobile/m_award_detail.png" class="m_award">
+            </div>
+            <div class="btnRow">
+                <button @click="link">
+                    <img src="./imgs/x2/btn_another_bill.png" alt="">
+                </button>
+            </div>
         </div>
-        <div class="allcontent">
-            <img src="./imgs/x2/award_detail.png" alt="">
-        </div>
-        <button></button>
         <footer>
             <the-footer></the-footer>
         </footer>
@@ -29,7 +37,12 @@
     <script src="./js/header_footer.js"></script>
     <script>
         new Vue({
-            el: '#app',
+            el: '#loseapp',
+            methods: {
+                link() {
+                    location.href = "./qrcode.html"
+                },
+            },
         })
     </script>
 </body>

@@ -1,263 +1,290 @@
-#app {
-    font-family: "LiHei", sans-serif;
-    background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
-    background-repeat: no-repeat;
-    background-position: left bottom 54px;
-    background-color: $bg;
-    background-size: contain;
+#chkapp {
+    .chkpage {
+        font-family: "LiHei", sans-serif;
+        background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+        background-repeat: no-repeat;
+        background-position: left bottom 0px;
+        background-color: $bg;
+        padding-bottom: 50px;
 
-    .banner {
-
-        img.text_fill {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 50px;
-            width: 65%;
-        }
-
-        img:nth-of-type(2) {
-            display: none;
-        }
-    }
-
-    main {
-        max-width: 1052px;
-        margin: 0 auto;
-        display: flex;
-        border: 1px solid red;
-
-
-        .wordBox {
-            width: 60%;
-            border: 1px solid blue;
-
-            .wordItem {
-                display: flex;
-                margin-top: 60px;
-
-                .flxLeft {
-                    width: 40%;
-                    text-align: right;
-                    font-size: 38px;
-                    color: $main;
-                }
-
-                .flxRight {
-                    width: 59%;
-                    font-size: 38px;
-                }
-            }
-        }
-
-        .imgBox {
-            width: 39%;
-            border: 1px solid green;
-
-            img {
-                max-width: 100%;
-            }
-        }
-    }
-
-    .down {
-        width: 55%;
-        margin: 0px auto;
-
-        .btnRow {
-            margin-bottom: 55px !important;
-            img{
-                width: 100%;
-                &:active{
-                    opacity: .8;
-                }
-            }
-        }
-    }
-
-
-}
-
-@include laptop{
-    #app {
-    
         .banner {
-            height: 180px !important;
+            height: 320px;
+            position: relative;
 
             img.text_fill {
-                bottom: 25px !important;
-                width: 80% !important;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 50px;
+                width: 65%;
             }
-    
+
             img:nth-of-type(2) {
                 display: none;
             }
         }
-    
+
         main {
-            max-width:685px;
+            max-width: 1052px;
+            margin: 0 auto;
+            display: flex;
+            border: 1px solid transparent;
+
 
             .wordBox {
-    
+                width: 60%;
+                border: 1px solid transparent;
+
                 .wordItem {
-    
+                    display: flex;
+                    margin-top: 60px;
+
                     .flxLeft {
-                        width: 44%;
-                        font-size: 28px;
+                        width: 40%;
+                        text-align: right;
+                        font-size: 38px;
+                        color: $main;
                     }
-    
+
                     .flxRight {
-                        font-size: 28px;
+                        width: 59%;
+                        font-size: 38px;
                     }
                 }
             }
-    
+
             .imgBox {
                 width: 39%;
-    
+                border: 1px solid transparent;
+
                 img {
                     max-width: 100%;
-                    margin-top: 63px;
                 }
             }
         }
-    
-        .down {
-            width: 100%;
-            margin-bottom: 54px;
-    
-            .btnRow {
-                // margin-bottom: 55px !important;
 
-                button{
-                    width: 257px !important;
-                    height: 64px !important;
-                   
+        .down {
+            width: 55%;
+            margin: 60px auto 0 auto;
+
+            .btnRow {
+                text-align: center;
+                margin-bottom: 80px;
+
+                button {
+                    width: 318px;
+                    height: 80px;
+                    margin-right: 80px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    outline: unset;
+                    border: unset;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+
+                        &:active {
+                            opacity: .8;
+                        }
+                    }
+
                 }
             }
         }
-    
-    
     }
-    
 }
 
-@include mobile{
-    #app {
-        background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
-                          url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
-        background-position: left top 87px, left bottom 117px !important;
-        background-repeat: no-repeat, no-repeat !important;
-        background-size: contain !important;
+@include laptop {
+    #chkapp {
+        .chkpage {
 
-        .banner {
-            height: 100px !important;
-            img.text_fill {
-                display: none;
+            .banner {
+                height: 180px !important;
+
+                img.text_fill {
+                    bottom: 25px !important;
+                    width: 80% !important;
+                }
             }
 
-            img:nth-of-type(2) {
+            main {
+                max-width: 685px;
+
+                .wordBox {
+
+                    .wordItem {
+
+                        .flxLeft {
+                            width: 44%;
+                            font-size: 28px;
+                        }
+
+                        .flxRight {
+                            font-size: 28px;
+                        }
+                    }
+                }
+
+                .imgBox {
+                    width: 39%;
+
+                    img {
+                        max-width: 100%;
+                        margin-top: 63px;
+                    }
+                }
+            }
+
+            .down {
+                width: 80%;
+                margin-bottom: 54px;
+
+                .btnRow {
+
+                    button {
+                        width: 257px !important;
+                        height: 64px !important;
+
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+}
+
+@include mobile {
+    #chkapp {
+
+        .chkpage {
+            background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
+                url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+            background-position: left top, left bottom !important;
+            background-repeat: no-repeat, no-repeat !important;
+            background-size: contain !important;
+            padding-bottom: 50px;
+            min-height: 75vh;
+
+            .banner {
+                height: 147px !important;
+                position: relative;
+
+                img.text_fill {
+                    display: none;
+                }
+
+                img:nth-of-type(2) {
+                    display: block;
+                    max-width: 90%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 10px;
+                }
+            }
+
+            main {
                 display: block;
-                max-width: 93%;
-                margin: 50px auto 0px auto;
+
+                .wordBox {
+                    width: 90%;
+                    margin: 0 auto;
+
+                    .wordItem:nth-of-type(1) {
+                        margin-top: 5px;
+                    }
+
+                    .wordItem {
+                        margin-top: 20px;
+
+                        .flxLeft,
+                        .flxRight {
+                            font-size: 20px;
+                        }
+
+                        .flxLeft {
+                            width: 48%;
+                            margin-right: 7px;
+                        }
+                    }
+                }
+
+                .imgBox {
+                    display: none;
+                }
             }
+
+            .down {
+                display: block;
+                margin-top: 0px;
+                margin-bottom: 106px;
+
+                .btnRow {
+                    width: 90% !important;
+
+                    button {
+                        height: 33px !important;
+                        margin: 25px auto 15px auto;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include mobile_m{
+    #chkapp {
+
+        .chkpage {
+            min-height: 78vh;
         }
 
-        main{
-            display: block;
-            .wordBox{
-                width: 90%;
-                margin: 0 auto;
-                .wordItem:nth-of-type(1){
-                    margin-top: 5px;
-                }
-                .wordItem{
-                    margin-top: 20px;
-                    .flxLeft, .flxRight{
-                        font-size: 20px;
-                    }
-                    .flxLeft{
-                        width: 48%;
-                        margin-right: 7px;
-                    }
-                }
-            }
-            .imgBox{
-                display: none;
-            }
-        }
-
-        .down{
-            margin-top: 0px;
-            margin-bottom: 106px;
-            .btnRow{
-                width: 90% !important;
-                button{
-                    width: 123px !important;
-                    height: 33px !important;
-                    margin: 25px auto 15px auto;
-                }
-            }
-        }
     }
 }
 
 @include mobile_s {
-    #app {
-        background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
-                          url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
-        background-position: left top 70px, left bottom 117px !important;
-        background-repeat: no-repeat, no-repeat !important;
-        background-size: contain !important;
+    #chkapp {
 
-        .banner {
-            height: 100px !important;
-            img.text_fill {
-                display: none;
+        .chkpage {
+            min-height: 78vh;
+
+            .banner {
+                height: 100px !important;
+                position: relative;
+
             }
 
-            img:nth-of-type(2) {
-                display: block;
-                max-width: 93%;
-                margin: 50px auto 0px auto;
-            }
-        }
-
-        main{
-            display: block;
-            .wordBox{
-                width: 90%;
-                margin: 0 auto;
-                .wordItem:nth-of-type(1){
-                    margin-top: 5px;
-                }
-                .wordItem{
-                    margin-top: 20px;
-                    .flxLeft, .flxRight{
-                        font-size: 20px;
-                    }
-                    .flxLeft{
-                        width: 48%;
-                        margin-right: 7px;
-                    }
+            .down {
+                .btnRow {
+                    width: 100% !important;
                 }
             }
-            .imgBox{
-                display: none;
-            }
+
+
         }
 
-        .down{
-            margin-top: 0px;
-            margin-bottom: 46px;
-            .btnRow{
-                width: 90% !important;
-                button{
-                    width: 123px !important;
-                    height: 33px !important;
-                    margin: 25px auto 15px auto;
+    }
+}
+
+@include mobile_xs {
+    #chkapp {
+
+        .chkpage {
+            .down {
+
+                .btnRow {
+                    width: 108% !important;
+
                 }
             }
+
         }
+
     }
 }

@@ -1,4 +1,4 @@
-#app {
+#scanapp {
     font-family: "LiHei", sans-serif;
     min-height: 100vh;
     form {
@@ -7,18 +7,19 @@
             url(../../imgs/x2/blur_bg_down.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: left top, left bottom;
+        background-position: left top, left bottom 54px;
         background-color: $bg;
+        padding-bottom: 59px;
 
         .up,
         .down {
-            border: 1px solid red;
+            border: 1px solid transparent;
             width: 55%;
             margin: 0 auto;
         }
 
         .banner {
-            border: 1px solid green;
+            border: 1px solid transparent;
             height: 320px;
             position: relative;
 
@@ -43,7 +44,7 @@
             }
 
             .middle {
-                border: 1px solid blue;
+                border: 1px solid transparent;
                 display: flex;
 
                 .left {
@@ -141,7 +142,7 @@
             }
 
             .chkbox {
-                border: 1px solid hotpink;
+                border: 1px solid transparent;
                 margin: 0 auto;
                 width: 50%;
                 margin-top: 40px;
@@ -210,9 +211,10 @@
                 url(../../imgs/x2/blur_bg_down.jpg);
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: left top, left bottom;
+            background-position: left top, left bottom 54px;
             background-color: $bg;
             min-height: 100%;
+            padding-bottom: 59px;
 
             .up,
             .down {
@@ -302,6 +304,8 @@
 
     @include middle_screen {
         form {
+            background-position: left top, left bottom 54px;
+            padding-bottom: 59px;
 
             .up,
             .down {
@@ -404,6 +408,8 @@
 
     @include laptop {
         form {
+            background-position: left top, left bottom 54px;
+            padding-bottom: 59px;
 
             .up,
             .down {
@@ -491,6 +497,8 @@
 
     @include ipad {
         form {
+            background-position: left top, left bottom 96px;
+            padding-bottom: 128px;
 
             .up,
             .down {
@@ -559,6 +567,7 @@
 
     @include mobile {
         form {
+
             .banner {
                 height: 155px;
                 position: relative;
@@ -781,11 +790,12 @@
 
             .down {
                 margin-top: 35px;
-                margin-bottom: 110px;
+                display: block;
 
                 .btnRow {
                     flex-wrap: nowrap;
                     margin-bottom: 45px;
+                    width: 100%;
 
                     button {
                         width: 191px;
@@ -800,6 +810,7 @@
 
     @include mobile_m {
         form {
+            background-position: left top, left bottom 116px;
             .banner {
                 height: 125px;
 
@@ -1034,6 +1045,8 @@
 
     @include mobile_xs{
         form {
+            background-position: left top, left bottom 0px;
+            padding-bottom: 10px;
             .banner {
                 height: 94px;
             }
