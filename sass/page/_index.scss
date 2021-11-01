@@ -3,6 +3,8 @@
     background-position: bottom left -400px;
     background-size: cover;
     padding-bottom: 120px;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 
     .landing {
         .index_m_header {
@@ -439,9 +441,9 @@
 
 @include mobile {
     #indexapp {
-        background-image: url(../../imgs/mobile/m_landing_bg2.jpg) !important;
-        background-position: bottom 40px left !important;
-        background-size: contain !important;
+        background-image: url(../../imgs/mobile/m_landing_bg.jpg) ;
+        background-position: bottom 40px left ;
+        background-size: contain ;
         padding-bottom: 40px;
 
         .landing {
@@ -449,7 +451,7 @@
                 display: block;
                 width: 100%;
                 height: 35px;
-                background-image: url(../../imgs/mobile/m_golden_top.png);
+                background-image: url(../../imgs/mobile/m_golden_top.png) !important;
                 background-size: cover;
 
                 #logo {
@@ -463,7 +465,7 @@
             }
 
             .allContent {
-                background-image: url(../../imgs/mobile/m_landing_bg.jpg);
+                // background-image: url(../../imgs/mobile/m_landing_bg.jpg);
                 background-size: cover;
                 min-height: 100vh;
                 padding-bottom: 100px;
