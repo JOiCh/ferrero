@@ -1577,191 +1577,169 @@ input[type=number] {
   }
 }
 
-#indexapp {
-  background-image: url(../../imgs/1016_landing/landing_bg.jpg) !important;
-  background-position: bottom left -400px;
-  background-size: cover;
-  padding-bottom: 120px;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-#indexapp .landing .index_m_header {
-  display: none;
-  position: relative;
-}
-
-#indexapp .landing .index_m_header img:nth-of-type(1) {
-  max-width: 100%;
-}
-
-#indexapp .landing .allContent {
-  text-align: center;
-  position: relative;
-}
-
-#indexapp .landing .allContent img.d_bg {
-  max-width: 90%;
-  margin-top: 20px;
-}
-
-#indexapp .landing .allContent img.m_bg {
-  display: none;
-}
-
-#indexapp .landing .allContent #btndetail1,
-#indexapp .landing .allContent #btndetail2 {
-  position: absolute;
-  width: 150px;
-  bottom: 256px;
-  cursor: pointer;
-}
-
-#indexapp .landing .allContent #btndetail1:active,
-#indexapp .landing .allContent #btndetail2:active {
-  opacity: .8;
-}
-
-#indexapp .landing .allContent #btndetail1 {
-  left: 19%;
-}
-
-#indexapp .landing .allContent #btndetail2 {
-  left: 46%;
-}
-
-#indexapp .landing .allContent .m_btnRow {
-  display: none;
-}
-
-#indexapp .landing .down .btnRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  margin: 0 auto;
-}
-
-#indexapp .landing .down .btnRow button {
-  width: 318px;
-  height: 80px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  outline: unset;
-  border: unset;
-  cursor: pointer;
-}
-
-#indexapp .landing .down .btnRow button img {
-  width: 100%;
-}
-
-#indexapp .landing .down .btnRow button img:active {
-  opacity: .8;
-}
-
-#indexapp .landing .down .btnRow button:nth-of-type(1) {
-  margin-right: 8%;
-}
-
-#indexapp .landing .down .btnRow button:nth-of-type(2) {
-  margin-left: 8%;
-}
-
-#indexapp .landing .showAwards {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(53, 53, 53, 0.589);
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 6;
-  -webkit-transition: .1s;
-  transition: .1s;
-}
-
-#indexapp .landing .showAwards .wrap {
-  width: 67%;
-  margin: 0 auto;
-}
-
-#indexapp .landing .showAwards .wrap header {
-  margin-top: 50px;
-}
-
-#indexapp .landing .showAwards .wrap header .fullHeader {
-  max-width: 90%;
-  max-height: 100%;
-  top: 44%;
-}
-
-#indexapp .landing .showAwards .wrap .banner {
-  height: 152px;
-  position: relative;
-  background-color: white;
-  border: unset;
-}
-
-#indexapp .landing .showAwards .wrap .banner.part2 {
-  height: 120px;
-}
-
-#indexapp .landing .showAwards .wrap .wordBox {
-  width: 100%;
-  height: 395px;
-  background-color: white;
-  overflow-y: auto;
-  padding: 0px 50px 50px 50px;
-}
-
-#indexapp .landing .showAwards .wrap .wordBox h6 {
-  color: #6b1c1f;
-  font-weight: bold;
-}
-
-#indexapp .landing .showAwards .wrap .wordBox p.yellow {
-  color: #c29138;
-  font-weight: bold;
-}
-
-#indexapp .landing .showAwards .wrap .wordBox p.item {
-  margin-top: 20px;
-}
-
-#indexapp .landing .showAwards .wrap .picBox {
-  width: 100%;
-  text-align: center;
-  height: 395px;
-  background-color: white;
-  overflow-y: auto;
-  padding-bottom: 50px;
-}
-
-#indexapp .landing .showAwards .wrap .picBox img {
-  width: 80%;
-}
-
-#indexapp .landing .showAwards #btn_close,
-#indexapp .landing .showAwards #btn_close2 {
-  position: absolute;
-  cursor: pointer;
-  top: 28px;
-  right: 17%;
-  z-index: 6;
-}
-
-@media all and (max-width: 1600px) {
+@media all and (max-width: 2560px) {
+  #indexapp {
+    background-image: url(../../imgs/1016_landing/landing_bg.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    padding-bottom: 120px;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  #indexapp .landing .index_m_header {
+    display: none;
+    position: relative;
+  }
+  #indexapp .landing .index_m_header img:nth-of-type(1) {
+    max-width: 100%;
+  }
+  #indexapp .landing .allContent {
+    text-align: center;
+    position: relative;
+  }
+  #indexapp .landing .allContent img.d_bg {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+  #indexapp .landing .allContent img.m_bg {
+    display: none;
+  }
   #indexapp .landing .allContent #btndetail1,
   #indexapp .landing .allContent #btndetail2 {
-    width: 120px;
-    bottom: 157px;
+    position: absolute;
+    width: 150px;
+    bottom: 256px;
+    cursor: pointer;
+  }
+  #indexapp .landing .allContent #btndetail1:active,
+  #indexapp .landing .allContent #btndetail2:active {
+    opacity: .8;
   }
   #indexapp .landing .allContent #btndetail1 {
-    left: 17.5%;
+    left: 19%;
   }
   #indexapp .landing .allContent #btndetail2 {
-    left: 45%;
+    left: 46%;
+  }
+  #indexapp .landing .allContent .m_btnRow {
+    display: none;
+  }
+  #indexapp .landing .down .btnRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+  }
+  #indexapp .landing .down .btnRow button {
+    width: 318px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    outline: unset;
+    border: unset;
+    cursor: pointer;
+  }
+  #indexapp .landing .down .btnRow button img {
+    width: 100%;
+  }
+  #indexapp .landing .down .btnRow button img:active {
+    opacity: .8;
+  }
+  #indexapp .landing .down .btnRow button:nth-of-type(1) {
+    margin-right: 8%;
+  }
+  #indexapp .landing .down .btnRow button:nth-of-type(2) {
+    margin-left: 8%;
+  }
+  #indexapp .landing .showAwards {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 53, 53, 0.589);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+  #indexapp .landing .showAwards .wrap {
+    width: 63%;
+    margin: 0 auto;
+  }
+  #indexapp .landing .showAwards .wrap header {
+    margin-top: 50px;
+    height: 220px;
+  }
+  #indexapp .landing .showAwards .wrap header .fullHeader {
+    max-width: 90%;
+    max-height: 100%;
+    top: 44%;
+  }
+  #indexapp .landing .showAwards .wrap .banner {
+    height: 110px;
+    position: relative;
+    background-color: white;
+    border: unset;
+  }
+  #indexapp .landing .showAwards .wrap .banner.part2 {
+    height: 120px;
+  }
+  #indexapp .landing .showAwards .wrap .wordBox {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    overflow-y: auto;
+    padding: 0px 50px 50px 50px;
+  }
+  #indexapp .landing .showAwards .wrap .wordBox h6 {
+    color: #6b1c1f;
+    font-weight: bold;
+  }
+  #indexapp .landing .showAwards .wrap .wordBox p.yellow {
+    color: #c29138;
+    font-weight: bold;
+  }
+  #indexapp .landing .showAwards .wrap .wordBox p.item {
+    margin-top: 20px;
+  }
+  #indexapp .landing .showAwards .wrap .picBox {
+    width: 100%;
+    text-align: center;
+    height: 350px;
+    background-color: white;
+    overflow-y: auto;
+    padding-bottom: 50px;
+  }
+  #indexapp .landing .showAwards .wrap .picBox img {
+    width: 70%;
+  }
+  #indexapp .landing .showAwards #btn_close,
+  #indexapp .landing .showAwards #btn_close2 {
+    position: absolute;
+    cursor: pointer;
+    top: 28px;
+    right: 19%;
+    z-index: 6;
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 1800px) {
+  #indexapp {
+    background-position: bottom left -400px;
+  }
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
+    bottom: 240px;
+    cursor: pointer;
+  }
+  #indexapp .landing .allContent #btndetail1 {
+    left: 18%;
+  }
+  #indexapp .landing .allContent #btndetail2 {
+    left: 45.5%;
   }
 }
 
@@ -1773,6 +1751,20 @@ input[type=number] {
   }
   #indexapp .landing .allContent #btndetail1 {
     left: 18%;
+  }
+  #indexapp .landing .allContent #btndetail2 {
+    left: 45.5%;
+  }
+}
+
+@media all and (max-width: 1600px) {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
+    width: 120px;
+    bottom: 219px;
+  }
+  #indexapp .landing .allContent #btndetail1 {
+    left: 18.5%;
   }
   #indexapp .landing .allContent #btndetail2 {
     left: 45.5%;
@@ -1791,12 +1783,9 @@ input[type=number] {
   #indexapp .landing .allContent #btndetail2 {
     left: 45.2%;
   }
-}
-
-@media all and (max-width: 1376px) {
-  #indexapp .landing .allContent #btndetail1,
-  #indexapp .landing .allContent #btndetail2 {
-    bottom: 180px;
+  #indexapp .landing .down {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
   }
 }
 
@@ -1818,13 +1807,16 @@ input[type=number] {
   #indexapp .landing .allContent #btndetail1,
   #indexapp .landing .allContent #btndetail2 {
     width: 110px;
-    bottom: 160px;
+    bottom: 170px;
   }
   #indexapp .landing .allContent #btndetail1 {
-    left: 17.5%;
+    left: 18%;
   }
   #indexapp .landing .allContent #btndetail2 {
-    left: 45%;
+    left: 45.2%;
+  }
+  #indexapp .landing .showAwards .wrap header {
+    height: 160px;
   }
   #indexapp .landing .showAwards .wrap header .fullHeader {
     max-height: 82%;
@@ -1837,6 +1829,20 @@ input[type=number] {
     top: 28px;
     right: 17%;
     z-index: 6;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
+    width: 105px;
+    bottom: 137px;
+  }
+  #indexapp .landing .allContent #btndetail1 {
+    left: 18.5%;
+  }
+  #indexapp .landing .allContent #btndetail2 {
+    left: 45.5%;
   }
 }
 
@@ -1859,6 +1865,10 @@ input[type=number] {
   #indexapp .landing .allContent #btndetail2 {
     left: 45%;
   }
+  #indexapp .landing .down {
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+  }
   #indexapp .landing .down .btnRow {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1877,18 +1887,26 @@ input[type=number] {
   #indexapp .landing .showAwards .wrap {
     width: 70%;
   }
-  #indexapp .landing .showAwards .wrap .banner {
-    height: 80px !important;
+  #indexapp .landing .showAwards .wrap header {
+    height: 140px;
+  }
+  #indexapp .landing .showAwards .wrap .banner,
+  #indexapp .landing .showAwards .wrap .banner.part2 {
+    height: 66px;
   }
   #indexapp .landing .showAwards .wrap .wordBox {
-    height: 500px;
-    background-color: white;
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
 @media all and (max-width: 768px) {
   #indexapp {
     padding-bottom: 158px;
+  }
+  #indexapp .landing .allContent {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
   }
   #indexapp .landing .allContent #btndetail1,
   #indexapp .landing .allContent #btndetail2 {
@@ -1900,13 +1918,17 @@ input[type=number] {
   #indexapp .landing .allContent #btndetail2 {
     left: 44%;
   }
+  #indexapp .landing .down {
+    -webkit-transform: translateY(220%);
+            transform: translateY(220%);
+  }
 }
 
 @media all and (max-width: 576px) {
   #indexapp {
     background-image: url(../../imgs/mobile/m_landing_bg.jpg);
-    background-position: bottom 40px left;
-    background-size: contain;
+    background-size: cover;
+    background-position: bottom center;
     padding-bottom: 40px;
   }
   #indexapp .landing .index_m_header {
@@ -1926,9 +1948,10 @@ input[type=number] {
     width: 60px;
   }
   #indexapp .landing .allContent {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
     background-size: cover;
     min-height: 100vh;
-    padding-bottom: 100px;
   }
   #indexapp .landing .allContent img.d_bg {
     display: none;
@@ -1944,10 +1967,10 @@ input[type=number] {
     top: 388px;
   }
   #indexapp .landing .allContent #btndetail1 {
-    left: 15%;
+    left: 16%;
   }
   #indexapp .landing .allContent #btndetail2 {
-    left: 68%;
+    left: 68.5%;
   }
   #indexapp .landing .m_btnRow {
     display: -webkit-box !important;
@@ -1956,10 +1979,11 @@ input[type=number] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   #indexapp .landing .m_btnRow button {
-    width: 145px;
-    height: 35px;
+    width: 200px;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -1972,6 +1996,12 @@ input[type=number] {
   }
   #indexapp .landing .m_btnRow button img:active {
     opacity: .8;
+  }
+  #indexapp .landing .m_btnRow button button:nth-of-type(1) {
+    margin-right: 6%;
+  }
+  #indexapp .landing .m_btnRow button button:nth-of-type(2) {
+    margin-left: 6%;
   }
   #indexapp .landing .m_btnRow button:nth-of-type(1) {
     margin-right: 6%;
@@ -1990,8 +2020,8 @@ input[type=number] {
     margin-top: 50px;
   }
   #indexapp .landing .showAwards .wrap header .fullHeader {
-    max-height: 100%;
-    top: 28%;
+    max-height: 86%;
+    top: 41%;
   }
   #indexapp .landing .showAwards .wrap .banner {
     -webkit-transform: translateY(-26px);
@@ -1999,13 +2029,13 @@ input[type=number] {
     height: 65px !important;
   }
   #indexapp .landing .showAwards .wrap .banner.part2 {
-    height: 120px;
+    height: 65px;
   }
   #indexapp .landing .showAwards .wrap .wordBox {
     -webkit-transform: translateY(-26px);
             transform: translateY(-26px);
     width: 100%;
-    height: 445px;
+    height: 300px;
     padding: 0px 15px 15px 15px;
     font-size: 12px;
     line-height: 18px;
@@ -2013,6 +2043,7 @@ input[type=number] {
   #indexapp .landing .showAwards .wrap .picBox {
     -webkit-transform: translateY(-28px);
             transform: translateY(-28px);
+    height: 300px;
   }
   #indexapp .landing .showAwards .wrap .picBox img {
     width: 90%;
@@ -2041,12 +2072,42 @@ input[type=number] {
   #indexapp .landing .allContent #btndetail2 {
     left: 64%;
   }
+  #indexapp .landing .m_btnRow button {
+    width: 160px;
+  }
+  #indexapp .landing .m_btnRow button:nth-of-type(1) {
+    margin-right: 3%;
+  }
+  #indexapp .landing .m_btnRow button:nth-of-type(2) {
+    margin-left: 3%;
+  }
+  #indexapp .landing .showAwards .wrap header .fullHeader {
+    max-height: 60%;
+    top: 11%;
+  }
+  #indexapp .landing .showAwards .wrap .banner {
+    -webkit-transform: translateY(-76px);
+            transform: translateY(-76px);
+    height: 65px !important;
+  }
+  #indexapp .landing .showAwards .wrap .banner.part2 {
+    height: 65px;
+  }
+  #indexapp .landing .showAwards .wrap .wordBox {
+    -webkit-transform: translateY(-76px);
+            transform: translateY(-76px);
+  }
+  #indexapp .landing .showAwards .wrap .picBox {
+    -webkit-transform: translateY(-76px);
+            transform: translateY(-76px);
+    height: 300px;
+  }
 }
 
 @media all and (max-width: 390px) {
   #indexapp .landing .allContent #btndetail1,
   #indexapp .landing .allContent #btndetail2 {
-    top: 254px;
+    top: 260px;
   }
   #indexapp .landing .allContent #btndetail1 {
     left: 11.5%;
@@ -2062,7 +2123,28 @@ input[type=number] {
   }
   #indexapp .landing .allContent #btndetail1,
   #indexapp .landing .allContent #btndetail2 {
-    top: 248px;
+    top: 250px;
+  }
+  #indexapp .landing .showAwards .wrap header .fullHeader {
+    max-height: 60%;
+    top: 11%;
+  }
+  #indexapp .landing .showAwards .wrap .banner {
+    -webkit-transform: translateY(-88px);
+            transform: translateY(-88px);
+    height: 65px !important;
+  }
+  #indexapp .landing .showAwards .wrap .banner.part2 {
+    height: 65px;
+  }
+  #indexapp .landing .showAwards .wrap .wordBox {
+    -webkit-transform: translateY(-88px);
+            transform: translateY(-88px);
+  }
+  #indexapp .landing .showAwards .wrap .picBox {
+    -webkit-transform: translateY(-88px);
+            transform: translateY(-88px);
+    height: 300px;
   }
 }
 
@@ -2070,6 +2152,15 @@ input[type=number] {
   #indexapp .landing .allContent #btndetail1,
   #indexapp .landing .allContent #btndetail2 {
     top: 240px;
+  }
+  #indexapp .landing .m_btnRow button {
+    width: 130px;
+  }
+  #indexapp .landing .m_btnRow button:nth-of-type(1) {
+    margin-right: 2.5%;
+  }
+  #indexapp .landing .m_btnRow button:nth-of-type(2) {
+    margin-left: 2.5%;
   }
 }
 
@@ -2089,14 +2180,13 @@ input[type=number] {
     left: 10.5%;
   }
   #indexapp .landing .m_btnRow button {
-    width: 130px;
-    height: 32px;
+    width: 120px;
   }
   #indexapp .landing .m_btnRow button:nth-of-type(1) {
-    margin-right: 4.5%;
+    margin-right: 2%;
   }
   #indexapp .landing .m_btnRow button:nth-of-type(2) {
-    margin-left: 4.5%;
+    margin-left: 2%;
   }
 }
 
