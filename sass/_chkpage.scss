@@ -398,7 +398,22 @@
                 position: relative;
 
             }
+            main {
 
+                .wordBox {
+
+                    .wordItem {
+
+                        .flxLeft {
+                            font-size: 16px !important;
+                        }
+
+                        .flxRight {
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+            }
             .down {
                 .btnRow {
                     button:nth-of-type(1) {

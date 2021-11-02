@@ -2556,6 +2556,12 @@ input[type=number] {
     height: 100px !important;
     position: relative;
   }
+  #chkapp .chkpage main .wordBox .wordItem .flxLeft {
+    font-size: 16px !important;
+  }
+  #chkapp .chkpage main .wordBox .wordItem .flxRight {
+    font-size: 16px !important;
+  }
   #chkapp .chkpage .down .btnRow button:nth-of-type(1) {
     margin-right: 3%;
   }
