@@ -779,7 +779,7 @@ input[type=number] {
     text-align: left;
   }
   #scanapp form .up .middle .left .input label .flxLeft span {
-    font-size: 24px;
+    font-size: 22px;
     color: #6b1c1f;
     display: inline-block;
     margin-left: 2.5%;
@@ -921,7 +921,7 @@ input[type=number] {
     font-size: 20px;
   }
   #scanapp form .up .middle .left .input label:nth-of-type(1) .flxLeft {
-    width: 35%;
+    width: 28%;
   }
   #scanapp form .up .middle .left .input label:nth-of-type(1) .flxLeft span {
     margin-left: 5%;
@@ -1049,7 +1049,6 @@ input[type=number] {
   #scanapp form .down .btnRow button {
     width: 145px;
     height: 35px;
-    margin-right: 11%;
   }
 }
 
