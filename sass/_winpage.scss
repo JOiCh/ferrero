@@ -189,6 +189,31 @@
                     }
                 }
             }
+            .showAwards {
+    
+                .wrap {
+    
+                    header {
+                        height: 160px;
+    
+                        .fullHeader {
+                            max-height: 82%;
+                            top: 56%;
+                        }
+                    }
+
+                }
+    
+                #btn_close,
+                #btn_close2 {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 28px;
+                    right: 17%;
+                    z-index: 6;
+                }
+    
+            }
         }
     }
 
@@ -208,6 +233,27 @@
                         }
                     }
                 }
+
+                .showAwards {
+
+                    .wrap {
+                        width: 70%;
+    
+                        header {
+                            height: 140px;
+                        }
+    
+                        .banner,
+                        .banner.part2 {
+                            height: 66px;
+                        }
+    
+                        .wordBox {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -215,8 +261,9 @@
     @include ipad {
         .winpage {
 
-            .banner {
-                height: 152px;
+            .wrap{
+                 .banner {
+                height: 70px;
             }
 
             .main_bg {
@@ -228,6 +275,8 @@
                     margin-bottom: 150px;
                 }
             }
+            }
+           
         }
     }
 } 
@@ -302,7 +351,117 @@
                             margin-left: 6%;
                         }
                     }
+
+
                 }
+
+                .showAwards {
+
+                    .wrap {
+                        width: 80%;
+                        margin: 0 auto;
+    
+                        header {
+                            margin-top: 50px;
+    
+                            .fullHeader {
+                                max-height: 86%;
+                                top: 41%;
+                            }
+                        }
+    
+                        .banner {
+                            transform: translateY(-26px);
+                            height: 65px !important;
+                        }
+    
+                        .banner.part2 {
+                            height: 65px;
+                        }
+    
+                        .wordBox {
+                            transform: translateY(-26px);
+                            width: 100%;
+                            height: 300px;
+                            padding: 0px 15px 15px 15px;
+                            font-size: 12px;
+                            line-height: 18px;
+    
+                        }
+    
+                        .picBox {
+                            transform: translateY(-28px);
+                            height: 300px;
+                            img {
+                                width: 90%;
+                            }
+                        }
+                    }
+    
+                    #btn_close,
+                    #btn_close2 {
+                        width: 30px;
+                        top: 36px;
+                        right: 12%;
+                        z-index: 6;
+                    }
+    
+                }
+            }
+
+            
+            .showAwards {
+
+                .wrap {
+                    width: 80%;
+                    margin: 0 auto;
+
+                    header {
+                        background-image: url(../imgs/mobile/m_golden_top.png);
+                        margin-top: 50px;
+
+                        .fullHeader {
+                            max-height: 80% !important;
+                            top: 15px !important;
+                        }
+                    }
+
+                    .banner {
+                        transform: translateY(-26px);
+                        height: 65px !important;
+                    }
+
+                    .banner.part2 {
+                        height: 65px;
+                    }
+
+                    .wordBox {
+                        transform: translateY(-26px);
+                        width: 100%;
+                        height: 300px;
+                        padding: 0px 15px 15px 15px;
+                        font-size: 12px;
+                        line-height: 18px;
+
+                    }
+
+                    .picBox {
+                        transform: translateY(-28px);
+                        height: 370px;
+                        img {
+                            width: 90%;
+                        }
+                    }
+                }
+
+                #btn_close,
+                #btn_close2 {
+                    width: 30px;
+                    top: 36px;
+                    right: 12%;
+                    z-index: 6;
+                }
+
             }
         }
     }
@@ -344,6 +503,25 @@
                     }
                 }
             }
+
+            .showAwards {
+
+                .wrap {
+
+                    header {
+                        height: 126px;
+                        .fullHeader {
+                            max-height: 66% !important;
+                            top: 23px !important;
+                        }
+                    }
+
+                    .banner {
+                        transform: translateY(0px);
+                    }
+                }
+
+            }
         }
     }
 }
@@ -379,6 +557,49 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@include mobile_s{
+    #winapp {
+
+        .winpage {
+
+            .showAwards {
+
+                .wrap {
+
+                    header {
+                        height: 93px;
+                        .fullHeader {
+                            max-height: 86% !important;
+                            top: 8px !important;
+                        }
+                    }
+
+                    .banner {
+                        transform: translateY(-88px);
+                        height: 65px !important;
+                    }
+
+                    .banner.part2 {
+                        height: 65px;
+                    }
+
+                    .wordBox {
+                        transform: translateY(-88px);
+                        height: 350px;
+                    }
+
+                    .picBox {
+                        transform: translateY(-88px);
+                        height: 350px;
+                        padding-top: 40px;
+                    }
+                }
+
             }
         }
     }
