@@ -1,10 +1,10 @@
+
 #winapp {
     .winpage {
-
         font-family: "LiHei", sans-serif;
         background-image: url(../imgs/x2/blur_bg_up.jpg) !important;
         background-repeat: no-repeat;
-        background-position: left top 20%;
+        background-position: center top;
         background-color: $bg;
         background-size: contain;
 
@@ -17,8 +17,8 @@
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                bottom: 17px !important;
-                width: 80% !important;
+                bottom: 17px;
+                width: 80%;
             }
 
             img.m_text_fill {
@@ -53,6 +53,7 @@
 
                 .btnRow {
                     width: 100%;
+                    display: flex;
 
                     button {
                         display: block;
@@ -65,7 +66,6 @@
                         background-color: transparent;
                         outline: unset;
                         border: unset;
-                        cursor: pointer;
                       
                         img{
                             width: 100%;
@@ -76,11 +76,11 @@
                     }
 
                     button:nth-of-type(1) {
-                        margin-right: 6%;
+                        margin-right: 8%;
                     }
 
                     button:nth-of-type(2) {
-                        margin-left: 6%;
+                        margin-left: 8%;
                     }
                 }
             }
@@ -97,7 +97,7 @@
             transition: .1s;
 
             .wrap {
-                width: 67%;
+                width: 63%;
                 margin: 0 auto;
 
                 header {
@@ -111,7 +111,7 @@
                 }
 
                 .banner {
-                    height: 152px;
+                    height: 110px;
                     position: relative;
                     background-color: white;
                     border: unset;
@@ -123,7 +123,7 @@
 
                 .wordBox {
                     width: 100%;
-                    height: 450px;
+                    height: 350px;
                     background-color: white;
                     overflow-y: auto;
                     padding: 0px 50px 50px 50px;
@@ -146,13 +146,13 @@
                 .picBox {
                     width: 100%;
                     text-align: center;
-                    height: 450px;
+                    height: 350px;
                     background-color: white;
                     overflow-y: auto;
                     padding-bottom: 50px;
 
                     img {
-                        width: 80%;
+                        width: 70%;
                     }
                 }
             }
@@ -162,42 +162,29 @@
                 position: absolute;
                 cursor: pointer;
                 top: 28px;
-                right: 17%;
+                right: 19%;
                 z-index: 6;
+                width: 40px;
             }
 
-        }
-    }
-
-    @media all and (max-width: 1426px) {
-        .winpage {
-            background-position: left top 21%;
-        }
-    }
-
-    @media all and (max-width: 1418px) {
-        .winpage {
-            background-position: left top 18%;
         }
     }
 
     @include middle_screen {
         .winpage {
 
-            background-position: left top 18%;
-
             .main_bg {
 
                 .down {
                     margin-top: 40px;
-                    margin-bottom: 150px;
+                    margin-bottom: 223px;
 
                     .btnRow {
 
                         button {
                             margin: 0px auto 100px auto;
-                            width: 257px !important;
-                            height: 64px !important;
+                            width: 257px ;
+                            height: 64px ;
                         }
                     }
                 }
@@ -205,19 +192,11 @@
         }
     }
 
-    @media all and (max-width: 1190px) {
-        .winpage {
-            background-position: left top 22%;
-        }
-    }
-
     @include laptop {
         .winpage {
 
-            background-position: left top 14%;
-
             .main_bg {
-
+                margin-bottom: 90px;
                 .down {
                     margin-bottom: 196px;
 
@@ -236,10 +215,8 @@
     @include ipad {
         .winpage {
 
-            background-position: left top 14%;
-
             .banner {
-                height: 152px !important;
+                height: 152px;
             }
 
             .main_bg {
@@ -253,49 +230,52 @@
             }
         }
     }
-}
+} 
 
 @include mobile {
     #winapp {
-        background-image: unset !important;
+        background-image: unset ;
 
         .winpage {
             position: relative;
             background-image: url(../imgs/mobile/m_blur_bg_up.jpg),
-                url(../imgs/mobile/m_blur_bg_down.jpg) !important;
-            background-position: left top 87px, left bottom 0px !important;
-            background-repeat: no-repeat, no-repeat !important;
-            background-size: contain !important;
+                url(../imgs/mobile/m_blur_bg_down.jpg) ;
+            background-position: center top 0px, center bottom 0px ;
+            background-repeat: no-repeat, no-repeat ;
+            background-size: contain ;
             min-height: 100vh;
 
             .banner {
-                height: 100px !important;
+                height: 135px ;
 
                 img.text_fill {
                     display: none;
                 }
 
                 img.m_text_fill {
+                    position: absolute;
                     display: block;
-                    width: 80% !important;
-                    margin: 60px auto 0px auto;
+                    width: 80%;
+                    bottom: 25px;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
             }
 
             .main_bg {
-
                 width: 100%;
                 background-image: url(../imgs/mobile/m_congratulations_text.png);
-                background-size: 88%;
+                background-size: 90%;
                 min-height: 81vh;
+                position: relative;
 
                 main {
                     width: 65%;
                     justify-content: center;
-                    margin: 100px auto 0px auto;
+                    margin: 130px auto 0px auto;
 
                     img {
-                        max-width: 95%;
+                        max-width: 80%;
                         margin: 0 auto;
                         display: block;
                     }
@@ -303,16 +283,23 @@
 
                 .down {
                     display: flex !important;
-                    margin-bottom: 0px;
-                    position: absolute;
-                    bottom: -33px;
+                    margin-bottom: 306px;
+                    margin-top: 21px;
 
                     .btnRow {
                         width: 100%;
 
                         button {
-                            margin: 0px auto 0px auto;
+                            margin: 0px auto;
                             cursor: pointer;
+                            width: 200px;
+                        }
+                        button:nth-of-type(1) {
+                            margin-right: 6%;
+                        }
+    
+                        button:nth-of-type(2) {
+                            margin-left: 6%;
                         }
                     }
                 }
@@ -321,42 +308,88 @@
     }
 }
 
-@media all and (max-width: 400px) {
+@include mobile_m{
+    #winapp {
+
+        .winpage {
+
+            .banner {
+                height: 119px ;
+            }
+
+            .main_bg {
+
+                main {
+                    width: 65%;
+                    justify-content: center;
+                    margin: 94px auto 0px auto;
+
+                }
+
+                .down {
+                    margin-top: 8px;
+                    margin-bottom: 278px;
+                    .btnRow {
+
+                        button {
+                            width: 171px;
+                        }
+                        button:nth-of-type(1) {
+                            margin-right: 3%;
+                        }
+    
+                        button:nth-of-type(2) {
+                            margin-left: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 390px) {
     #winapp {
         .winpage {
-            background-position: left top 75px, left bottom 0px !important;
+
+            .banner {
+                height: 113px ;
+            }
+
+            .main_bg {
+
+                main {
+                    width: 65%;
+                    justify-content: center;
+                    margin: 94px auto 0px auto;
+                }
+
+                .down {
+                    margin-top: 1px;
+                    .btnRow {
+
+                        button {
+                            width: 150px;
+                        }
+                        button:nth-of-type(1) {
+                            margin-right: 4%;
+                        }
+    
+                        button:nth-of-type(2) {
+                            margin-left: 4%;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
 @include mobile_xs {
     #winapp {
-        background: unset !important;
 
         .winpage {
-            background-image: url(../imgs/mobile/m_blur_bg_up.jpg),
-                url(../imgs/mobile/m_blur_bg_down.jpg) !important;
-            background-position: left top 67px, left bottom 0px !important;
-            background-repeat: no-repeat, no-repeat !important;
-            background-size: contain !important;
-            min-height: 100vh;
-
-            .banner {
-                height: 100px !important;
-
-                img.text_fill {
-                    display: none;
-                }
-
-                img.m_text_fill {
-                    display: block;
-                    width: 80% !important;
-                    margin: 60px auto 0px auto;
-                }
-            }
 
             .main_bg {
-
                 width: 100%;
                 background-image: url(../imgs/mobile/m_congratulations_text.png);
                 background-size: 88%;
@@ -376,14 +409,14 @@
                 }
 
                 .down {
-                    bottom: 70px;
-
+                    margin-bottom: 130px;
                     .btnRow {
                         width: 100%;
-
+                        transform: translateY(200%);
                         button {
                             margin: 0px auto 0px auto;
                             cursor: pointer;
+                            width: 125px;
                         }
                     }
                 }

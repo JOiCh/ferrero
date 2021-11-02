@@ -208,7 +208,7 @@ input[type=number] {
 
 @media all and (max-width: 414px) {
   #indexapp header, #chkapp header, #scanapp header, #loseapp header, #winapp header, #loadapp header {
-    background-size: contain;
+    background-size: cover;
     height: 86px;
   }
   #indexapp header .fullHeader, #chkapp header .fullHeader, #scanapp header .fullHeader, #loseapp header .fullHeader, #winapp header .fullHeader, #loadapp header .fullHeader {
@@ -449,7 +449,7 @@ input[type=number] {
   opacity: .8;
 }
 
-@media all and (max-width: 1600px) {
+@media all and (max-width: 1680px) {
   #scanapp form {
     background-image: url(../imgs/x2/blur_bg_up.jpg), url(../imgs/x2/blur_bg_down.jpg);
     background-size: contain;
@@ -862,11 +862,19 @@ input[type=number] {
         flex-wrap: nowrap;
     margin-bottom: 45px;
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #scanapp form .down .btnRow button {
     width: 191px;
     height: 46px;
-    margin-right: 15%;
+  }
+  #scanapp form .down .btnRow button:nth-of-type(1) {
+    margin-right: 6%;
+  }
+  #scanapp form .down .btnRow button:nth-of-type(2) {
+    margin-left: 6%;
   }
 }
 
@@ -1072,7 +1080,7 @@ input[type=number] {
   font-family: "LiHei", sans-serif;
   background-image: url(../imgs/x2/blur_bg_up.jpg) !important;
   background-repeat: no-repeat;
-  background-position: left top 20%;
+  background-position: center top;
   background-color: #fbf3dc;
   background-size: contain;
 }
@@ -1088,8 +1096,8 @@ input[type=number] {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 17px !important;
-  width: 80% !important;
+  bottom: 17px;
+  width: 80%;
 }
 
 #winapp .winpage .banner img.m_text_fill {
@@ -1127,6 +1135,9 @@ input[type=number] {
 
 #winapp .winpage .main_bg .down .btnRow {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #winapp .winpage .main_bg .down .btnRow button {
@@ -1140,7 +1151,6 @@ input[type=number] {
   background-color: transparent;
   outline: unset;
   border: unset;
-  cursor: pointer;
 }
 
 #winapp .winpage .main_bg .down .btnRow button img {
@@ -1152,11 +1162,11 @@ input[type=number] {
 }
 
 #winapp .winpage .main_bg .down .btnRow button:nth-of-type(1) {
-  margin-right: 6%;
+  margin-right: 8%;
 }
 
 #winapp .winpage .main_bg .down .btnRow button:nth-of-type(2) {
-  margin-left: 6%;
+  margin-left: 8%;
 }
 
 #winapp .winpage .showAwards {
@@ -1172,7 +1182,7 @@ input[type=number] {
 }
 
 #winapp .winpage .showAwards .wrap {
-  width: 67%;
+  width: 63%;
   margin: 0 auto;
 }
 
@@ -1187,7 +1197,7 @@ input[type=number] {
 }
 
 #winapp .winpage .showAwards .wrap .banner {
-  height: 152px;
+  height: 110px;
   position: relative;
   background-color: white;
   border: unset;
@@ -1199,7 +1209,7 @@ input[type=number] {
 
 #winapp .winpage .showAwards .wrap .wordBox {
   width: 100%;
-  height: 450px;
+  height: 350px;
   background-color: white;
   overflow-y: auto;
   padding: 0px 50px 50px 50px;
@@ -1222,14 +1232,14 @@ input[type=number] {
 #winapp .winpage .showAwards .wrap .picBox {
   width: 100%;
   text-align: center;
-  height: 450px;
+  height: 350px;
   background-color: white;
   overflow-y: auto;
   padding-bottom: 50px;
 }
 
 #winapp .winpage .showAwards .wrap .picBox img {
-  width: 80%;
+  width: 70%;
 }
 
 #winapp .winpage .showAwards #btn_close,
@@ -1237,46 +1247,26 @@ input[type=number] {
   position: absolute;
   cursor: pointer;
   top: 28px;
-  right: 17%;
+  right: 19%;
   z-index: 6;
-}
-
-@media all and (max-width: 1426px) {
-  #winapp .winpage {
-    background-position: left top 21%;
-  }
-}
-
-@media all and (max-width: 1418px) {
-  #winapp .winpage {
-    background-position: left top 18%;
-  }
+  width: 40px;
 }
 
 @media all and (max-width: 1283px) {
-  #winapp .winpage {
-    background-position: left top 18%;
-  }
   #winapp .winpage .main_bg .down {
     margin-top: 40px;
-    margin-bottom: 150px;
+    margin-bottom: 223px;
   }
   #winapp .winpage .main_bg .down .btnRow button {
     margin: 0px auto 100px auto;
-    width: 257px !important;
-    height: 64px !important;
-  }
-}
-
-@media all and (max-width: 1190px) {
-  #winapp .winpage {
-    background-position: left top 22%;
+    width: 257px;
+    height: 64px;
   }
 }
 
 @media all and (max-width: 992px) {
-  #winapp .winpage {
-    background-position: left top 14%;
+  #winapp .winpage .main_bg {
+    margin-bottom: 90px;
   }
   #winapp .winpage .main_bg .down {
     margin-bottom: 196px;
@@ -1288,11 +1278,8 @@ input[type=number] {
 }
 
 @media all and (max-width: 768px) {
-  #winapp .winpage {
-    background-position: left top 14%;
-  }
   #winapp .winpage .banner {
-    height: 152px !important;
+    height: 152px;
   }
   #winapp .winpage .main_bg main {
     margin: 50px auto 40px auto;
@@ -1304,42 +1291,47 @@ input[type=number] {
 
 @media all and (max-width: 576px) {
   #winapp {
-    background-image: unset !important;
+    background-image: unset;
   }
   #winapp .winpage {
     position: relative;
-    background-image: url(../imgs/mobile/m_blur_bg_up.jpg), url(../imgs/mobile/m_blur_bg_down.jpg) !important;
-    background-position: left top 87px, left bottom 0px !important;
-    background-repeat: no-repeat, no-repeat !important;
-    background-size: contain !important;
+    background-image: url(../imgs/mobile/m_blur_bg_up.jpg), url(../imgs/mobile/m_blur_bg_down.jpg);
+    background-position: center top 0px, center bottom 0px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
     min-height: 100vh;
   }
   #winapp .winpage .banner {
-    height: 100px !important;
+    height: 135px;
   }
   #winapp .winpage .banner img.text_fill {
     display: none;
   }
   #winapp .winpage .banner img.m_text_fill {
+    position: absolute;
     display: block;
-    width: 80% !important;
-    margin: 60px auto 0px auto;
+    width: 80%;
+    bottom: 25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   #winapp .winpage .main_bg {
     width: 100%;
     background-image: url(../imgs/mobile/m_congratulations_text.png);
-    background-size: 88%;
+    background-size: 90%;
     min-height: 81vh;
+    position: relative;
   }
   #winapp .winpage .main_bg main {
     width: 65%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 100px auto 0px auto;
+    margin: 130px auto 0px auto;
   }
   #winapp .winpage .main_bg main img {
-    max-width: 95%;
+    max-width: 80%;
     margin: 0 auto;
     display: block;
   }
@@ -1347,47 +1339,77 @@ input[type=number] {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    margin-bottom: 0px;
-    position: absolute;
-    bottom: -33px;
+    margin-bottom: 306px;
+    margin-top: 21px;
   }
   #winapp .winpage .main_bg .down .btnRow {
     width: 100%;
   }
   #winapp .winpage .main_bg .down .btnRow button {
-    margin: 0px auto 0px auto;
+    margin: 0px auto;
     cursor: pointer;
+    width: 200px;
+  }
+  #winapp .winpage .main_bg .down .btnRow button:nth-of-type(1) {
+    margin-right: 6%;
+  }
+  #winapp .winpage .main_bg .down .btnRow button:nth-of-type(2) {
+    margin-left: 6%;
   }
 }
 
-@media all and (max-width: 400px) {
-  #winapp .winpage {
-    background-position: left top 75px, left bottom 0px !important;
+@media all and (max-width: 414px) {
+  #winapp .winpage .banner {
+    height: 119px;
+  }
+  #winapp .winpage .main_bg main {
+    width: 65%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 94px auto 0px auto;
+  }
+  #winapp .winpage .main_bg .down {
+    margin-top: 8px;
+    margin-bottom: 278px;
+  }
+  #winapp .winpage .main_bg .down .btnRow button {
+    width: 171px;
+  }
+  #winapp .winpage .main_bg .down .btnRow button:nth-of-type(1) {
+    margin-right: 3%;
+  }
+  #winapp .winpage .main_bg .down .btnRow button:nth-of-type(2) {
+    margin-left: 3%;
+  }
+}
+
+@media all and (max-width: 390px) {
+  #winapp .winpage .banner {
+    height: 113px;
+  }
+  #winapp .winpage .main_bg main {
+    width: 65%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 94px auto 0px auto;
+  }
+  #winapp .winpage .main_bg .down {
+    margin-top: 1px;
+  }
+  #winapp .winpage .main_bg .down .btnRow button {
+    width: 150px;
+  }
+  #winapp .winpage .main_bg .down .btnRow button:nth-of-type(1) {
+    margin-right: 4%;
+  }
+  #winapp .winpage .main_bg .down .btnRow button:nth-of-type(2) {
+    margin-left: 4%;
   }
 }
 
 @media all and (max-width: 320px) {
-  #winapp {
-    background: unset !important;
-  }
-  #winapp .winpage {
-    background-image: url(../imgs/mobile/m_blur_bg_up.jpg), url(../imgs/mobile/m_blur_bg_down.jpg) !important;
-    background-position: left top 67px, left bottom 0px !important;
-    background-repeat: no-repeat, no-repeat !important;
-    background-size: contain !important;
-    min-height: 100vh;
-  }
-  #winapp .winpage .banner {
-    height: 100px !important;
-  }
-  #winapp .winpage .banner img.text_fill {
-    display: none;
-  }
-  #winapp .winpage .banner img.m_text_fill {
-    display: block;
-    width: 80% !important;
-    margin: 60px auto 0px auto;
-  }
   #winapp .winpage .main_bg {
     width: 100%;
     background-image: url(../imgs/mobile/m_congratulations_text.png);
@@ -1408,14 +1430,17 @@ input[type=number] {
     display: block;
   }
   #winapp .winpage .main_bg .down {
-    bottom: 70px;
+    margin-bottom: 130px;
   }
   #winapp .winpage .main_bg .down .btnRow {
     width: 100%;
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
   }
   #winapp .winpage .main_bg .down .btnRow button {
     margin: 0px auto 0px auto;
     cursor: pointer;
+    width: 125px;
   }
 }
 
@@ -1577,153 +1602,180 @@ input[type=number] {
   }
 }
 
-@media all and (max-width: 2560px) {
-  #indexapp {
-    background-image: url(../imgs/x2/landing_bg.jpg);
-    background-position: bottom center;
-    background-size: cover;
-    padding-bottom: 120px;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-  }
-  #indexapp .landing .index_m_header {
-    display: none;
-    position: relative;
-  }
-  #indexapp .landing .index_m_header img:nth-of-type(1) {
-    max-width: 100%;
-  }
-  #indexapp .landing .allContent {
-    text-align: center;
-    position: relative;
-  }
-  #indexapp .landing .allContent img.d_bg {
-    max-width: 90%;
-    margin-top: 20px;
-  }
-  #indexapp .landing .allContent img.m_bg {
-    display: none;
-  }
-  #indexapp .landing .allContent #btndetail1,
-  #indexapp .landing .allContent #btndetail2 {
-    position: absolute;
-    width: 150px;
-    bottom: 256px;
-    cursor: pointer;
-  }
-  #indexapp .landing .allContent #btndetail1:active,
-  #indexapp .landing .allContent #btndetail2:active {
-    opacity: .8;
-  }
-  #indexapp .landing .allContent #btndetail1 {
-    left: 19%;
-  }
-  #indexapp .landing .allContent #btndetail2 {
-    left: 46%;
-  }
-  #indexapp .landing .allContent .m_btnRow {
-    display: none;
-  }
-  #indexapp .landing .down .btnRow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 50%;
-    margin: 0 auto;
-  }
-  #indexapp .landing .down .btnRow button {
-    width: 318px;
-    height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    outline: unset;
-    border: unset;
-    cursor: pointer;
-  }
-  #indexapp .landing .down .btnRow button img {
-    width: 100%;
-  }
-  #indexapp .landing .down .btnRow button img:active {
-    opacity: .8;
-  }
-  #indexapp .landing .down .btnRow button:nth-of-type(1) {
-    margin-right: 8%;
-  }
-  #indexapp .landing .down .btnRow button:nth-of-type(2) {
-    margin-left: 8%;
-  }
-  #indexapp .landing .showAwards {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(53, 53, 53, 0.589);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 6;
-    -webkit-transition: .1s;
-    transition: .1s;
-  }
-  #indexapp .landing .showAwards .wrap {
-    width: 63%;
-    margin: 0 auto;
-  }
-  #indexapp .landing .showAwards .wrap header {
-    margin-top: 50px;
-    height: 220px;
-  }
-  #indexapp .landing .showAwards .wrap header .fullHeader {
-    max-width: 90%;
-    max-height: 100%;
-    top: 44%;
-  }
-  #indexapp .landing .showAwards .wrap .banner {
-    height: 110px;
-    position: relative;
-    background-color: white;
-    border: unset;
-  }
-  #indexapp .landing .showAwards .wrap .banner.part2 {
-    height: 120px;
-  }
-  #indexapp .landing .showAwards .wrap .wordBox {
-    width: 100%;
-    height: 350px;
-    background-color: white;
-    overflow-y: auto;
-    padding: 0px 50px 50px 50px;
-  }
-  #indexapp .landing .showAwards .wrap .wordBox h6 {
-    color: #6b1c1f;
-    font-weight: bold;
-  }
-  #indexapp .landing .showAwards .wrap .wordBox p.yellow {
-    color: #c29138;
-    font-weight: bold;
-  }
-  #indexapp .landing .showAwards .wrap .wordBox p.item {
-    margin-top: 20px;
-  }
-  #indexapp .landing .showAwards .wrap .picBox {
-    width: 100%;
-    text-align: center;
-    height: 350px;
-    background-color: white;
-    overflow-y: auto;
-    padding-bottom: 50px;
-  }
-  #indexapp .landing .showAwards .wrap .picBox img {
-    width: 70%;
-  }
-  #indexapp .landing .showAwards #btn_close,
-  #indexapp .landing .showAwards #btn_close2 {
-    position: absolute;
-    cursor: pointer;
-    top: 28px;
-    right: 19%;
-    z-index: 6;
-    width: 40px;
-  }
+#indexapp {
+  background-image: url(../imgs/x2/landing_bg.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  padding-bottom: 120px;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#indexapp .landing .index_m_header {
+  display: none;
+  position: relative;
+}
+
+#indexapp .landing .index_m_header img:nth-of-type(1) {
+  max-width: 100%;
+}
+
+#indexapp .landing .allContent {
+  text-align: center;
+  position: relative;
+}
+
+#indexapp .landing .allContent img.d_bg {
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+#indexapp .landing .allContent img.m_bg {
+  display: none;
+}
+
+#indexapp .landing .allContent #btndetail1,
+#indexapp .landing .allContent #btndetail2 {
+  position: absolute;
+  width: 150px;
+  bottom: 283px;
+  cursor: pointer;
+}
+
+#indexapp .landing .allContent #btndetail1:active,
+#indexapp .landing .allContent #btndetail2:active {
+  opacity: .8;
+}
+
+#indexapp .landing .allContent #btndetail1 {
+  left: 24%;
+}
+
+#indexapp .landing .allContent #btndetail2 {
+  left: 46.5%;
+}
+
+#indexapp .landing .allContent .m_btnRow {
+  display: none;
+}
+
+#indexapp .landing .down .btnRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#indexapp .landing .down .btnRow button {
+  width: 318px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+#indexapp .landing .down .btnRow button img {
+  width: 100%;
+}
+
+#indexapp .landing .down .btnRow button img:active {
+  opacity: .8;
+}
+
+#indexapp .landing .down .btnRow button:nth-of-type(1) {
+  margin-right: 8%;
+}
+
+#indexapp .landing .down .btnRow button:nth-of-type(2) {
+  margin-left: 8%;
+}
+
+#indexapp .landing .showAwards {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 53, 53, 0.589);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 6;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+#indexapp .landing .showAwards .wrap {
+  width: 63%;
+  margin: 0 auto;
+}
+
+#indexapp .landing .showAwards .wrap header {
+  margin-top: 50px;
+  height: 220px;
+}
+
+#indexapp .landing .showAwards .wrap header .fullHeader {
+  max-width: 90%;
+  max-height: 100%;
+  top: 44%;
+}
+
+#indexapp .landing .showAwards .wrap .banner {
+  height: 110px;
+  position: relative;
+  background-color: white;
+  border: unset;
+}
+
+#indexapp .landing .showAwards .wrap .banner.part2 {
+  height: 120px;
+}
+
+#indexapp .landing .showAwards .wrap .wordBox {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  overflow-y: auto;
+  padding: 0px 50px 50px 50px;
+}
+
+#indexapp .landing .showAwards .wrap .wordBox h6 {
+  color: #6b1c1f;
+  font-weight: bold;
+}
+
+#indexapp .landing .showAwards .wrap .wordBox p.yellow {
+  color: #c29138;
+  font-weight: bold;
+}
+
+#indexapp .landing .showAwards .wrap .wordBox p.item {
+  margin-top: 20px;
+}
+
+#indexapp .landing .showAwards .wrap .picBox {
+  width: 100%;
+  text-align: center;
+  height: 350px;
+  background-color: white;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+#indexapp .landing .showAwards .wrap .picBox img {
+  width: 70%;
+}
+
+#indexapp .landing .showAwards #btn_close,
+#indexapp .landing .showAwards #btn_close2 {
+  position: absolute;
+  cursor: pointer;
+  top: 28px;
+  right: 19%;
+  z-index: 6;
+  width: 40px;
 }
 
 @media all and (max-width: 1800px) {
@@ -1757,7 +1809,7 @@ input[type=number] {
   }
 }
 
-@media all and (max-width: 1600px) {
+@media all and (max-width: 1680px) {
   #indexapp .landing .allContent #btndetail1,
   #indexapp .landing .allContent #btndetail2 {
     width: 120px;
