@@ -55,11 +55,11 @@
                 <div class="middle">
                     <div class="left">
                         <div class="input">
-                            <label for="">
+                            <label style="flex-wrap:nowrap">
                                 <div class="flxLeft">
                                     <span class="fstSpan">發票日期:</span>
                                 </div>
-                                <div class="flxRight">
+                                <div class="flxRight" style="display: flex;flex-wrap:nowrap">
                                     <select name="" id="" v-model="selectedMonth" @change="chooseMonths">
                                         <option selected hidden>{{selectedMonth}}</option>
                                         <option v-for="month in months">{{month}}</option>
