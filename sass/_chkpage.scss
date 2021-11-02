@@ -1,7 +1,7 @@
 #chkapp {
     .chkpage {
         font-family: "LiHei", sans-serif;
-        background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+        background-image: url(../imgs/x2/blur_bg_down.jpg) !important;
         background-repeat: no-repeat;
         background-position: left bottom 0px;
         background-color: $bg;
@@ -162,8 +162,8 @@
     #chkapp {
 
         .chkpage {
-            background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
-                url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+            background-image: url(../imgs/mobile/m_blur_bg_up.jpg),
+                url(../imgs/mobile/m_blur_bg_down.jpg) !important;
             background-position: left top, left bottom !important;
             background-repeat: no-repeat, no-repeat !important;
             background-size: contain !important;

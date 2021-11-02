@@ -4,7 +4,7 @@
     border: 2px solid transparent;
     height: 100%;
     font-family: "LiHei", sans-serif;
-    background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+    background-image: url(../imgs/x2/blur_bg_down.jpg) !important;
     background-repeat: no-repeat;
     background-position: left bottom 0px;
     background-color: $bg;
@@ -28,7 +28,7 @@
 
 @include laptop {
     #app {
-        background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+        background-image: url(../imgs/x2/blur_bg_down.jpg) !important;
         border: 2px solid blue;
         .load {
             max-width: 400px;

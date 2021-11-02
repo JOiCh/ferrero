@@ -1,8 +1,8 @@
 #loseapp {
     .losepage {
         font-family: "LiHei", sans-serif;
-        background-image: url(../../imgs/x2/blur_bg_up.jpg),
-            url(../../imgs/x2/blur_bg_down.jpg);
+        background-image: url(../imgs/x2/blur_bg_up.jpg),
+            url(../imgs/x2/blur_bg_down.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: left top, left bottom 50px;
@@ -112,8 +112,8 @@
 
     @include mobile{
         .losepage {
-            background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
-                url(../../imgs/mobile/m_blur_bg_down.jpg);
+            background-image: url(../imgs/mobile/m_blur_bg_up.jpg),
+                url(../imgs/mobile/m_blur_bg_down.jpg);
             background-position: left top, left bottom 65px;
             background-color: $bg;
             padding-bottom: 80px;    

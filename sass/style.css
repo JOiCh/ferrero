@@ -245,7 +245,7 @@ input[type=number] {
 }
 
 #scanapp form {
-  background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
+  background-image: url(../imgs/x2/blur_bg_up.jpg), url(../imgs/x2/blur_bg_down.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top, left bottom 54px;
@@ -451,7 +451,7 @@ input[type=number] {
 
 @media all and (max-width: 1600px) {
   #scanapp form {
-    background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
+    background-image: url(../imgs/x2/blur_bg_up.jpg), url(../imgs/x2/blur_bg_down.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left top, left bottom 54px;
@@ -1070,7 +1070,7 @@ input[type=number] {
 
 #winapp .winpage {
   font-family: "LiHei", sans-serif;
-  background-image: url(../../imgs/x2/blur_bg_up.jpg) !important;
+  background-image: url(../imgs/x2/blur_bg_up.jpg) !important;
   background-repeat: no-repeat;
   background-position: left top 20%;
   background-color: #fbf3dc;
@@ -1100,7 +1100,7 @@ input[type=number] {
   width: 65%;
   border: 1px solid transparent;
   margin: 0 auto;
-  background-image: url(./../../imgs/x2/congratulations_text.png);
+  background-image: url(../imgs/x2/congratulations_text.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
@@ -1308,7 +1308,7 @@ input[type=number] {
   }
   #winapp .winpage {
     position: relative;
-    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-image: url(../imgs/mobile/m_blur_bg_up.jpg), url(../imgs/mobile/m_blur_bg_down.jpg) !important;
     background-position: left top 87px, left bottom 0px !important;
     background-repeat: no-repeat, no-repeat !important;
     background-size: contain !important;
@@ -1327,7 +1327,7 @@ input[type=number] {
   }
   #winapp .winpage .main_bg {
     width: 100%;
-    background-image: url(../../imgs/mobile/m_congratulations_text.png);
+    background-image: url(../imgs/mobile/m_congratulations_text.png);
     background-size: 88%;
     min-height: 81vh;
   }
@@ -1371,7 +1371,7 @@ input[type=number] {
     background: unset !important;
   }
   #winapp .winpage {
-    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-image: url(../imgs/mobile/m_blur_bg_up.jpg), url(../imgs/mobile/m_blur_bg_down.jpg) !important;
     background-position: left top 67px, left bottom 0px !important;
     background-repeat: no-repeat, no-repeat !important;
     background-size: contain !important;
@@ -1390,7 +1390,7 @@ input[type=number] {
   }
   #winapp .winpage .main_bg {
     width: 100%;
-    background-image: url(../../imgs/mobile/m_congratulations_text.png);
+    background-image: url(../imgs/mobile/m_congratulations_text.png);
     background-size: 88%;
     min-height: 71vh;
     margin-bottom: 0px;
@@ -1421,7 +1421,7 @@ input[type=number] {
 
 #loseapp .losepage {
   font-family: "LiHei", sans-serif;
-  background-image: url(../../imgs/x2/blur_bg_up.jpg), url(../../imgs/x2/blur_bg_down.jpg);
+  background-image: url(../imgs/x2/blur_bg_up.jpg), url(../imgs/x2/blur_bg_down.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left top, left bottom 50px;
@@ -1509,7 +1509,7 @@ input[type=number] {
 
 @media all and (max-width: 576px) {
   #loseapp .losepage {
-    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg);
+    background-image: url(../imgs/mobile/m_blur_bg_up.jpg), url(../imgs/mobile/m_blur_bg_down.jpg);
     background-position: left top, left bottom 65px;
     background-color: #fbf3dc;
     padding-bottom: 80px;
@@ -2192,7 +2192,7 @@ input[type=number] {
 
 #chkapp .chkpage {
   font-family: "LiHei", sans-serif;
-  background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+  background-image: url(../imgs/x2/blur_bg_down.jpg) !important;
   background-repeat: no-repeat;
   background-position: left bottom 0px;
   background-color: #fbf3dc;
@@ -2326,7 +2326,7 @@ input[type=number] {
 
 @media all and (max-width: 576px) {
   #chkapp .chkpage {
-    background-image: url(../../imgs/mobile/m_blur_bg_up.jpg), url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+    background-image: url(../imgs/mobile/m_blur_bg_up.jpg), url(../imgs/mobile/m_blur_bg_down.jpg) !important;
     background-position: left top, left bottom !important;
     background-repeat: no-repeat, no-repeat !important;
     background-size: contain !important;
@@ -2417,7 +2417,7 @@ input[type=number] {
   border: 2px solid transparent;
   height: 100%;
   font-family: "LiHei", sans-serif;
-  background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+  background-image: url(../imgs/x2/blur_bg_down.jpg) !important;
   background-repeat: no-repeat;
   background-position: left bottom 0px;
   background-color: #fbf3dc;
@@ -2440,7 +2440,7 @@ input[type=number] {
 
 @media all and (max-width: 992px) {
   #app {
-    background-image: url(../../imgs/x2/blur_bg_down.jpg) !important;
+    background-image: url(../imgs/x2/blur_bg_down.jpg) !important;
     border: 2px solid blue;
   }
   #app .load {

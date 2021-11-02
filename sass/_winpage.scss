@@ -2,7 +2,7 @@
     .winpage {
 
         font-family: "LiHei", sans-serif;
-        background-image: url(../../imgs/x2/blur_bg_up.jpg) !important;
+        background-image: url(../imgs/x2/blur_bg_up.jpg) !important;
         background-repeat: no-repeat;
         background-position: left top 20%;
         background-color: $bg;
@@ -30,7 +30,7 @@
             width: 65%;
             border: 1px solid transparent;
             margin: 0 auto;
-            background-image: url(./../../imgs/x2/congratulations_text.png);
+            background-image: url(../imgs/x2/congratulations_text.png);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: top center;
@@ -261,8 +261,8 @@
 
         .winpage {
             position: relative;
-            background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
-                url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+            background-image: url(../imgs/mobile/m_blur_bg_up.jpg),
+                url(../imgs/mobile/m_blur_bg_down.jpg) !important;
             background-position: left top 87px, left bottom 0px !important;
             background-repeat: no-repeat, no-repeat !important;
             background-size: contain !important;
@@ -285,7 +285,7 @@
             .main_bg {
 
                 width: 100%;
-                background-image: url(../../imgs/mobile/m_congratulations_text.png);
+                background-image: url(../imgs/mobile/m_congratulations_text.png);
                 background-size: 88%;
                 min-height: 81vh;
 
@@ -334,8 +334,8 @@
         background: unset !important;
 
         .winpage {
-            background-image: url(../../imgs/mobile/m_blur_bg_up.jpg),
-                url(../../imgs/mobile/m_blur_bg_down.jpg) !important;
+            background-image: url(../imgs/mobile/m_blur_bg_up.jpg),
+                url(../imgs/mobile/m_blur_bg_down.jpg) !important;
             background-position: left top 67px, left bottom 0px !important;
             background-repeat: no-repeat, no-repeat !important;
             background-size: contain !important;
@@ -358,7 +358,7 @@
             .main_bg {
 
                 width: 100%;
-                background-image: url(../../imgs/mobile/m_congratulations_text.png);
+                background-image: url(../imgs/mobile/m_congratulations_text.png);
                 background-size: 88%;
                 min-height: 71vh;
                 margin-bottom: 0px;
