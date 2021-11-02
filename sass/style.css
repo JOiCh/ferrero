@@ -2263,9 +2263,10 @@ input[type=number] {
   font-family: "LiHei", sans-serif;
   background-image: url(../imgs/x2/blur_bg_down.jpg) !important;
   background-repeat: no-repeat;
-  background-position: left bottom 0px;
+  background-position: center bottom 0px;
   background-color: #fbf3dc;
   padding-bottom: 50px;
+  min-height: 83vh;
 }
 
 #chkapp .chkpage .banner {
@@ -2334,14 +2335,18 @@ input[type=number] {
 }
 
 #chkapp .chkpage .down .btnRow {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 80px;
 }
 
 #chkapp .chkpage .down .btnRow button {
   width: 318px;
   height: 80px;
-  margin-right: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -2358,19 +2363,53 @@ input[type=number] {
   opacity: .8;
 }
 
+#chkapp .chkpage .down .btnRow button:nth-of-type(1) {
+  margin-right: 8%;
+}
+
+#chkapp .chkpage .down .btnRow button:nth-of-type(2) {
+  margin-left: 8%;
+}
+
+@media all and (max-width: 1283px) {
+  .chkpage .banner {
+    height: 275px;
+    position: relative;
+  }
+  .chkpage .banner img.text_fill {
+    bottom: 25px;
+  }
+  .chkpage main .wordBox .wordItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
+  .chkpage main .wordBox .wordItem .flxLeft {
+    width: 45%;
+    text-align: right;
+    font-size: 34px !important;
+    color: #6b1c1f;
+  }
+  .chkpage main .wordBox .wordItem .flxRight {
+    width: 59%;
+    font-size: 34px !important;
+  }
+}
+
 @media all and (max-width: 992px) {
   #chkapp .chkpage .banner {
-    height: 180px !important;
+    height: 180px;
   }
   #chkapp .chkpage .banner img.text_fill {
-    bottom: 25px !important;
-    width: 80% !important;
+    bottom: 25px;
+    width: 80%;
   }
   #chkapp .chkpage main {
-    max-width: 685px;
+    max-width: 820px;
   }
   #chkapp .chkpage main .wordBox .wordItem .flxLeft {
-    width: 44%;
+    width: 50%;
     font-size: 28px;
   }
   #chkapp .chkpage main .wordBox .wordItem .flxRight {
@@ -2393,6 +2432,46 @@ input[type=number] {
   }
 }
 
+@media all and (max-width: 768px) {
+  #chkapp .chkpage .banner {
+    height: 150px;
+  }
+  #chkapp .chkpage .banner img.text_fill {
+    bottom: 25px;
+    width: 80%;
+  }
+  #chkapp .chkpage main {
+    max-width: 820px;
+  }
+  #chkapp .chkpage main .wordBox .wordItem .flxLeft {
+    width: 50%;
+    font-size: 28px !important;
+  }
+  #chkapp .chkpage main .wordBox .wordItem .flxRight {
+    font-size: 28px !important;
+  }
+  #chkapp .chkpage main .imgBox {
+    width: 39%;
+  }
+  #chkapp .chkpage main .imgBox img {
+    max-width: 100%;
+    margin-top: 63px;
+  }
+  #chkapp .chkpage .down {
+    width: 80%;
+    margin-bottom: 54px;
+  }
+  #chkapp .chkpage .down .btnRow button {
+    width: 220px !important;
+  }
+  #chkapp .chkpage .down .btnRow button:nth-of-type(1) {
+    margin-right: 6%;
+  }
+  #chkapp .chkpage .down .btnRow button:nth-of-type(2) {
+    margin-left: 6%;
+  }
+}
+
 @media all and (max-width: 576px) {
   #chkapp .chkpage {
     background-image: url(../imgs/mobile/m_blur_bg_up.jpg), url(../imgs/mobile/m_blur_bg_down.jpg) !important;
@@ -2400,7 +2479,7 @@ input[type=number] {
     background-repeat: no-repeat, no-repeat !important;
     background-size: contain !important;
     padding-bottom: 50px;
-    min-height: 75vh;
+    min-height: 79vh;
   }
   #chkapp .chkpage .banner {
     height: 147px !important;
@@ -2444,21 +2523,28 @@ input[type=number] {
   }
   #chkapp .chkpage .down {
     display: block;
-    margin-top: 0px;
-    margin-bottom: 106px;
-  }
-  #chkapp .chkpage .down .btnRow {
-    width: 90% !important;
+    margin-top: 40px;
   }
   #chkapp .chkpage .down .btnRow button {
-    height: 33px !important;
-    margin: 25px auto 15px auto;
+    width: 120px;
   }
 }
 
 @media all and (max-width: 414px) {
   #chkapp .chkpage {
     min-height: 78vh;
+  }
+  #chkapp .chkpage main .wordBox .wordItem .flxLeft {
+    font-size: 20px !important;
+  }
+  #chkapp .chkpage main .wordBox .wordItem .flxRight {
+    font-size: 20px !important;
+  }
+  #chkapp .chkpage .down .btnRow button:nth-of-type(1) {
+    margin-right: 4%;
+  }
+  #chkapp .chkpage .down .btnRow button:nth-of-type(2) {
+    margin-left: 4%;
   }
 }
 
@@ -2470,14 +2556,11 @@ input[type=number] {
     height: 100px !important;
     position: relative;
   }
-  #chkapp .chkpage .down .btnRow {
-    width: 100% !important;
+  #chkapp .chkpage .down .btnRow button:nth-of-type(1) {
+    margin-right: 3%;
   }
-}
-
-@media all and (max-width: 320px) {
-  #chkapp .chkpage .down .btnRow {
-    width: 108% !important;
+  #chkapp .chkpage .down .btnRow button:nth-of-type(2) {
+    margin-left: 3%;
   }
 }
 
