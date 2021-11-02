@@ -388,7 +388,7 @@ input[type=number] {
 }
 
 #scanapp form .up .middle .right img {
-  width: 100%;
+  width: 75%;
 }
 
 #scanapp form .up .chkbox {
@@ -425,14 +425,18 @@ input[type=number] {
 }
 
 #scanapp form .down .btnRow {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 80px;
 }
 
 #scanapp form .down .btnRow button {
   width: 318px;
   height: 80px;
-  margin-right: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -449,16 +453,15 @@ input[type=number] {
   opacity: .8;
 }
 
+#scanapp form .down .btnRow button:nth-of-type(1) {
+  margin-right: 8%;
+}
+
+#scanapp form .down .btnRow button:nth-of-type(2) {
+  margin-left: 8%;
+}
+
 @media all and (max-width: 1680px) {
-  #scanapp form {
-    background-image: url(../imgs/x2/blur_bg_up.jpg), url(../imgs/x2/blur_bg_down.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left top, left bottom 54px;
-    background-color: #fbf3dc;
-    min-height: 100%;
-    padding-bottom: 59px;
-  }
   #scanapp form .up,
   #scanapp form .down {
     width: 900px;
@@ -499,6 +502,7 @@ input[type=number] {
   #scanapp form .up .middle .right img {
     -webkit-transform: translateX(30px);
             transform: translateX(30px);
+    width: 100%;
   }
   #scanapp form .up .chkbox {
     width: 50%;
@@ -512,7 +516,6 @@ input[type=number] {
 
 @media all and (max-width: 1283px) {
   #scanapp form {
-    background-position: left top, left bottom 54px;
     padding-bottom: 59px;
   }
   #scanapp form .up,
@@ -568,16 +571,11 @@ input[type=number] {
   #scanapp form .down .btnRow button {
     width: 286px;
     height: 72px;
-    margin-right: 140px;
-  }
-  #scanapp form .down .btnRow button:nth-of-type(2) {
-    margin-right: 0px;
   }
 }
 
 @media all and (max-width: 992px) {
   #scanapp form {
-    background-position: left top, left bottom 54px;
     padding-bottom: 59px;
   }
   #scanapp form .up,
@@ -624,7 +622,6 @@ input[type=number] {
   #scanapp form .down .btnRow button {
     width: 257px;
     height: 64px;
-    margin-right: 130px;
   }
 }
 
@@ -867,14 +864,14 @@ input[type=number] {
             justify-content: center;
   }
   #scanapp form .down .btnRow button {
-    width: 191px;
+    width: 180px;
     height: 46px;
   }
   #scanapp form .down .btnRow button:nth-of-type(1) {
-    margin-right: 6%;
+    margin-right: 5%;
   }
   #scanapp form .down .btnRow button:nth-of-type(2) {
-    margin-left: 6%;
+    margin-left: 5%;
   }
 }
 
@@ -892,7 +889,7 @@ input[type=number] {
     bottom: 20px;
   }
   #scanapp form .up {
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
   }
   #scanapp form .up .scan {
@@ -969,9 +966,27 @@ input[type=number] {
     margin-bottom: 35px;
   }
   #scanapp form .down .btnRow button {
-    width: 171px;
+    width: 170px;
     height: 41px;
-    margin-right: 9%;
+  }
+  #scanapp form .down .btnRow button:nth-of-type(1) {
+    margin-right: 4.5%;
+  }
+  #scanapp form .down .btnRow button:nth-of-type(2) {
+    margin-left: 4.5%;
+  }
+}
+
+@media all and (max-width: 390px) {
+  #scanapp form .down .btnRow button {
+    width: 155px;
+    height: 41px;
+  }
+  #scanapp form .down .btnRow button:nth-of-type(1) {
+    margin-right: 3%;
+  }
+  #scanapp form .down .btnRow button:nth-of-type(2) {
+    margin-left: 3%;
   }
 }
 
@@ -1072,7 +1087,9 @@ input[type=number] {
   #scanapp form .down .btnRow button {
     width: 130px;
     height: 32px;
-    margin-right: 9%;
+  }
+  #scanapp form .down .btnRow button:nth-of-type(2) {
+    margin-right: 0% !important;
   }
 }
 
