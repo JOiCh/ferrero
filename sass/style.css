@@ -1302,31 +1302,34 @@ input[type=number] {
     width: 257px;
     height: 64px;
   }
-  #winapp .winpage .main_bg .showAwards .wrap {
+  #winapp .winpage .showAwards .wrap {
     width: 70%;
   }
-  #winapp .winpage .main_bg .showAwards .wrap header {
+  #winapp .winpage .showAwards .wrap header {
     height: 140px;
   }
-  #winapp .winpage .main_bg .showAwards .wrap .banner,
-  #winapp .winpage .main_bg .showAwards .wrap .banner.part2 {
+  #winapp .winpage .showAwards .wrap .banner,
+  #winapp .winpage .showAwards .wrap .banner.part2 {
     height: 66px;
   }
-  #winapp .winpage .main_bg .showAwards .wrap .wordBox {
+  #winapp .winpage .showAwards .wrap .wordBox {
     font-size: 12px;
     line-height: 18px;
   }
 }
 
 @media all and (max-width: 768px) {
-  #winapp .winpage .wrap .banner {
-    height: 70px;
+  #winapp .winpage .banner {
+    height: 154px;
   }
-  #winapp .winpage .wrap .main_bg main {
+  #winapp .winpage .main_bg main {
     margin: 50px auto 40px auto;
   }
-  #winapp .winpage .wrap .main_bg .down {
+  #winapp .winpage .main_bg .down {
     margin-bottom: 150px;
+  }
+  #winapp .winpage .showAwards .wrap .banner {
+    height: 70px;
   }
 }
 
@@ -1816,7 +1819,7 @@ input[type=number] {
 }
 
 #indexapp .landing .allContent #btndetail1 {
-  left: 24%;
+  left: 22%;
 }
 
 #indexapp .landing .allContent #btndetail2 {
@@ -2146,7 +2149,7 @@ input[type=number] {
 
 @media all and (max-width: 576px) {
   #indexapp {
-    background-image: url(../imgs/mobile/m_landing_bg.jpg);
+    background-image: url(../imgs/mobile/m_landing_bg.jpg) !important;
     background-size: cover;
     background-position: bottom center;
     padding-bottom: 40px;

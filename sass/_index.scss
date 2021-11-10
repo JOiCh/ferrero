@@ -43,7 +43,7 @@
             }
 
             #btndetail1 {
-                left: 24%;
+                left: 22%;
             }
 
             #btndetail2 {
@@ -498,7 +498,7 @@
 
 @include mobile {
     #indexapp {
-        background-image: url(../imgs/mobile/m_landing_bg.jpg);
+        background-image: url(../imgs/mobile/m_landing_bg.jpg) !important;
         background-size: cover;
         background-position: bottom center;
         padding-bottom: 40px;

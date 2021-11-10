@@ -1,4 +1,3 @@
-
 #winapp {
     .winpage {
         font-family: "LiHei", sans-serif;
@@ -66,9 +65,10 @@
                         background-color: transparent;
                         outline: unset;
                         border: unset;
-                      
-                        img{
+
+                        img {
                             width: 100%;
+
                             &:active {
                                 opacity: .8;
                             }
@@ -183,19 +183,20 @@
 
                         button {
                             margin: 0px auto 100px auto;
-                            width: 257px ;
-                            height: 64px ;
+                            width: 257px;
+                            height: 64px;
                         }
                     }
                 }
             }
+
             .showAwards {
-    
+
                 .wrap {
-    
+
                     header {
                         height: 160px;
-    
+
                         .fullHeader {
                             max-height: 82%;
                             top: 56%;
@@ -203,7 +204,7 @@
                     }
 
                 }
-    
+
                 #btn_close,
                 #btn_close2 {
                     position: absolute;
@@ -212,7 +213,7 @@
                     right: 17%;
                     z-index: 6;
                 }
-    
+
             }
         }
     }
@@ -222,6 +223,7 @@
 
             .main_bg {
                 margin-bottom: 90px;
+
                 .down {
                     margin-bottom: 196px;
 
@@ -234,24 +236,25 @@
                     }
                 }
 
-                .showAwards {
+            }
 
-                    .wrap {
-                        width: 70%;
-    
-                        header {
-                            height: 140px;
-                        }
-    
-                        .banner,
-                        .banner.part2 {
-                            height: 66px;
-                        }
-    
-                        .wordBox {
-                            font-size: 12px;
-                            line-height: 18px;
-                        }
+            .showAwards {
+
+                .wrap {
+                    width: 70%;
+
+                    header {
+                        height: 140px;
+                    }
+
+                    .banner,
+                    .banner.part2 {
+                        height: 66px;
+                    }
+
+                    .wordBox {
+                        font-size: 12px;
+                        line-height: 18px;
                     }
                 }
             }
@@ -261,9 +264,8 @@
     @include ipad {
         .winpage {
 
-            .wrap{
-                 .banner {
-                height: 70px;
+            .banner {
+                height: 154px ;
             }
 
             .main_bg {
@@ -275,27 +277,35 @@
                     margin-bottom: 150px;
                 }
             }
+
+            .showAwards {
+                .wrap {
+                    .banner {
+                        height: 70px;
+                    }
+                }
+
             }
-           
+
         }
     }
-} 
+}
 
 @include mobile {
     #winapp {
-        background-image: unset ;
+        background-image: unset;
 
         .winpage {
             position: relative;
             background-image: url(../imgs/mobile/m_blur_bg_up.jpg),
-                url(../imgs/mobile/m_blur_bg_down.jpg) ;
-            background-position: center top 0px, center bottom 0px ;
-            background-repeat: no-repeat, no-repeat ;
-            background-size: contain ;
+                url(../imgs/mobile/m_blur_bg_down.jpg);
+            background-position: center top 0px, center bottom 0px;
+            background-repeat: no-repeat, no-repeat;
+            background-size: contain;
             min-height: 100vh;
 
             .banner {
-                height: 135px ;
+                height: 135px;
 
                 img.text_fill {
                     display: none;
@@ -343,10 +353,11 @@
                             cursor: pointer;
                             width: 200px;
                         }
+
                         button:nth-of-type(1) {
                             margin-right: 6%;
                         }
-    
+
                         button:nth-of-type(2) {
                             margin-left: 6%;
                         }
@@ -360,25 +371,25 @@
                     .wrap {
                         width: 80%;
                         margin: 0 auto;
-    
+
                         header {
                             margin-top: 50px;
-    
+
                             .fullHeader {
                                 max-height: 86%;
                                 top: 41%;
                             }
                         }
-    
+
                         .banner {
                             transform: translateY(-26px);
                             height: 65px !important;
                         }
-    
+
                         .banner.part2 {
                             height: 65px;
                         }
-    
+
                         .wordBox {
                             transform: translateY(-26px);
                             width: 100%;
@@ -386,18 +397,19 @@
                             padding: 0px 15px 15px 15px;
                             font-size: 12px;
                             line-height: 18px;
-    
+
                         }
-    
+
                         .picBox {
                             transform: translateY(-28px);
                             height: 300px;
+
                             img {
                                 width: 90%;
                             }
                         }
                     }
-    
+
                     #btn_close,
                     #btn_close2 {
                         width: 30px;
@@ -405,11 +417,11 @@
                         right: 12%;
                         z-index: 6;
                     }
-    
+
                 }
             }
 
-            
+
             .showAwards {
 
                 .wrap {
@@ -448,6 +460,7 @@
                     .picBox {
                         transform: translateY(-28px);
                         height: 370px;
+
                         img {
                             width: 90%;
                         }
@@ -467,13 +480,13 @@
     }
 }
 
-@include mobile_m{
+@include mobile_m {
     #winapp {
 
         .winpage {
 
             .banner {
-                height: 119px ;
+                height: 119px;
             }
 
             .main_bg {
@@ -488,15 +501,17 @@
                 .down {
                     margin-top: 8px;
                     margin-bottom: 278px;
+
                     .btnRow {
 
                         button {
                             width: 171px;
                         }
+
                         button:nth-of-type(1) {
                             margin-right: 3%;
                         }
-    
+
                         button:nth-of-type(2) {
                             margin-left: 3%;
                         }
@@ -510,6 +525,7 @@
 
                     header {
                         height: 126px;
+
                         .fullHeader {
                             max-height: 66% !important;
                             top: 23px !important;
@@ -525,12 +541,13 @@
         }
     }
 }
+
 @media all and (max-width: 390px) {
     #winapp {
         .winpage {
 
             .banner {
-                height: 113px ;
+                height: 113px;
             }
 
             .main_bg {
@@ -543,15 +560,17 @@
 
                 .down {
                     margin-top: 1px;
+
                     .btnRow {
 
                         button {
                             width: 150px;
                         }
+
                         button:nth-of-type(1) {
                             margin-right: 4%;
                         }
-    
+
                         button:nth-of-type(2) {
                             margin-left: 4%;
                         }
@@ -562,7 +581,7 @@
     }
 }
 
-@include mobile_s{
+@include mobile_s {
     #winapp {
 
         .winpage {
@@ -573,6 +592,7 @@
 
                     header {
                         height: 93px;
+
                         .fullHeader {
                             max-height: 86% !important;
                             top: 8px !important;
@@ -631,9 +651,11 @@
 
                 .down {
                     margin-bottom: 130px;
+
                     .btnRow {
                         width: 100%;
                         transform: translateY(200%);
+
                         button {
                             margin: 0px auto 0px auto;
                             cursor: pointer;
