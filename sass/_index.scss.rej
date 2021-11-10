@@ -1,0 +1,10 @@
+diff a/sass/_index.scss b/sass/_index.scss	(rejected hunks)
+@@ -43,7 +43,7 @@
+             }
+ 
+             #btndetail1 {
+-                left: 24%;
++                left: 22%;
+             }
+ 
+             #btndetail2 {
