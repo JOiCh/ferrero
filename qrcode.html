@@ -61,13 +61,13 @@
                                 </div>
                                 <div class="flxRight" style="display: flex;flex-wrap:nowrap">
                                     <select name="" id="" v-model="selectedMonth" @change="chooseMonths">
-                                        <option selected hidden>{{selectedMonth}}</option>
-                                        <option v-for="month in months">{{month}}</option>
+                                        <option selected hidden v-cloak>{{selectedMonth}}</option>
+                                        <option v-for="month in months" v-cloak>{{month}}</option>
                                     </select>
                                     <span class="spanMv">月</span>
                                     <select name="" id="" v-model="selectedDay">
-                                        <option selected hidden>{{selectedDay}}</option>
-                                        <option v-for="day in days">{{day}}</option>
+                                        <option selected hidden v-cloak >{{selectedDay}}</option>
+                                        <option v-for="day in days" v-cloak>{{day}}</option>
                                     </select>
                                     <span class="spanMv">日</span>
                                 </div>

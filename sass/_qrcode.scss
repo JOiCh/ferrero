@@ -1,6 +1,11 @@
+[v-cloak] {
+    display: none;
+}
+
 #scanapp {
     font-family: "LiHei", sans-serif;
     min-height: 100vh;
+
     form {
 
         background-image: url(../imgs/x2/blur_bg_up.jpg),
@@ -188,14 +193,16 @@
                     border: unset;
                     cursor: pointer;
 
-                    img{
+                    img {
                         width: 100%;
+
                         &:active {
                             opacity: .8;
                         }
                     }
-                 
+
                 }
+
                 button:nth-of-type(1) {
                     margin-right: 8%;
                 }
@@ -624,16 +631,18 @@
                     left: 0px;
                     z-index: 6;
                     transition: .1s;
-                    img.billShow{
+
+                    img.billShow {
                         display: block;
-                        margin: 30px auto 0 auto; 
+                        margin: 30px auto 0 auto;
                         width: 60%;
                     }
-                    img.closeBtn{
+
+                    img.closeBtn {
                         display: block;
                         position: absolute;
                         width: 10%;
-                        top:20px;
+                        top: 20px;
                         right: 20%;
                     }
 
@@ -789,6 +798,7 @@
                         width: 180px;
                         height: 46px;
                     }
+
                     button:nth-of-type(1) {
                         margin-right: 5%;
                     }
@@ -805,6 +815,7 @@
     @include mobile_m {
         form {
             background-position: left top, left bottom 116px;
+
             .banner {
                 height: 125px;
 
@@ -958,7 +969,7 @@
         }
     }
 
-    @include mobile_s{
+    @include mobile_s {
         form {
             .banner {
                 height: 109px;
@@ -988,7 +999,8 @@
                             line-height: 24px;
                             margin-top: 20px;
                         }
-                        h4{
+
+                        h4 {
                             margin-top: 0px;
                         }
                     }
@@ -1006,15 +1018,16 @@
                                     span {
                                         margin-left: 9%;
                                         transform: translateY(1px);
-                                        
+
                                     }
-                                    span.fstSpan{
+
+                                    span.fstSpan {
                                         font-size: 20px;
                                     }
                                 }
 
-                                .flxRight{
-                                    select:nth-of-type(1){
+                                .flxRight {
+                                    select:nth-of-type(1) {
                                         margin-left: -1px;
                                     }
                                 }
@@ -1066,10 +1079,11 @@
         }
     }
 
-    @include mobile_xs{
+    @include mobile_xs {
         form {
             background-position: left top, left bottom 0px;
             padding-bottom: 10px;
+
             .banner {
                 height: 94px;
             }
@@ -1098,9 +1112,9 @@
                         .input {
                             label:nth-of-type(1) {
 
-                                .flxRight{
+                                .flxRight {
                                     left: 10px;
-                                    top:10px;
+                                    top: 10px;
                                 }
                             }
 
@@ -1121,6 +1135,7 @@
                     }
 
                 }
+
                 .chkbox {
 
                     label {
@@ -1147,7 +1162,8 @@
                         width: 130px;
                         height: 32px;
                     }
-                    button:nth-of-type(2){
+
+                    button:nth-of-type(2) {
                         margin-right: 0% !important;
                     }
                 }
