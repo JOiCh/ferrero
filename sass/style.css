@@ -1819,11 +1819,11 @@ input[type=number] {
 }
 
 #indexapp .landing .allContent #btndetail1 {
-  left: 22%;
+  left: 24%;
 }
 
 #indexapp .landing .allContent #btndetail2 {
-  left: 46.5%;
+  left: 47%;
 }
 
 #indexapp .landing .allContent .m_btnRow {
@@ -1949,6 +1949,19 @@ input[type=number] {
   width: 40px;
 }
 
+@media all and (max-width: 1920px) {
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
+    bottom: 255px;
+  }
+  #indexapp .landing .allContent #btndetail1 {
+    left: 18.5%;
+  }
+  #indexapp .landing .allContent #btndetail2 {
+    left: 46%;
+  }
+}
+
 @media all and (max-width: 1800px) {
   #indexapp {
     background-position: bottom left -400px;
@@ -2038,6 +2051,10 @@ input[type=number] {
   #indexapp .landing .allContent #btndetail2 {
     left: 45.2%;
   }
+  #indexapp .landing .down {
+    -webkit-transform: translateY(180%);
+            transform: translateY(180%);
+  }
   #indexapp .landing .showAwards .wrap header {
     height: 160px;
   }
@@ -2058,14 +2075,18 @@ input[type=number] {
 @media all and (max-width: 1024px) {
   #indexapp .landing .allContent #btndetail1,
   #indexapp .landing .allContent #btndetail2 {
-    width: 105px;
+    width: 100px;
     bottom: 137px;
   }
   #indexapp .landing .allContent #btndetail1 {
-    left: 18.5%;
+    left: 18%;
   }
   #indexapp .landing .allContent #btndetail2 {
-    left: 45.5%;
+    left: 45%;
+  }
+  #indexapp .landing .down {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
   }
 }
 
@@ -2120,6 +2141,27 @@ input[type=number] {
   #indexapp .landing .showAwards .wrap .wordBox {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #indexapp .landing {
+    padding-bottom: 185px;
+  }
+  #indexapp .landing .allContent #btndetail1,
+  #indexapp .landing .allContent #btndetail2 {
+    width: 85px;
+    bottom: 116px;
+  }
+  #indexapp .landing .allContent #btndetail1 {
+    left: 15.5%;
+  }
+  #indexapp .landing .allContent #btndetail2 {
+    left: 44.5%;
+  }
+  #indexapp .landing .down {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
   }
 }
 
