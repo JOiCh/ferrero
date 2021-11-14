@@ -753,7 +753,7 @@
 
 @include laptop {
     .loading {
-        border: 12px solid blue;
+        // border: 12px solid blue;
         .load {
             max-width: 400px;
             margin: 0 auto;
@@ -765,7 +765,7 @@
 
 @include mobile {
     .loading {
-        border: 9px solid brown;
+        // border: 9px solid brown;
         .load {
             max-width: 300px;
             margin: 0 auto;
@@ -780,7 +780,7 @@
 
 @include mobile_s {
     .loading {
-        border: 1px solid red;
+        // border: 1px solid red;
         .load {
             max-width: 300px;
             margin: 0 auto;
