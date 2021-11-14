@@ -7,14 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass/style.css">
     <title>Check Page</title>
+    <!-- 進度條 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@2.5.10/dist/vuetify.min.css">
 </head>
 
 <body>
     <div id="chkapp">
-        <header>
+        <header v-if="isCheckpage">
             <the-header></the-header>
         </header>
-        <div class="chkpage">
+        <div class="chkpage" v-if="isCheckpage">
             <div class="banner">
                 <img src="./imgs/x2/text_check.png" class="text_fill">
                 <img src="./imgs/mobile/m_text_check.png" alt="">
@@ -80,24 +85,48 @@
                         <img src="./imgs/x2/btn_rewrite.png" @click="link">
                     </button>
                     <button type="button">
-                        <img src="./imgs/x2/btn_sure.png" alt="">
+                        <img src="./imgs/x2/btn_sure.png" alt="" @click="goLoadingPage">
                     </button>
                 </div>
             </div>
+        </div>
+
+        <!-- loading 區塊 -->
+        <div class="loading" v-if="!isCheckpage">
+            <v-app id="progressbar" class="load" style="background: none;">
+                <v-container>
+                    <v-img src="./imgs/x2/loading_deco.png" align-content="center" justify="center">
+                        <div class="loadingbar">
+                            <v-progress-linear color="amber accent-3 lighten-2" border- indeterminate rounded striped
+                                height="15">
+                            </v-progress-linear>
+                        </div>
+                </v-container>
+            </v-app>
         </div>
         <footer>
             <the-footer></the-footer>
         </footer>
     </div>
     <script src="./js/vue.js"></script>
+    <!-- loading bar -->
+    <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.5.10/dist/vuetify.min.js"></script>
     <script src="./js/header_footer.js"></script>
     <script>
         new Vue({
             el: '#chkapp',
+            vuetify: new Vuetify(),
+            data: {
+                isCheckpage: true,
+            },
             methods: {
                 link() {
                     location.href = "./qrcode.html"
                 },
+                goLoadingPage() {
+                    this.isCheckpage = false;
+                }
             },
         })
     </script>

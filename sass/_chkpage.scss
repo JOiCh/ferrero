@@ -431,3 +431,365 @@
 
     }
 }
+
+#chkapp {
+    .chkpage {
+        font-family: "LiHei", sans-serif;
+        background-image: url(../imgs/x2/blur_bg_down.jpg) !important;
+        background-repeat: no-repeat;
+        background-position: left bottom 0px;
+        background-color: $bg;
+        padding-bottom: 50px;
+
+        .banner {
+            height: 320px;
+            position: relative;
+
+            img.text_fill {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 50px;
+                width: 65%;
+            }
+
+            img:nth-of-type(2) {
+                display: none;
+            }
+        }
+
+        main {
+            max-width: 1052px;
+            margin: 0 auto;
+            display: flex;
+            border: 1px solid transparent;
+
+
+            .wordBox {
+                width: 60%;
+                border: 1px solid transparent;
+
+                .wordItem {
+                    display: flex;
+                    margin-top: 60px;
+
+                    .flxLeft {
+                        width: 40%;
+                        text-align: right;
+                        font-size: 38px;
+                        color: $main;
+                    }
+
+                    .flxRight {
+                        width: 59%;
+                        font-size: 38px;
+                    }
+                }
+            }
+
+            .imgBox {
+                width: 39%;
+                border: 1px solid transparent;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .down {
+            width: 55%;
+            margin: 60px auto 0 auto;
+
+            .btnRow {
+                text-align: center;
+                margin-bottom: 80px;
+
+                button {
+                    width: 318px;
+                    height: 80px;
+                    margin-right: 80px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    outline: unset;
+                    border: unset;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+
+                        &:active {
+                            opacity: .8;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@include laptop {
+    #chkapp {
+        .chkpage {
+
+            .banner {
+                height: 180px !important;
+
+                img.text_fill {
+                    bottom: 25px !important;
+                    width: 80% !important;
+                }
+            }
+
+            main {
+                max-width: 685px;
+
+                .wordBox {
+
+                    .wordItem {
+
+                        .flxLeft {
+                            width: 44%;
+                            font-size: 28px;
+                        }
+
+                        .flxRight {
+                            font-size: 28px;
+                        }
+                    }
+                }
+
+                .imgBox {
+                    width: 39%;
+
+                    img {
+                        max-width: 100%;
+                        margin-top: 63px;
+                    }
+                }
+            }
+
+            .down {
+                width: 80%;
+                margin-bottom: 54px;
+
+                .btnRow {
+
+                    button {
+                        width: 257px !important;
+                        height: 64px !important;
+
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+}
+
+@include mobile {
+    #chkapp {
+
+        .chkpage {
+            background-image: url(../imgs/mobile/m_blur_bg_up.jpg),
+                url(../imgs/mobile/m_blur_bg_down.jpg) !important;
+            background-position: left top, left bottom !important;
+            background-repeat: no-repeat, no-repeat !important;
+            background-size: contain !important;
+            padding-bottom: 50px;
+            min-height: 75vh;
+
+            .banner {
+                height: 147px !important;
+                position: relative;
+
+                img.text_fill {
+                    display: none;
+                }
+
+                img:nth-of-type(2) {
+                    display: block;
+                    max-width: 90%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 10px;
+                }
+            }
+
+            main {
+                display: block;
+
+                .wordBox {
+                    width: 90%;
+                    margin: 0 auto;
+
+                    .wordItem:nth-of-type(1) {
+                        margin-top: 5px;
+                    }
+
+                    .wordItem {
+                        margin-top: 20px;
+
+                        .flxLeft,
+                        .flxRight {
+                            font-size: 20px;
+                        }
+
+                        .flxLeft {
+                            width: 48%;
+                            margin-right: 7px;
+                        }
+                    }
+                }
+
+                .imgBox {
+                    display: none;
+                }
+            }
+
+            .down {
+                display: block;
+                margin-top: 0px;
+                margin-bottom: 106px;
+
+                .btnRow {
+                    width: 90% !important;
+
+                    button {
+                        height: 33px !important;
+                        margin: 25px auto 15px auto;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include mobile_m{
+    #chkapp {
+
+        .chkpage {
+            min-height: 78vh;
+        }
+
+    }
+}
+
+@include mobile_s {
+    #chkapp {
+
+        .chkpage {
+            min-height: 78vh;
+
+            .banner {
+                height: 100px !important;
+                position: relative;
+
+            }
+
+            .down {
+                .btnRow {
+                    width: 100% !important;
+                }
+            }
+
+
+        }
+
+    }
+}
+
+@include mobile_xs {
+    #chkapp {
+
+        .chkpage {
+            .down {
+
+                .btnRow {
+                    width: 108% !important;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+// loading_page
+.loading {
+    border: 2px solid transparent;
+    // height: 100%;
+    font-family: "LiHei", sans-serif;
+    background-image: url(../imgs/x2/blur_bg_down.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom 0px;
+    background-color: $bg;
+    background-size: cover;
+
+    .load {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 30px;
+        
+
+        .loadingbar {
+            border: 2px solid rgb(208, 149, 53);
+            width: 100%;
+            height: 27px;
+            padding: 5px;
+            border-radius: 5%;
+            margin-top: 310px;
+        }
+    }
+}
+
+@include laptop {
+    .loading {
+        border: 12px solid blue;
+        .load {
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+}
+}
+
+@include mobile {
+    .loading {
+        border: 9px solid brown;
+        .load {
+            max-width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+
+            .loadingbar {
+                margin-top: 230px;
+            }
+        }
+}
+}
+
+@include mobile_s {
+    .loading {
+        border: 1px solid red;
+        .load {
+            max-width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+
+            .loadingbar {
+                margin-top: 225px;
+            }
+        }
+    
+}
+}
