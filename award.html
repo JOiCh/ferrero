@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Scan Page</title>
+    <style>
+        .camera{
+            /* border: 2px solid red; */
+            width: 200px;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="scanapp" v-cloak> 
+        <header>
+            <the-header></the-header>
+        </header>
+        <form action="">
+            <div class="banner" style="height: 120px">
+                <!-- <img src="./imgs/x2/text_fill.png" class="text_fill"> -->
+                <!-- <img src="./imgs/mobile/m_text_fill.png" id="m_text_fill"> -->
+            </div>
+            <div class="up">
+                <div class="middle" style="border: 2px solid red; width: 100%;">
+                    <img src="https://picsum.photos/1280/4000" style="width: 100%; height: 100%px; object-fit: contain;" alt="">
+                </div>
+            </div>
+            <div class="down" style="height: 100px;">
+                <!-- <div class="btnRow">
+                    <button type="button">
+                        <img src="./imgs/x2/btn_rewrite.png" alt="">
+                    </button>
+                    <button type="button" @click="gotItems">
+                        <img src="./imgs/x2/btn_send.png" alt="">
+                    </button>
+                </div> -->
+            </div>
+        </form>
+        <footer>
+            <the-footer></the-footer>
+        </footer>
+    </div>
+    <script src="./js/vue.js"></script>
+    <!-- vue qrcode -->
+    <script src="https://unpkg.com/vue-qrcode-reader/dist/VueQrcodeReader.umd.min.js"></script>
+    <script src="./js/header_footer.js"></script>
+    <script>
+        new Vue({
+            el: '#scanapp'
+        })
+    </script>
+</body>
+
+</html>
