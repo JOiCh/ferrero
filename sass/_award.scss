@@ -1,0 +1,25 @@
+#scanapp {
+        // border: 2px solid red;
+        form {
+            .up{
+                .pc{
+                    display: block;
+                }
+                .mobile{
+                    display: none;
+                }
+            }
+        } 
+        @include mobile {
+            form {
+                .up{
+                    .pc{
+                        display: none;
+                    }
+                    .mobile{
+                        display: block;
+                    }
+                }
+            } 
+        }
+}
